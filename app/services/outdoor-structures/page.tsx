@@ -74,6 +74,7 @@ export default function OutdoorStructures() {
         title="Custom Outdoor Structures That Extend Your Living Space"
         subtitle="Your backyard should feel like a destination—not an afterthought."
         compact
+        backgroundImage="/images/outdoor-structures.jpg"
       />
 
       <section className="py-16 bg-white">

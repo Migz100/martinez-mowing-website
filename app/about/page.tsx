@@ -80,6 +80,7 @@ export default function About() {
         title="Built on Reputation, Driven by Craftsmanship"
         subtitle="20+ years of turning Desert Aire backyards into outdoor retreats homeowners are proud to show off."
         compact
+        backgroundImage="/images/team-work.jpg"
       />
 
       {/* Main Story */}

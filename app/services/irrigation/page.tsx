@@ -75,6 +75,7 @@ export default function Irrigation() {
         title="Smart Irrigation That Saves Water and Keeps Everything Green"
         subtitle="Desert Aire's climate means irrigation isn't optional—it's essential."
         compact
+        backgroundImage="/images/irrigation.jpg"
       />
 
       <section className="py-16 bg-white">

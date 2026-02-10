@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import { ReactNode } from 'react'
 
 interface HeroSectionProps {
@@ -8,6 +9,7 @@ interface HeroSectionProps {
   ctaLink?: string
   secondaryCta?: ReactNode
   compact?: boolean
+  backgroundImage?: string
 }
 
 export default function HeroSection({
@@ -17,27 +19,36 @@ export default function HeroSection({
   ctaLink = '/contact',
   secondaryCta,
   compact = false,
+  backgroundImage = '/images/hero-landscaping.jpg',
 }: HeroSectionProps) {
   return (
     <section className="relative w-full">
-      {/* Background Placeholder with Gradient Overlay */}
-      <div className="relative h-[500px] md:h-[600px] flex items-center justify-center">
-        <div className="absolute inset-0 image-placeholder-gradient flex items-center justify-center">
-          <p className="text-white/40 text-sm md:text-base font-medium text-center px-4">
-            [Hero Background Image - Full Width Landscape]
-          </p>
-        </div>
+      {/* Background Image with Dark Overlay */}
+      <div className="relative h-[500px] md:h-[600px] flex items-center justify-center overflow-hidden">
+        <Image
+          src={backgroundImage}
+          alt="Martinez Mowing & More - Professional Landscaping"
+          fill
+          className="object-cover"
+          priority
+          quality={90}
+        />
+        
+        {/* Dark overlay for better text readability */}
+        <div className="absolute inset-0 bg-black/50" />
 
         {/* Content */}
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1
             className={`${
               compact ? 'text-3xl md:text-4xl' : 'text-4xl md:text-5xl lg:text-6xl'
-            } font-bold text-white mb-6 leading-tight`}
+            } font-bold text-white mb-8 leading-tight`}
           >
             {title}
           </h1>
-          <p className="text-lg md:text-xl text-white/95 mb-8 max-w-3xl mx-auto leading-relaxed">
+          
+          {/* Improved subtitle spacing */}
+          <p className="text-base md:text-lg lg:text-xl text-white/95 mb-10 max-w-2xl mx-auto leading-relaxed px-4">
             {subtitle}
           </p>
 

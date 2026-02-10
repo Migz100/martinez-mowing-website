@@ -76,6 +76,7 @@ export default function Maintenance() {
         title="Year-Round Maintenance So You Can Actually Enjoy Your Property"
         subtitle="You bought in Desert Aire to enjoy the lifestyle—not to spend your weekends edging, blowing, and trimming."
         compact
+        backgroundImage="/images/maintenance.jpg"
       />
 
       <section className="py-16 bg-white">

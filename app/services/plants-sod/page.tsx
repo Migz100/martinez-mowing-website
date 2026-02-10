@@ -97,6 +97,7 @@ export default function PlantsSod() {
         title="Lush, Green Landscapes That Thrive in the Columbia Basin"
         subtitle="Desert Aire's climate is beautiful—but it's tough on lawns and plants. We've spent two decades figuring out exactly what works here."
         compact
+        backgroundImage="/images/plants-sod.jpg"
       />
 
       <section className="py-16 bg-white">

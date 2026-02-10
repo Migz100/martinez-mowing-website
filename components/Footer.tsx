@@ -1,26 +1,49 @@
+'use client'
+
 import Link from 'next/link'
-import { FaFacebook, FaInstagram, FaPhone, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa'
+import { usePathname } from 'next/navigation'
+import { FaTiktok, FaInstagram, FaPhone, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa'
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
+  const pathname = usePathname()
+  const isSpanish = pathname?.startsWith('/es')
 
-  const serviceLinks = [
-    { href: '/services/fences', label: 'Fences' },
-    { href: '/services/plants-sod', label: 'Plants & Sod' },
-    { href: '/services/maintenance', label: 'Property Maintenance' },
-    { href: '/services/retaining-walls', label: 'Retaining Walls' },
-    { href: '/services/outdoor-structures', label: 'Outdoor Structures' },
-    { href: '/services/irrigation', label: 'Irrigation & Drainage' },
-  ]
+  const serviceLinks = isSpanish
+    ? [
+        { href: '/es/servicios/cercas', label: 'Cercas' },
+        { href: '/es/servicios/plantas-cesped', label: 'Plantas y Césped' },
+        { href: '/es/servicios/mantenimiento', label: 'Mantenimiento' },
+        { href: '/es/servicios/muros-retencion', label: 'Muros de Retención' },
+        { href: '/es/servicios/estructuras-exteriores', label: 'Estructuras Exteriores' },
+        { href: '/es/servicios/irrigacion', label: 'Irrigación y Drenaje' },
+      ]
+    : [
+        { href: '/services/fences', label: 'Fences' },
+        { href: '/services/plants-sod', label: 'Plants & Sod' },
+        { href: '/services/maintenance', label: 'Property Maintenance' },
+        { href: '/services/retaining-walls', label: 'Retaining Walls' },
+        { href: '/services/outdoor-structures', label: 'Outdoor Structures' },
+        { href: '/services/irrigation', label: 'Irrigation & Drainage' },
+      ]
 
-  const quickLinks = [
-    { href: '/', label: 'Home' },
-    { href: '/about', label: 'About' },
-    { href: '/services', label: 'Services' },
-    { href: '/gallery', label: 'Gallery' },
-    { href: '/contact', label: 'Contact' },
-    { href: '/es', label: 'Español' },
-  ]
+  const quickLinks = isSpanish
+    ? [
+        { href: '/es', label: 'Inicio' },
+        { href: '/es/sobre', label: 'Sobre Nosotros' },
+        { href: '/es/servicios', label: 'Servicios' },
+        { href: '/es/galeria', label: 'Galería' },
+        { href: '/es/contacto', label: 'Contacto' },
+        { href: '/', label: 'English' },
+      ]
+    : [
+        { href: '/', label: 'Home' },
+        { href: '/about', label: 'About' },
+        { href: '/services', label: 'Services' },
+        { href: '/gallery', label: 'Gallery' },
+        { href: '/contact', label: 'Contact' },
+        { href: '/es', label: 'Español' },
+      ]
 
   return (
     <footer className="bg-charcoal text-white">
@@ -48,14 +71,14 @@ export default function Footer() {
               </a>
               <div className="flex items-start gap-2">
                 <FaMapMarkerAlt className="flex-shrink-0 mt-1" />
-                <span>Serving Desert Aire & Mattawa, WA</span>
+                <span>{isSpanish ? 'Sirviendo a Desert Aire y Mattawa, WA' : 'Serving Desert Aire & Mattawa, WA'}</span>
               </div>
             </div>
           </div>
 
           {/* Services */}
           <div>
-            <h3 className="text-lg font-bold mb-4">Services</h3>
+            <h3 className="text-lg font-bold mb-4">{isSpanish ? 'Servicios' : 'Services'}</h3>
             <ul className="space-y-2">
               {serviceLinks.map((link) => (
                 <li key={link.href}>
@@ -72,7 +95,7 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-lg font-bold mb-4">Quick Links</h3>
+            <h3 className="text-lg font-bold mb-4">{isSpanish ? 'Enlaces Rápidos' : 'Quick Links'}</h3>
             <ul className="space-y-2">
               {quickLinks.map((link) => (
                 <li key={link.href}>
@@ -89,17 +112,19 @@ export default function Footer() {
 
           {/* Social & License */}
           <div>
-            <h3 className="text-lg font-bold mb-4">Connect With Us</h3>
+            <h3 className="text-lg font-bold mb-4">{isSpanish ? 'Conéctate Con Nosotros' : 'Connect With Us'}</h3>
             <div className="flex gap-4 mb-6">
-              <a
-                href="https://www.facebook.com/profile.php?id=100089373431266"
+              {/* Facebook link TBD - commented out per requirements */}
+              {/* <a
+                href="https://www.facebook.com/martinezmowing"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-2xl text-gray-300 hover:text-accent transition-colors"
                 aria-label="Facebook"
               >
                 <FaFacebook />
-              </a>
+              </a> */}
+              
               <a
                 href="https://www.instagram.com/martinezmowing_morellc"
                 target="_blank"
@@ -109,9 +134,21 @@ export default function Footer() {
               >
                 <FaInstagram />
               </a>
+              
+              <a
+                href="https://www.tiktok.com/@martinezmowing"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-2xl text-gray-300 hover:text-accent transition-colors"
+                aria-label="TikTok"
+              >
+                <FaTiktok />
+              </a>
             </div>
             <div className="text-gray-300 space-y-2">
-              <p className="font-semibold text-accent">Licensed & Insured</p>
+              <p className="font-semibold text-accent">
+                {isSpanish ? 'Licenciado y Asegurado' : 'Licensed & Insured'}
+              </p>
               <p className="text-sm">GC #MARTIMM744B1</p>
             </div>
           </div>
@@ -120,10 +157,10 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400 text-sm">
           <p>
-            © {currentYear} Martinez Mowing & More LLC. All rights reserved.
+            © {currentYear} Martinez Mowing & More LLC. {isSpanish ? 'Todos los derechos reservados.' : 'All rights reserved.'}
           </p>
           <p className="mt-2">
-            Built by{' '}
+            {isSpanish ? 'Construido por' : 'Built by'}{' '}
             <a
               href="https://fadegrowthpartner.com"
               target="_blank"

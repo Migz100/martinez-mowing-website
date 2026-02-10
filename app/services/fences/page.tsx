@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import Image from 'next/image'
 import { FaCheckCircle } from 'react-icons/fa'
 import HeroSection from '@/components/HeroSection'
 import ImagePlaceholder from '@/components/ImagePlaceholder'
@@ -104,6 +105,7 @@ export default function Fences() {
         title="Custom Fences That Frame Your Desert Aire Property Perfectly"
         subtitle="Your fence is more than a boundary—it's the first thing guests notice, the backdrop to every backyard gathering, and the foundation of your outdoor privacy."
         compact
+        backgroundImage="/images/hero-fence.jpg"
       />
 
       <section className="py-16 bg-white">
@@ -129,10 +131,14 @@ export default function Fences() {
                 <p className="text-gray-600">Most fences completed in 3-5 days</p>
               </div>
 
-              <ImagePlaceholder
-                text="[Completed fence installation - side view]"
-                height="h-64"
-              />
+              <div className="relative h-64 rounded-xl overflow-hidden shadow-lg">
+                <Image
+                  src="/images/fences.jpg"
+                  alt="Completed fence installation"
+                  fill
+                  className="object-cover"
+                />
+              </div>
             </div>
 
             <div>

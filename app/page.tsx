@@ -114,6 +114,7 @@ export default function Home() {
       <HeroSection
         title="The Contractor Your Desert Aire Neighbors Already Trust"
         subtitle="Premium fences, professional landscaping, and worry-free maintenance for golf course living. We know the HOA standards, the soil, and exactly what thrives here."
+        backgroundImage="/images/hero-landscaping.jpg"
         secondaryCta={
           <a
             href="tel:5099321924"

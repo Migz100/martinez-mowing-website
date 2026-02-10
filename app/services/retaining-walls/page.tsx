@@ -75,6 +75,7 @@ export default function RetainingWalls() {
         title="Retaining Walls That Solve Problems and Add Value"
         subtitle="Sloped yards, erosion issues, and unusable spaces—retaining walls fix them all while adding structure and beauty to your landscape."
         compact
+        backgroundImage="/images/retaining-walls.jpg"
       />
 
       <section className="py-16 bg-white">
