@@ -5,12 +5,12 @@ import SeasonalBanner from '@/components/SeasonalBanner'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import StickyMobileCTA from '@/components/StickyMobileCTA'
-import StructuredData, { localBusinessSchema } from '@/components/StructuredData'
+import { LocalBusinessSchema, WebSiteSchema } from '@/components/StructuredData'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://martinezmowingandmore.com'),
+  metadataBase: new URL('https://martinezmowingandmore.vercel.app'),
   title: {
     default: 'Desert Aire Premier Landscaping & Outdoor Contractor | Martinez Mowing & More',
     template: '%s | Martinez Mowing & More',
@@ -83,7 +83,8 @@ export default function RootLayout({
           hrefLang="en"
           href="https://martinezmowingandmore.com"
         />
-        <StructuredData data={localBusinessSchema} />
+        <LocalBusinessSchema />
+        <WebSiteSchema />
       </head>
       <body className={inter.className}>
         <SeasonalBanner />

@@ -1,21 +1,17 @@
-import React from 'react'
+const BASE_URL = 'https://martinezmowingandmore.vercel.app'
 
-interface StructuredDataProps {
-  data: Record<string, any> | Record<string, any>[]
-}
-
-/**
- * Renders JSON-LD structured data in a script tag for SEO
- * Supports single schema objects or arrays of schemas
- */
-export default function StructuredData({ data }: StructuredDataProps) {
-  const schemaArray = Array.isArray(data) ? data : [data]
-
+// Default export: renders one or more JSON-LD schemas
+export default function StructuredData({
+  data,
+}: {
+  data: Record<string, unknown> | Record<string, unknown>[]
+}) {
+  const schemas = Array.isArray(data) ? data : [data]
   return (
     <>
-      {schemaArray.map((schema, index) => (
+      {schemas.map((schema, i) => (
         <script
-          key={index}
+          key={i}
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
         />
@@ -24,17 +20,15 @@ export default function StructuredData({ data }: StructuredDataProps) {
   )
 }
 
-/**
- * LocalBusiness schema for Martinez Mowing & More LLC
- * Use this site-wide in layout.tsx
- */
+// --- Pre-built schema objects ---
+
 export const localBusinessSchema = {
   '@context': 'https://schema.org',
   '@type': 'GeneralContractor',
   name: 'Martinez Mowing & More LLC',
   description:
     'Premium landscaping, fences, property maintenance, and outdoor construction for Desert Aire and Mattawa, WA. Licensed General Contractor #MARTIMM744B1.',
-  url: 'https://martinezmowingandmore.com',
+  url: BASE_URL,
   telephone: '+15099321924',
   email: 'Martinezmowingandmorellc@gmail.com',
   address: {
@@ -62,10 +56,7 @@ export const localBusinessSchema = {
     },
   ],
   foundingDate: '2021',
-  founder: {
-    '@type': 'Person',
-    name: 'Daniel Martinez',
-  },
+  founder: { '@type': 'Person', name: 'Daniel Martinez' },
   hasCredential: {
     '@type': 'EducationalOccupationalCredential',
     credentialCategory: 'General Contractor License',
@@ -81,23 +72,18 @@ export const localBusinessSchema = {
   ],
   priceRange: '$$-$$$',
   openingHours: 'Mo-Sa 07:00-18:00',
-  image: 'https://martinezmowingandmore.com/og-image.jpg',
   knowsLanguage: ['en', 'es'],
 }
 
-/**
- * WebSite schema - use on homepage only
- */
 export const webSiteSchema = {
   '@context': 'https://schema.org',
   '@type': 'WebSite',
   name: 'Martinez Mowing & More LLC',
-  url: 'https://martinezmowingandmore.com',
+  url: BASE_URL,
 }
 
-/**
- * Generate Service schema for service pages
- */
+// --- Factory functions ---
+
 export function createServiceSchema(
   name: string,
   description: string,
@@ -111,16 +97,19 @@ export function createServiceSchema(
     provider: {
       '@type': 'GeneralContractor',
       name: 'Martinez Mowing & More LLC',
+      telephone: '+15099321924',
     },
-    areaServed: 'Desert Aire, Mattawa, WA',
+    areaServed: {
+      '@type': 'City',
+      name: 'Desert Aire, Mattawa, WA',
+    },
     serviceType,
   }
 }
 
-/**
- * Generate FAQPage schema
- */
-export function createFAQSchema(faqs: Array<{ question: string; answer: string }>) {
+export function createFAQSchema(
+  faqs: { question: string; answer: string }[]
+) {
   return {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
@@ -135,11 +124,8 @@ export function createFAQSchema(faqs: Array<{ question: string; answer: string }
   }
 }
 
-/**
- * Generate BreadcrumbList schema
- */
 export function createBreadcrumbSchema(
-  items: Array<{ name: string; url?: string }>
+  items: { name: string; url?: string }[]
 ) {
   return {
     '@context': 'https://schema.org',
@@ -148,7 +134,26 @@ export function createBreadcrumbSchema(
       '@type': 'ListItem',
       position: index + 1,
       name: item.name,
-      ...(item.url && { item: item.url }),
+      ...(item.url ? { item: item.url } : {}),
     })),
   }
+}
+
+// Named component exports for layout.tsx
+export function LocalBusinessSchema() {
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+    />
+  )
+}
+
+export function WebSiteSchema() {
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(webSiteSchema) }}
+    />
+  )
 }
