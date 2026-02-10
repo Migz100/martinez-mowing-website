@@ -1,4 +1,5 @@
-import type { Metadata } from 'next'
+'use client'
+
 import {
   HiOutlineViewGrid,
   HiOutlineColorSwatch,
@@ -10,12 +11,6 @@ import {
 import HeroSection from '@/components/HeroSection'
 import ServiceCard from '@/components/ServiceCard'
 import CTABanner from '@/components/CTABanner'
-
-export const metadata: Metadata = {
-  title: 'Services | Martinez Mowing & More LLC',
-  description:
-    'Fences, landscaping, property maintenance, retaining walls, outdoor structures, and irrigation services for Desert Aire and Mattawa, WA.',
-}
 
 export default function Services() {
   const services = [

@@ -1,3 +1,5 @@
+'use client'
+
 import Link from 'next/link'
 import { FaPhone } from 'react-icons/fa'
 import {
@@ -13,8 +15,44 @@ import ServiceCard from '@/components/ServiceCard'
 import TrustBadges from '@/components/TrustBadges'
 import CTABanner from '@/components/CTABanner'
 import ImagePlaceholder from '@/components/ImagePlaceholder'
+import SocialProofBanner from '@/components/SocialProofBanner'
+import HowItWorks from '@/components/HowItWorks'
+import FAQAccordion from '@/components/FAQAccordion'
 
 export default function Home() {
+  const faqs = [
+    {
+      question: 'Are you licensed and insured?',
+      answer:
+        'Yes! We are a fully licensed General Contractor (GC #MARTIMM744B1) and carry comprehensive liability insurance. We handle all permits and ensure every project meets local building codes and HOA requirements.',
+    },
+    {
+      question: 'What areas do you serve?',
+      answer:
+        'We primarily serve Desert Aire, Mattawa, and surrounding areas in the Columbia Basin. We know this climate, soil, and HOA requirements better than anyone.',
+    },
+    {
+      question: 'How long do projects typically take?',
+      answer:
+        'It depends on the project. Most fences are completed in 3-5 days. Sod and landscaping installs take 1-3 days. Larger projects like decks or retaining walls are estimated during your free consultation. We always provide realistic timelines upfront.',
+    },
+    {
+      question: 'Do you handle HOA approvals?',
+      answer:
+        'Absolutely. We know Desert Aire\'s HOA requirements inside and out. We can help you navigate the approval process and ensure your project meets all community standards.',
+    },
+    {
+      question: 'What happens after I submit a quote request?',
+      answer:
+        'Daniel personally reviews your request and calls you within 24 hours. We\'ll schedule a free on-site visit to see your property, discuss your vision, and provide a detailed, no-pressure quote.',
+    },
+    {
+      question: 'Do you offer payment plans?',
+      answer:
+        'We work with you to create a payment structure that fits your budget. Details are discussed during your estimate. Our goal is to make your outdoor vision affordable and stress-free.',
+    },
+  ]
+
   const services = [
     {
       title: 'Fences',
@@ -80,6 +118,9 @@ export default function Home() {
         }
       />
 
+      {/* Social Proof Banner */}
+      <SocialProofBanner />
+
       {/* Services Overview */}
       <section className="py-16 bg-cream">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -139,8 +180,17 @@ export default function Home() {
         </div>
       </section>
 
+      {/* How It Works */}
+      <HowItWorks />
+
+      {/* FAQs */}
+      <FAQAccordion faqs={faqs} />
+
       {/* CTA Banner */}
-      <CTABanner />
+      <CTABanner
+        title="Stop Losing Property Value to Neglected Landscaping"
+        subtitle="Every day without proper maintenance costs you money. Every season that passes without improvements is a missed opportunity. Let's transform your outdoor space before another Desert Aire summer passes you by."
+      />
     </>
   )
 }

@@ -4,6 +4,7 @@ import { useState } from 'react'
 import Link from 'next/link'
 import { FaBars, FaTimes, FaPhone } from 'react-icons/fa'
 import MobileNav from './MobileNav'
+import TrustBadgeRow from './TrustBadgeRow'
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -20,6 +21,7 @@ export default function Header() {
   return (
     <>
       <header className="sticky top-0 z-50 bg-white shadow-md">
+        <TrustBadgeRow />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
             {/* Logo */}

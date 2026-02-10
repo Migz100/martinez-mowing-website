@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { FaPhone, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa'
+import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaClipboardCheck, FaPhoneAlt, FaCalendarCheck } from 'react-icons/fa'
 import HeroSection from '@/components/HeroSection'
 import ContactForm from '@/components/ContactForm'
 import ImagePlaceholder from '@/components/ImagePlaceholder'
@@ -26,9 +26,31 @@ export default function Contact() {
           <div className="grid md:grid-cols-2 gap-12">
             {/* Contact Form */}
             <div>
-              <h2 className="text-3xl font-bold text-charcoal mb-6">
-                Request Your Free Quote
-              </h2>
+              <div className="flex items-start gap-4 mb-6">
+                <ImagePlaceholder
+                  text="[Photo: Daniel Martinez headshot]"
+                  height="h-24"
+                  className="w-24 rounded-full flex-shrink-0"
+                />
+                <div>
+                  <h2 className="text-3xl font-bold text-charcoal mb-2">
+                    Request Your Free Quote
+                  </h2>
+                  <p className="text-gray-600">
+                    Daniel personally responds to every request
+                  </p>
+                </div>
+              </div>
+
+              <div className="bg-accent/10 border-l-4 border-accent p-4 rounded-lg mb-6">
+                <p className="text-sm text-charcoal font-semibold">
+                  ✓ No spam. No pressure. No pushy sales tactics.
+                </p>
+                <p className="text-sm text-gray-600 mt-1">
+                  Just a straightforward conversation about your project.
+                </p>
+              </div>
+
               <ContactForm />
             </div>
 
@@ -114,8 +136,58 @@ export default function Contact() {
         </div>
       </section>
 
+      {/* What Happens Next */}
+      <section className="py-16 bg-cream">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-center text-charcoal mb-12">
+            What Happens After You Submit
+          </h2>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="bg-white p-8 rounded-xl shadow-md text-center">
+              <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                <FaClipboardCheck className="text-3xl text-primary" />
+              </div>
+              <h3 className="text-xl font-bold text-charcoal mb-3">
+                1. We Review Your Details
+              </h3>
+              <p className="text-gray-600">
+                Daniel personally reviews your project information and
+                considers the best approach for your specific needs.
+              </p>
+            </div>
+
+            <div className="bg-white p-8 rounded-xl shadow-md text-center">
+              <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                <FaPhoneAlt className="text-3xl text-primary" />
+              </div>
+              <h3 className="text-xl font-bold text-charcoal mb-3">
+                2. Daniel Calls You Within 24 Hours
+              </h3>
+              <p className="text-gray-600">
+                No automated responses. You'll get a personal call from Daniel
+                to discuss your vision and answer any questions.
+              </p>
+            </div>
+
+            <div className="bg-white p-8 rounded-xl shadow-md text-center">
+              <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                <FaCalendarCheck className="text-3xl text-primary" />
+              </div>
+              <h3 className="text-xl font-bold text-charcoal mb-3">
+                3. We Schedule Your Free On-Site Estimate
+              </h3>
+              <p className="text-gray-600">
+                We'll visit your property, take measurements, and provide a
+                detailed, transparent quote. No pressure to decide on the spot.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Business Hours */}
-      <section className="py-12 bg-cream">
+      <section className="py-12 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h3 className="text-2xl font-bold text-charcoal mb-4">
             Business Hours

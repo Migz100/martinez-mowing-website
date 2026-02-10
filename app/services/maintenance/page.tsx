@@ -119,8 +119,8 @@ export default function Maintenance() {
       </section>
 
       <CTABanner
-        title="Ready to Reclaim Your Weekends?"
-        subtitle="Let's create a maintenance plan that keeps your property pristine without the hassle."
+        title="Stop Spending Your Weekends on Yard Work"
+        subtitle="Every Saturday spent mowing, edging, and blowing is a Saturday you could be on the golf course, at the marina, or with your family. Reclaim your time. Let us handle the yard."
       />
     </>
   )

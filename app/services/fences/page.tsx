@@ -1,8 +1,10 @@
 import type { Metadata } from 'next'
+import Link from 'next/link'
 import { FaCheckCircle } from 'react-icons/fa'
 import HeroSection from '@/components/HeroSection'
 import ImagePlaceholder from '@/components/ImagePlaceholder'
 import CTABanner from '@/components/CTABanner'
+import FAQAccordion from '@/components/FAQAccordion'
 
 export const metadata: Metadata = {
   title: 'Custom Fences | Martinez Mowing & More LLC',
@@ -11,6 +13,29 @@ export const metadata: Metadata = {
 }
 
 export default function Fences() {
+  const faqs = [
+    {
+      question: 'What fence materials do you recommend for Desert Aire?',
+      answer:
+        'For Desert Aire\'s wind and sun exposure, we typically recommend composite or vinyl for durability with minimal maintenance, or cedar for a natural look. We\'ll assess your specific needs during the free estimate.',
+    },
+    {
+      question: 'Do you handle HOA approval?',
+      answer:
+        'Yes. We know Desert Aire\'s HOA fence requirements and can help you navigate the approval process to ensure your fence meets community standards.',
+    },
+    {
+      question: 'How long will my fence last?',
+      answer:
+        'With proper installation and our concrete footings, vinyl and composite fences last 20-30+ years with minimal maintenance. Cedar fences last 15-20 years with proper sealing.',
+    },
+    {
+      question: 'Can you match my existing fence style?',
+      answer:
+        'Absolutely. We can match styles, colors, and heights to blend seamlessly with existing fencing or create a completely custom design.',
+    },
+  ]
+
   const included = [
     'Custom design consultation',
     'HOA compliance review',
@@ -101,9 +126,41 @@ export default function Fences() {
         </div>
       </section>
 
+      {/* FAQs */}
+      <FAQAccordion faqs={faqs} title="Common Fence Questions" />
+
+      {/* Related Services */}
+      <section className="py-12 bg-cream">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h3 className="text-2xl font-bold text-center text-charcoal mb-8">
+            Related Services
+          </h3>
+          <div className="flex flex-wrap justify-center gap-4">
+            <Link
+              href="/services/retaining-walls"
+              className="px-6 py-3 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow font-semibold text-primary"
+            >
+              Retaining Walls
+            </Link>
+            <Link
+              href="/services/outdoor-structures"
+              className="px-6 py-3 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow font-semibold text-primary"
+            >
+              Decks & Pergolas
+            </Link>
+            <Link
+              href="/services/plants-sod"
+              className="px-6 py-3 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow font-semibold text-primary"
+            >
+              Landscaping
+            </Link>
+          </div>
+        </div>
+      </section>
+
       <CTABanner
-        title="Ready for a Fence That Lasts?"
-        subtitle="Let's discuss your vision, measure your property, and give you a detailed quote. No pressure, no pushy sales."
+        title="Don't Let Another Summer Pass With an Incomplete Fence"
+        subtitle="Your privacy, your pets, your kids—every day without a proper fence puts them at risk. Stop putting it off. Let's build you a fence that lasts decades."
       />
     </>
   )

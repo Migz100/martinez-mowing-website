@@ -1,8 +1,10 @@
 import type { Metadata } from 'next'
+import Link from 'next/link'
 import { FaCheckCircle } from 'react-icons/fa'
 import HeroSection from '@/components/HeroSection'
 import ImagePlaceholder from '@/components/ImagePlaceholder'
 import CTABanner from '@/components/CTABanner'
+import FAQAccordion from '@/components/FAQAccordion'
 
 export const metadata: Metadata = {
   title: 'Plants & Sod | Martinez Mowing & More LLC',
@@ -11,6 +13,24 @@ export const metadata: Metadata = {
 }
 
 export default function PlantsSod() {
+  const faqs = [
+    {
+      question: 'What type of sod works best in Desert Aire?',
+      answer:
+        'For Desert Aire\'s hot summers and cold winters, we typically recommend Kentucky bluegrass blends or tall fescue. Both handle the climate well with proper irrigation. We\'ll assess your sun exposure and water access to recommend the best fit.',
+    },
+    {
+      question: 'When is the best time to install sod?',
+      answer:
+        'Spring (April-May) and fall (September-October) are ideal for sod installation in the Columbia Basin. We can install year-round, but these seasons give new sod the best chance to establish before temperature extremes.',
+    },
+    {
+      question: 'How long before I can use my new lawn?',
+      answer:
+        'You can walk on new sod after 2 weeks. Light use (kids playing) is fine after 3-4 weeks. Full use (sports, heavy traffic) should wait 6-8 weeks until roots are fully established.',
+    },
+  ]
+
   const approach = [
     'Site Analysis',
     'Smart Plant Selection',
@@ -100,9 +120,41 @@ export default function PlantsSod() {
         </div>
       </section>
 
+      {/* FAQs */}
+      <FAQAccordion faqs={faqs} title="Landscaping Questions" />
+
+      {/* Related Services */}
+      <section className="py-12 bg-cream">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h3 className="text-2xl font-bold text-center text-charcoal mb-8">
+            Complete Your Outdoor Transformation
+          </h3>
+          <div className="flex flex-wrap justify-center gap-4">
+            <Link
+              href="/services/irrigation"
+              className="px-6 py-3 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow font-semibold text-primary"
+            >
+              Irrigation Systems
+            </Link>
+            <Link
+              href="/services/maintenance"
+              className="px-6 py-3 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow font-semibold text-primary"
+            >
+              Maintenance Plans
+            </Link>
+            <Link
+              href="/services/fences"
+              className="px-6 py-3 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow font-semibold text-primary"
+            >
+              Fencing
+            </Link>
+          </div>
+        </div>
+      </section>
+
       <CTABanner
-        title="Ready for a Lawn You'll Be Proud Of?"
-        subtitle="Let's walk your property, discuss your vision, and create a landscape that thrives year-round."
+        title="Stop Wasting Money on a Lawn That Won't Grow"
+        subtitle="Every summer you spend fighting brown patches and bare spots is money and time down the drain. Let's install a lawn that actually thrives in Desert Aire's climate."
       />
     </>
   )

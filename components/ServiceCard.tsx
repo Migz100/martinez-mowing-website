@@ -1,5 +1,8 @@
+'use client'
+
 import Link from 'next/link'
 import { IconType } from 'react-icons'
+import { motion } from 'framer-motion'
 
 interface ServiceCardProps {
   title: string
@@ -18,7 +21,11 @@ export default function ServiceCard({
 }: ServiceCardProps) {
   return (
     <Link href={href}>
-      <div className="group bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden h-full border border-gray-100 hover:border-primary/30">
+      <motion.div
+        whileHover={{ y: -8, scale: 1.02 }}
+        transition={{ duration: 0.3 }}
+        className="group bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden h-full border border-gray-100 hover:border-primary/30"
+      >
         {/* Image Placeholder */}
         <div className="relative h-48 image-placeholder-gradient flex items-center justify-center">
           <Icon className="text-5xl text-white/80 group-hover:scale-110 transition-transform duration-300" />
@@ -40,7 +47,7 @@ export default function ServiceCard({
             </span>
           </span>
         </div>
-      </div>
+      </motion.div>
     </Link>
   )
 }

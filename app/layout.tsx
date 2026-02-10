@@ -1,8 +1,10 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
+import SeasonalBanner from '@/components/SeasonalBanner'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
+import StickyMobileCTA from '@/components/StickyMobileCTA'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -26,11 +28,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
+        <SeasonalBanner />
         <Header />
         <main className="min-h-screen">
           {children}
         </main>
         <Footer />
+        <StickyMobileCTA />
       </body>
     </html>
   )
