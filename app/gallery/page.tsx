@@ -1,8 +1,8 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import Image from 'next/image'
 import { FaInstagram } from 'react-icons/fa'
 import HeroSection from '@/components/HeroSection'
-import ImagePlaceholder from '@/components/ImagePlaceholder'
 import CTABanner from '@/components/CTABanner'
 import StructuredData, { createBreadcrumbSchema } from '@/components/StructuredData'
 import Breadcrumbs from '@/components/Breadcrumbs'
@@ -41,20 +41,20 @@ export const metadata: Metadata = {
 export default function Gallery() {
   const breadcrumbItems = [{ name: 'Gallery' }]
 
-  // Create 12 placeholder grid items
-  const placeholders = [
-    'Completed fence project',
-    'Before/After lawn transformation',
-    'Custom deck installation',
-    'Retaining wall construction',
-    'Landscape with new plants',
-    'Pergola with outdoor seating',
-    'Irrigation system installation',
-    'Property maintenance results',
-    'Stone retaining wall detail',
-    'Sod installation progress',
-    'Patio cover project',
-    'French drain with decorative rock',
+  // Gallery images
+  const galleryImages = [
+    { src: '/images/fences.jpg', alt: 'Completed fence project' },
+    { src: '/images/backyard.jpg', alt: 'Beautiful landscaped backyard' },
+    { src: '/images/outdoor-structures.jpg', alt: 'Custom deck installation' },
+    { src: '/images/retaining-walls.jpg', alt: 'Retaining wall construction' },
+    { src: '/images/plants-sod.jpg', alt: 'Landscape with new plants' },
+    { src: '/images/outdoor-structures.jpg', alt: 'Pergola with outdoor seating' },
+    { src: '/images/irrigation.jpg', alt: 'Irrigation system installation' },
+    { src: '/images/maintenance.jpg', alt: 'Property maintenance results' },
+    { src: '/images/retaining-walls.jpg', alt: 'Stone retaining wall detail' },
+    { src: '/images/plants-sod.jpg', alt: 'Sod installation progress' },
+    { src: '/images/outdoor-structures.jpg', alt: 'Patio cover project' },
+    { src: '/images/irrigation.jpg', alt: 'Drainage system with decorative rock' },
   ]
 
   return (
@@ -95,13 +95,16 @@ export default function Gallery() {
 
           {/* Gallery Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {placeholders.map((text, index) => (
-              <ImagePlaceholder
-                key={index}
-                text={`[${text}]`}
-                height="h-64"
-                className="rounded-xl"
-              />
+            {galleryImages.map((image, index) => (
+              <div key={index} className="relative h-64 rounded-xl overflow-hidden shadow-lg group">
+                <Image
+                  src={image.src}
+                  alt={image.alt}
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-300"
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                />
+              </div>
             ))}
           </div>
         </div>

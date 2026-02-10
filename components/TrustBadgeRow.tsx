@@ -1,12 +1,25 @@
+'use client'
+
+import { usePathname } from 'next/navigation'
 import { FaCertificate, FaShieldAlt, FaMapMarkerAlt, FaCalendarAlt } from 'react-icons/fa'
 
 export default function TrustBadgeRow() {
-  const badges = [
-    { icon: FaCertificate, text: 'Licensed GC' },
-    { icon: FaShieldAlt, text: 'Fully Insured' },
-    { icon: FaMapMarkerAlt, text: 'Local to WA' },
-    { icon: FaCalendarAlt, text: 'Est. 2021' },
-  ]
+  const pathname = usePathname()
+  const isSpanish = pathname.startsWith('/es')
+
+  const badges = isSpanish
+    ? [
+        { icon: FaCertificate, text: 'Contratista Licenciado' },
+        { icon: FaShieldAlt, text: 'Completamente Asegurado' },
+        { icon: FaMapMarkerAlt, text: 'Local en WA' },
+        { icon: FaCalendarAlt, text: 'Est. 2021' },
+      ]
+    : [
+        { icon: FaCertificate, text: 'Licensed GC' },
+        { icon: FaShieldAlt, text: 'Fully Insured' },
+        { icon: FaMapMarkerAlt, text: 'Local to WA' },
+        { icon: FaCalendarAlt, text: 'Est. 2021' },
+      ]
 
   return (
     <div className="bg-primary/5 border-y border-primary/10">

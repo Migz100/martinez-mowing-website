@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import { FaCheckCircle } from 'react-icons/fa'
 import HeroSection from '@/components/HeroSection'
-import ImagePlaceholder from '@/components/ImagePlaceholder'
 import CTABanner from '@/components/CTABanner'
 import StructuredData, {
   createServiceSchema,
@@ -118,10 +118,15 @@ export default function OutdoorStructures() {
                 ))}
               </ul>
 
-              <ImagePlaceholder
-                text="[Custom deck with pergola]"
-                height="h-64"
+              <div className="relative h-64 rounded-xl overflow-hidden shadow-lg">
+              <Image
+                src="/images/outdoor-structures.jpg"
+                alt="Custom deck with pergola"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 50vw"
               />
+            </div>
             </div>
           </div>
         </div>
@@ -141,21 +146,33 @@ export default function OutdoorStructures() {
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            <ImagePlaceholder
-              text="[Deck example - cedar or composite]"
-              height="h-64"
-              className="rounded-xl"
-            />
-            <ImagePlaceholder
-              text="[Pergola example]"
-              height="h-64"
-              className="rounded-xl"
-            />
-            <ImagePlaceholder
-              text="[Patio cover or gazebo]"
-              height="h-64"
-              className="rounded-xl"
-            />
+            <div className="relative h-64 rounded-xl overflow-hidden shadow-lg">
+              <Image
+                src="/images/outdoor-structures.jpg"
+                alt="Deck example - cedar or composite"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 33vw"
+              />
+            </div>
+            <div className="relative h-64 rounded-xl overflow-hidden shadow-lg">
+              <Image
+                src="/images/outdoor-structures.jpg"
+                alt="Pergola example"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 33vw"
+              />
+            </div>
+            <div className="relative h-64 rounded-xl overflow-hidden shadow-lg">
+              <Image
+                src="/images/outdoor-structures.jpg"
+                alt="Patio cover or gazebo"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 33vw"
+              />
+            </div>
           </div>
         </div>
       </section>

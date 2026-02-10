@@ -3,7 +3,6 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { FaCheckCircle } from 'react-icons/fa'
 import HeroSection from '@/components/HeroSection'
-import ImagePlaceholder from '@/components/ImagePlaceholder'
 import CTABanner from '@/components/CTABanner'
 import FAQAccordion from '@/components/FAQAccordion'
 import StructuredData, {
@@ -154,10 +153,15 @@ export default function Fences() {
                 ))}
               </ul>
 
-              <ImagePlaceholder
-                text="[Close-up of fence construction detail]"
-                height="h-64"
-              />
+              <div className="relative h-64 rounded-xl overflow-hidden shadow-lg">
+                <Image
+                  src="/images/fences.jpg"
+                  alt="Close-up of fence construction detail"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -166,21 +170,33 @@ export default function Fences() {
       <section className="py-16 bg-cream">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-3 gap-8">
-            <ImagePlaceholder
-              text="[Wood fence example]"
-              height="h-64"
-              className="rounded-xl"
-            />
-            <ImagePlaceholder
-              text="[Vinyl fence example]"
-              height="h-64"
-              className="rounded-xl"
-            />
-            <ImagePlaceholder
-              text="[Composite fence example]"
-              height="h-64"
-              className="rounded-xl"
-            />
+            <div className="relative h-64 rounded-xl overflow-hidden shadow-lg">
+              <Image
+                src="/images/fences.jpg"
+                alt="Wood fence example"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 33vw"
+              />
+            </div>
+            <div className="relative h-64 rounded-xl overflow-hidden shadow-lg">
+              <Image
+                src="/images/fences.jpg"
+                alt="Vinyl fence example"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 33vw"
+              />
+            </div>
+            <div className="relative h-64 rounded-xl overflow-hidden shadow-lg">
+              <Image
+                src="/images/fences.jpg"
+                alt="Composite fence example"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 33vw"
+              />
+            </div>
           </div>
         </div>
       </section>

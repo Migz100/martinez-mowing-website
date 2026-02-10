@@ -1,8 +1,8 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import Image from 'next/image'
 import { FaCheckCircle } from 'react-icons/fa'
 import HeroSection from '@/components/HeroSection'
-import ImagePlaceholder from '@/components/ImagePlaceholder'
 import CTABanner from '@/components/CTABanner'
 import FAQAccordion from '@/components/FAQAccordion'
 import StructuredData, {
@@ -123,10 +123,15 @@ export default function PlantsSod() {
                 <p className="text-gray-600">Most installs completed in 1-3 days</p>
               </div>
 
-              <ImagePlaceholder
-                text="[Fresh sod installation in progress]"
-                height="h-64"
-              />
+              <div className="relative h-64 rounded-xl overflow-hidden shadow-lg">
+                <Image
+                  src="/images/plants-sod.jpg"
+                  alt="Fresh sod installation in progress"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
+              </div>
             </div>
 
             <div>
@@ -142,10 +147,15 @@ export default function PlantsSod() {
                 ))}
               </ul>
 
-              <ImagePlaceholder
-                text="[Completed landscaping with plants and sod]"
-                height="h-64"
-              />
+              <div className="relative h-64 rounded-xl overflow-hidden shadow-lg">
+                <Image
+                  src="/images/backyard.jpg"
+                  alt="Completed landscaping with plants and sod"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -154,21 +164,33 @@ export default function PlantsSod() {
       <section className="py-16 bg-cream">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-3 gap-8">
-            <ImagePlaceholder
-              text="[Before: bare yard]"
-              height="h-64"
-              className="rounded-xl"
-            />
-            <ImagePlaceholder
-              text="[During: sod being laid]"
-              height="h-64"
-              className="rounded-xl"
-            />
-            <ImagePlaceholder
-              text="[After: lush green lawn]"
-              height="h-64"
-              className="rounded-xl"
-            />
+            <div className="relative h-64 rounded-xl overflow-hidden shadow-lg">
+              <Image
+                src="/images/desert-landscape.jpg"
+                alt="Before: bare yard"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 33vw"
+              />
+            </div>
+            <div className="relative h-64 rounded-xl overflow-hidden shadow-lg">
+              <Image
+                src="/images/plants-sod.jpg"
+                alt="During: sod being laid"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 33vw"
+              />
+            </div>
+            <div className="relative h-64 rounded-xl overflow-hidden shadow-lg">
+              <Image
+                src="/images/backyard.jpg"
+                alt="After: lush green lawn"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 33vw"
+              />
+            </div>
           </div>
         </div>
       </section>

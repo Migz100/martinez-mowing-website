@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import { FaCheckCircle } from 'react-icons/fa'
 import HeroSection from '@/components/HeroSection'
-import ImagePlaceholder from '@/components/ImagePlaceholder'
 import CTABanner from '@/components/CTABanner'
 import StructuredData, {
   createServiceSchema,
@@ -121,10 +121,15 @@ export default function RetainingWalls() {
                 ))}
               </ul>
 
-              <ImagePlaceholder
-                text="[Completed retaining wall with landscaping]"
-                height="h-64"
+              <div className="relative h-64 rounded-xl overflow-hidden shadow-lg">
+              <Image
+                src="/images/retaining-walls.jpg"
+                alt="Completed retaining wall with landscaping"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 50vw"
               />
+            </div>
             </div>
           </div>
         </div>
@@ -144,21 +149,33 @@ export default function RetainingWalls() {
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            <ImagePlaceholder
-              text="[Allan Block retaining wall]"
-              height="h-64"
-              className="rounded-xl"
-            />
-            <ImagePlaceholder
-              text="[Natural stone wall]"
-              height="h-64"
-              className="rounded-xl"
-            />
-            <ImagePlaceholder
-              text="[Timber retaining wall]"
-              height="h-64"
-              className="rounded-xl"
-            />
+            <div className="relative h-64 rounded-xl overflow-hidden shadow-lg">
+              <Image
+                src="/images/retaining-walls.jpg"
+                alt="Allan Block retaining wall"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 33vw"
+              />
+            </div>
+            <div className="relative h-64 rounded-xl overflow-hidden shadow-lg">
+              <Image
+                src="/images/retaining-walls.jpg"
+                alt="Natural stone wall"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 33vw"
+              />
+            </div>
+            <div className="relative h-64 rounded-xl overflow-hidden shadow-lg">
+              <Image
+                src="/images/retaining-walls.jpg"
+                alt="Timber retaining wall"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 33vw"
+              />
+            </div>
           </div>
         </div>
       </section>

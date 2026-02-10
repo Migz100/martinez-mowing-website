@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import { FaCheckCircle } from 'react-icons/fa'
 import HeroSection from '@/components/HeroSection'
-import ImagePlaceholder from '@/components/ImagePlaceholder'
 import CTABanner from '@/components/CTABanner'
 import StructuredData, {
   createServiceSchema,
@@ -108,10 +108,15 @@ export default function Maintenance() {
                 </p>
               </div>
 
-              <ImagePlaceholder
-                text="[Lawn mowing in progress]"
-                height="h-64"
+              <div className="relative h-64 rounded-xl overflow-hidden shadow-lg">
+              <Image
+                src="/images/maintenance.jpg"
+                alt="Lawn mowing in progress"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 50vw"
               />
+            </div>
             </div>
 
             <div>
@@ -127,10 +132,15 @@ export default function Maintenance() {
                 ))}
               </ul>
 
-              <ImagePlaceholder
-                text="[Perfectly maintained property]"
-                height="h-64"
+              <div className="relative h-64 rounded-xl overflow-hidden shadow-lg">
+              <Image
+                src="/images/maintenance.jpg"
+                alt="Perfectly maintained property"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 50vw"
               />
+            </div>
             </div>
           </div>
         </div>
@@ -150,21 +160,33 @@ export default function Maintenance() {
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            <ImagePlaceholder
-              text="[Spring cleanup work]"
-              height="h-64"
-              className="rounded-xl"
-            />
-            <ImagePlaceholder
-              text="[Summer lawn maintenance]"
-              height="h-64"
-              className="rounded-xl"
-            />
-            <ImagePlaceholder
-              text="[Fall leaf removal]"
-              height="h-64"
-              className="rounded-xl"
-            />
+            <div className="relative h-64 rounded-xl overflow-hidden shadow-lg">
+              <Image
+                src="/images/maintenance.jpg"
+                alt="Spring cleanup work"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 33vw"
+              />
+            </div>
+            <div className="relative h-64 rounded-xl overflow-hidden shadow-lg">
+              <Image
+                src="/images/maintenance.jpg"
+                alt="Summer lawn maintenance"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 33vw"
+              />
+            </div>
+            <div className="relative h-64 rounded-xl overflow-hidden shadow-lg">
+              <Image
+                src="/images/maintenance.jpg"
+                alt="Fall leaf removal"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 33vw"
+              />
+            </div>
           </div>
         </div>
       </section>

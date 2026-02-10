@@ -48,7 +48,7 @@ export default function HeroSection({
           </h1>
           
           {/* Improved subtitle spacing */}
-          <p className="text-base md:text-lg lg:text-xl text-white/95 mb-10 max-w-2xl mx-auto leading-relaxed px-4">
+          <p className="text-base md:text-lg text-white/95 mb-10 max-w-2xl mx-auto leading-relaxed px-4">
             {subtitle}
           </p>
 

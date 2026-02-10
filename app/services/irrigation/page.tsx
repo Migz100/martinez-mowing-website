@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import { FaCheckCircle } from 'react-icons/fa'
 import HeroSection from '@/components/HeroSection'
-import ImagePlaceholder from '@/components/ImagePlaceholder'
 import CTABanner from '@/components/CTABanner'
 import StructuredData, {
   createServiceSchema,
@@ -120,10 +120,15 @@ export default function Irrigation() {
                 ))}
               </ul>
 
-              <ImagePlaceholder
-                text="[Irrigation system installation or sprinklers running]"
-                height="h-64"
+              <div className="relative h-64 rounded-xl overflow-hidden shadow-lg">
+              <Image
+                src="/images/irrigation.jpg"
+                alt="Irrigation system installation or sprinklers running"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 50vw"
               />
+            </div>
             </div>
           </div>
         </div>
@@ -143,21 +148,33 @@ export default function Irrigation() {
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            <ImagePlaceholder
-              text="[Irrigation system closeup]"
-              height="h-64"
-              className="rounded-xl"
-            />
-            <ImagePlaceholder
-              text="[French drain installation]"
-              height="h-64"
-              className="rounded-xl"
-            />
-            <ImagePlaceholder
-              text="[Drainage with decorative rock]"
-              height="h-64"
-              className="rounded-xl"
-            />
+            <div className="relative h-64 rounded-xl overflow-hidden shadow-lg">
+              <Image
+                src="/images/irrigation.jpg"
+                alt="Irrigation system closeup"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 33vw"
+              />
+            </div>
+            <div className="relative h-64 rounded-xl overflow-hidden shadow-lg">
+              <Image
+                src="/images/irrigation.jpg"
+                alt="French drain installation"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 33vw"
+              />
+            </div>
+            <div className="relative h-64 rounded-xl overflow-hidden shadow-lg">
+              <Image
+                src="/images/irrigation.jpg"
+                alt="Drainage with decorative rock"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 33vw"
+              />
+            </div>
           </div>
         </div>
       </section>

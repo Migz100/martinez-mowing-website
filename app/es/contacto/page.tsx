@@ -1,8 +1,8 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaClipboardCheck, FaPhoneAlt, FaCalendarCheck } from 'react-icons/fa'
 import HeroSection from '@/components/HeroSection'
 import ContactForm from '@/components/ContactForm'
-import ImagePlaceholder from '@/components/ImagePlaceholder'
 import Breadcrumbs from '@/components/Breadcrumbs'
 
 export const metadata: Metadata = {
@@ -31,11 +31,15 @@ export default function ContactoES() {
             {/* Contact Form */}
             <div>
               <div className="flex items-start gap-4 mb-6">
-                <ImagePlaceholder
-                  text="[Foto: Daniel Martinez]"
-                  height="h-24"
-                  className="w-24 rounded-full flex-shrink-0"
+                <div className="relative h-24 w-24 rounded-full flex-shrink-0 overflow-hidden shadow-lg">
+                <Image
+                  src="/images/backyard.jpg"
+                  alt="Foto: Daniel Martinez"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 33vw"
                 />
+              </div>
                 <div>
                   <h2 className="text-3xl font-bold text-charcoal mb-2">
                     Solicita Tu Cotización Gratis

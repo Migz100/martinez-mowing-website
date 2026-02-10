@@ -1,19 +1,27 @@
+'use client'
+
+import { usePathname } from 'next/navigation'
 import { FaStar, FaCheckCircle } from 'react-icons/fa'
 import StatCounter from './StatCounter'
 
 export default function SocialProofBanner() {
+  const pathname = usePathname()
+  const isSpanish = pathname.startsWith('/es')
+
   return (
     <div className="bg-white border-y border-gray-200 py-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-12 text-center md:text-left">
-          {/* Trusted Since */}
+          {/* Years Experience */}
           <div className="flex items-center gap-3">
             <FaCheckCircle className="text-3xl text-primary flex-shrink-0" />
             <div>
               <p className="text-2xl font-bold text-primary">
                 <StatCounter end={20} suffix="+" />
               </p>
-              <p className="text-sm text-gray-600">Years Experience</p>
+              <p className="text-sm text-gray-600">
+                {isSpanish ? 'Años de Experiencia' : 'Years Experience'}
+              </p>
             </div>
           </div>
 
@@ -22,9 +30,13 @@ export default function SocialProofBanner() {
             <FaCheckCircle className="text-3xl text-primary flex-shrink-0" />
             <div>
               <p className="text-lg font-bold text-charcoal">
-                Trusted by Desert Aire Homeowners
+                {isSpanish
+                  ? 'Confianza de los Propietarios de Desert Aire'
+                  : 'Trusted by Desert Aire Homeowners'}
               </p>
-              <p className="text-sm text-gray-600">Since 2021</p>
+              <p className="text-sm text-gray-600">
+                {isSpanish ? 'Desde 2021' : 'Since 2021'}
+              </p>
             </div>
           </div>
 
@@ -37,7 +49,9 @@ export default function SocialProofBanner() {
             </div>
             <div>
               <p className="text-sm text-gray-600">
-                [Google Reviews Coming Soon]
+                {isSpanish
+                  ? '[Reseñas de Google Próximamente]'
+                  : '[Google Reviews Coming Soon]'}
               </p>
             </div>
           </div>

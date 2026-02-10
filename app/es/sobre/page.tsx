@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import { FaCertificate, FaMapMarkerAlt, FaUsers, FaHandshake } from 'react-icons/fa'
 import HeroSection from '@/components/HeroSection'
-import ImagePlaceholder from '@/components/ImagePlaceholder'
 import CTABanner from '@/components/CTABanner'
 import StructuredData, { createBreadcrumbSchema } from '@/components/StructuredData'
 import Breadcrumbs from '@/components/Breadcrumbs'
@@ -66,11 +66,15 @@ export default function SobreNosotros() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
             <div className="mb-12">
-              <ImagePlaceholder
-                text="[Retrato de Daniel Martinez]"
-                height="h-96"
-                className="mb-8"
-              />
+              <div className="relative h-96 mb-8 overflow-hidden shadow-lg">
+                <Image
+                  src="/images/team-work.jpg"
+                  alt="Retrato de Daniel Martinez"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                />
+              </div>
               <p className="text-xl text-gray-700 leading-relaxed mb-6">
                 Hola, soy Daniel Martinez, y he estado construyendo espacios al aire libre en la Cuenca de Columbia por más de 20 años.
               </p>
@@ -120,11 +124,15 @@ export default function SobreNosotros() {
       {/* Closing Statement */}
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <ImagePlaceholder
-            text="[Foto de proyecto completado o equipo trabajando]"
-            height="h-80"
-            className="mb-8"
-          />
+          <div className="relative h-80 mb-8 overflow-hidden shadow-lg">
+                <Image
+                  src="/images/team-work.jpg"
+                  alt="Foto de proyecto completado o equipo trabajando"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                />
+              </div>
           <p className="text-xl text-gray-700 leading-relaxed mb-6">
             Ya sea una cerca personalizada para enmarcar tu vista, un nuevo sistema de riego para mantener tu césped verde durante el verano, o mantenimiento mensual para que realmente puedas disfrutar tus fines de semana—tratamos tu propiedad como si fuera nuestra.
           </p>

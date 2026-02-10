@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import HeroSection from '@/components/HeroSection'
-import ImagePlaceholder from '@/components/ImagePlaceholder'
 import CTABanner from '@/components/CTABanner'
 import Breadcrumbs from '@/components/Breadcrumbs'
 
@@ -14,12 +14,12 @@ export default function GaleriaES() {
   const breadcrumbItems = [{ name: 'Galería' }]
 
   const projectCategories = [
-    'Cercas',
-    'Jardinería',
-    'Mantenimiento',
-    'Muros de Retención',
-    'Estructuras Exteriores',
-    'Irrigación',
+    { name: 'Cercas', image: '/images/fences.jpg' },
+    { name: 'Jardinería', image: '/images/plants-sod.jpg' },
+    { name: 'Mantenimiento', image: '/images/maintenance.jpg' },
+    { name: 'Muros de Retención', image: '/images/retaining-walls.jpg' },
+    { name: 'Estructuras Exteriores', image: '/images/outdoor-structures.jpg' },
+    { name: 'Irrigación', image: '/images/irrigation.jpg' },
   ]
 
   return (
@@ -43,16 +43,19 @@ export default function GaleriaES() {
           </div>
 
           {projectCategories.map((category, index) => (
-            <div key={category} className="mb-12">
-              <h3 className="text-2xl font-bold text-charcoal mb-6">{category}</h3>
+            <div key={category.name} className="mb-12">
+              <h3 className="text-2xl font-bold text-charcoal mb-6">{category.name}</h3>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 {[1, 2, 3].map((num) => (
-                  <ImagePlaceholder
-                    key={`${category}-${num}`}
-                    text={`[${category} - Proyecto ${num}]`}
-                    height="h-64"
-                    className="rounded-xl"
-                  />
+                  <div key={`${category.name}-${num}`} className="relative h-64 rounded-xl overflow-hidden shadow-lg group">
+                    <Image
+                      src={category.image}
+                      alt={`${category.name} - Proyecto ${num}`}
+                      fill
+                      className="object-cover group-hover:scale-105 transition-transform duration-300"
+                      sizes="(max-width: 768px) 100vw, 33vw"
+                    />
+                  </div>
                 ))}
               </div>
             </div>

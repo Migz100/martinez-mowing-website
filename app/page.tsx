@@ -14,7 +14,7 @@ import HeroSection from '@/components/HeroSection'
 import ServiceCard from '@/components/ServiceCard'
 import TrustBadges from '@/components/TrustBadges'
 import CTABanner from '@/components/CTABanner'
-import ImagePlaceholder from '@/components/ImagePlaceholder'
+import Image from 'next/image'
 import SocialProofBanner from '@/components/SocialProofBanner'
 import HowItWorks from '@/components/HowItWorks'
 import FAQAccordion from '@/components/FAQAccordion'
@@ -157,10 +157,15 @@ export default function Home() {
       <section className="py-16 bg-cream">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            <ImagePlaceholder
-              text="[Owner Photo - Daniel Martinez on job site]"
-              height="h-96"
-            />
+            <div className="relative h-96 rounded-lg overflow-hidden">
+              <Image
+                src="/images/team-work.jpg"
+                alt="Daniel Martinez - Owner of Martinez Mowing & More"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 50vw"
+              />
+            </div>
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-charcoal mb-6">
                 Built on Reputation, Driven by Craftsmanship

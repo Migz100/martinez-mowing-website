@@ -1,8 +1,8 @@
+import Image from 'next/image'
 import type { Metadata } from 'next'
 import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaClipboardCheck, FaPhoneAlt, FaCalendarCheck } from 'react-icons/fa'
 import HeroSection from '@/components/HeroSection'
 import ContactForm from '@/components/ContactForm'
-import ImagePlaceholder from '@/components/ImagePlaceholder'
 import StructuredData, { createBreadcrumbSchema } from '@/components/StructuredData'
 import Breadcrumbs from '@/components/Breadcrumbs'
 
@@ -63,11 +63,15 @@ export default function Contact() {
             {/* Contact Form */}
             <div>
               <div className="flex items-start gap-4 mb-6">
-                <ImagePlaceholder
-                  text="[Photo: Daniel Martinez headshot]"
-                  height="h-24"
-                  className="w-24 rounded-full flex-shrink-0"
+                <div className="relative h-24 w-24 rounded-full flex-shrink-0 overflow-hidden shadow-lg">
+                <Image
+                  src="/images/backyard.jpg"
+                  alt="Photo: Daniel Martinez headshot"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 33vw"
                 />
+              </div>
                 <div>
                   <h2 className="text-3xl font-bold text-charcoal mb-2">
                     Request Your Free Quote
@@ -151,11 +155,15 @@ export default function Contact() {
               </div>
 
               {/* Map Placeholder */}
-              <ImagePlaceholder
-                text="[Google Maps Embed - Desert Aire/Mattawa service area]"
-                height="h-80"
-                className="rounded-xl"
-              />
+              <div className="relative h-80 rounded-xl overflow-hidden shadow-lg">
+                <Image
+                  src="/images/backyard.jpg"
+                  alt="Google Maps Embed - Desert Aire/Mattawa service area"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                />
+              </div>
 
               <div className="mt-6 p-4 bg-accent/10 border-l-4 border-accent rounded-lg">
                 <h3 className="font-bold text-charcoal mb-2">
