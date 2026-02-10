@@ -64,6 +64,7 @@ export default function HomeES() {
         'Cercas personalizadas de madera, vinilo y compuesto diseñadas para los estándares de viento, sol y HOA de Desert Aire.',
       icon: HiOutlineViewGrid,
       href: '/es/servicios/cercas',
+      image: '/images/fences.jpg',
       price: 'Desde $8,000',
     },
     {
@@ -72,6 +73,7 @@ export default function HomeES() {
         'Paisajes verdes y exuberantes que prosperan en el clima de la Cuenca de Columbia con resultados de calidad resort.',
       icon: HiOutlineColorSwatch,
       href: '/es/servicios/plantas-cesped',
+      image: '/images/plants-sod.jpg',
       price: 'Desde $6,000',
     },
     {
@@ -80,6 +82,7 @@ export default function HomeES() {
         'Mantenimiento durante todo el año para que pueda disfrutar de su propiedad sin pasar los fines de semana trabajando en el jardín.',
       icon: HiOutlineCog,
       href: '/es/servicios/mantenimiento',
+      image: '/images/maintenance.jpg',
       price: '$300-700/mes',
     },
     {
@@ -88,6 +91,7 @@ export default function HomeES() {
         'Soluciones estructurales que resuelven problemas de erosión mientras agregan belleza y valor a su paisaje.',
       icon: HiOutlineCube,
       href: '/es/servicios/muros-retencion',
+      image: '/images/retaining-walls.jpg',
     },
     {
       title: 'Terrazas/Pérgolas/Estructuras',
@@ -95,6 +99,7 @@ export default function HomeES() {
         'Estructuras al aire libre personalizadas que extienden su espacio de vida y hacen de su patio trasero un destino.',
       icon: HiOutlineHome,
       href: '/es/servicios/estructuras-exteriores',
+      image: '/images/outdoor-structures.jpg',
     },
     {
       title: 'Irrigación y Drenaje',
@@ -102,6 +107,7 @@ export default function HomeES() {
         'Sistemas de riego inteligentes que ahorran agua y mantienen todo verde durante los veranos de Desert Aire.',
       icon: HiOutlineBeaker,
       href: '/es/servicios/irrigacion',
+      image: '/images/irrigation.jpg',
     },
   ]
 
@@ -144,7 +150,7 @@ export default function HomeES() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service) => (
-              <ServiceCard key={service.title} {...service} />
+              <ServiceCard key={service.title} {...service} learnMoreText="Ver Más" />
             ))}
           </div>
         </div>

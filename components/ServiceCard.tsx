@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { IconType } from 'react-icons'
 import { motion } from 'framer-motion'
 
@@ -10,6 +11,8 @@ interface ServiceCardProps {
   icon: IconType
   href: string
   price?: string
+  image?: string
+  learnMoreText?: string
 }
 
 export default function ServiceCard({
@@ -18,6 +21,8 @@ export default function ServiceCard({
   icon: Icon,
   href,
   price,
+  image,
+  learnMoreText = 'Learn More',
 }: ServiceCardProps) {
   return (
     <Link href={href}>
@@ -26,9 +31,25 @@ export default function ServiceCard({
         transition={{ duration: 0.3 }}
         className="group bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden h-full border border-gray-100 hover:border-primary/30"
       >
-        {/* Image Placeholder */}
-        <div className="relative h-48 image-placeholder-gradient flex items-center justify-center">
-          <Icon className="text-5xl text-white/80 group-hover:scale-110 transition-transform duration-300" />
+        {/* Image */}
+        <div className="relative h-48 overflow-hidden">
+          {image ? (
+            <>
+              <Image
+                src={image}
+                alt={title}
+                fill
+                className="object-cover group-hover:scale-110 transition-transform duration-500"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+              <Icon className="absolute bottom-3 right-3 text-3xl text-white/90" />
+            </>
+          ) : (
+            <div className="h-full image-placeholder-gradient flex items-center justify-center">
+              <Icon className="text-5xl text-white/80 group-hover:scale-110 transition-transform duration-300" />
+            </div>
+          )}
         </div>
 
         {/* Content */}
@@ -41,7 +62,7 @@ export default function ServiceCard({
             <p className="text-sm font-semibold text-accent mb-3">{price}</p>
           )}
           <span className="inline-flex items-center text-primary font-semibold group-hover:gap-2 transition-all">
-            Learn More
+            {learnMoreText}
             <span className="inline-block group-hover:translate-x-1 transition-transform">
               →
             </span>

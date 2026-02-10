@@ -25,6 +25,7 @@ export default function Services() {
       icon: HiOutlineViewGrid,
       href: '/services/fences',
       price: 'Avg. $8,000 | 3-5 days',
+      image: '/images/fences.jpg',
     },
     {
       title: 'Plants & Sod',
@@ -33,6 +34,7 @@ export default function Services() {
       icon: HiOutlineColorSwatch,
       href: '/services/plants-sod',
       price: 'Avg. $6,000 | 1-3 days',
+      image: '/images/plants-sod.jpg',
     },
     {
       title: 'Property Maintenance',
@@ -41,6 +43,7 @@ export default function Services() {
       icon: HiOutlineCog,
       href: '/services/maintenance',
       price: '$300-700/month',
+      image: '/images/maintenance.jpg',
     },
     {
       title: 'Retaining Walls',
@@ -48,6 +51,7 @@ export default function Services() {
         'Structural solutions for sloped yards, erosion control, and creating usable outdoor space. Allan Block, natural stone, and timber options.',
       icon: HiOutlineCube,
       href: '/services/retaining-walls',
+      image: '/images/retaining-walls.jpg',
     },
     {
       title: 'Decks, Pergolas & Outdoor Structures',
@@ -55,6 +59,7 @@ export default function Services() {
         'Custom decks (cedar, composite, Trex), pergolas, patio covers, and gazebos that extend your living space and make your backyard a destination.',
       icon: HiOutlineHome,
       href: '/services/outdoor-structures',
+      image: '/images/outdoor-structures.jpg',
     },
     {
       title: 'Irrigation & Drainage',
@@ -62,6 +67,7 @@ export default function Services() {
         'New system design and installation, repairs, seasonal blowouts, French drains, and drainage solutions to keep everything green.',
       icon: HiOutlineBeaker,
       href: '/services/irrigation',
+      image: '/images/irrigation.jpg',
     },
   ]
 

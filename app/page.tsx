@@ -65,6 +65,7 @@ export default function Home() {
       icon: HiOutlineViewGrid,
       href: '/services/fences',
       price: 'Starting at $8,000',
+      image: '/images/fences.jpg',
     },
     {
       title: 'Plants & Sod',
@@ -73,6 +74,7 @@ export default function Home() {
       icon: HiOutlineColorSwatch,
       href: '/services/plants-sod',
       price: 'Starting at $6,000',
+      image: '/images/plants-sod.jpg',
     },
     {
       title: 'Property Maintenance',
@@ -81,6 +83,7 @@ export default function Home() {
       icon: HiOutlineCog,
       href: '/services/maintenance',
       price: '$300-700/month',
+      image: '/images/maintenance.jpg',
     },
     {
       title: 'Retaining Walls',
@@ -88,6 +91,7 @@ export default function Home() {
         'Structural solutions that solve erosion issues while adding beauty and value to your landscape.',
       icon: HiOutlineCube,
       href: '/services/retaining-walls',
+      image: '/images/retaining-walls.jpg',
     },
     {
       title: 'Decks/Pergolas/Outdoor Structures',
@@ -95,6 +99,7 @@ export default function Home() {
         'Custom outdoor structures that extend your living space and make your backyard a destination.',
       icon: HiOutlineHome,
       href: '/services/outdoor-structures',
+      image: '/images/outdoor-structures.jpg',
     },
     {
       title: 'Irrigation & Drainage',
@@ -102,6 +107,7 @@ export default function Home() {
         'Smart irrigation systems that save water and keep everything green through Desert Aire summers.',
       icon: HiOutlineBeaker,
       href: '/services/irrigation',
+      image: '/images/irrigation.jpg',
     },
   ]
 
