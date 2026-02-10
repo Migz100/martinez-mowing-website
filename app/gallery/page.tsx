@@ -4,14 +4,43 @@ import { FaInstagram } from 'react-icons/fa'
 import HeroSection from '@/components/HeroSection'
 import ImagePlaceholder from '@/components/ImagePlaceholder'
 import CTABanner from '@/components/CTABanner'
+import StructuredData, { createBreadcrumbSchema } from '@/components/StructuredData'
+import Breadcrumbs from '@/components/Breadcrumbs'
 
 export const metadata: Metadata = {
-  title: 'Gallery | Martinez Mowing & More LLC',
+  title: 'Our Work - Landscaping Projects Desert Aire | Martinez Mowing & More',
   description:
-    'View our portfolio of completed landscaping, fencing, and outdoor structure projects in Desert Aire and Mattawa, WA.',
+    'View our portfolio of completed landscaping, fencing, and outdoor structure projects in Desert Aire & Mattawa, WA. Licensed GC #MARTIMM744B1. See what we can do for you.',
+  keywords: [
+    'landscaping portfolio Desert Aire',
+    'fence projects Mattawa WA',
+    'outdoor projects Columbia Basin',
+    'landscaping photos Desert Aire',
+    'contractor gallery',
+  ],
+  openGraph: {
+    title: 'Our Work - Landscaping Projects | Martinez Mowing & More LLC',
+    description:
+      'View our portfolio of completed landscaping, fencing, and outdoor projects in Desert Aire & Mattawa.',
+    url: 'https://martinezmowingandmore.com/gallery',
+    siteName: 'Martinez Mowing & More LLC',
+    type: 'website',
+    locale: 'en_US',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Our Work - Landscaping Projects Desert Aire',
+    description:
+      'View our portfolio of completed projects in Desert Aire & Mattawa. Licensed GC.',
+  },
+  alternates: {
+    canonical: 'https://martinezmowingandmore.com/gallery',
+  },
 }
 
 export default function Gallery() {
+  const breadcrumbItems = [{ name: 'Gallery' }]
+
   // Create 12 placeholder grid items
   const placeholders = [
     'Completed fence project',
@@ -30,6 +59,13 @@ export default function Gallery() {
 
   return (
     <>
+      <StructuredData
+        data={createBreadcrumbSchema([
+          { name: 'Home', url: 'https://martinezmowingandmore.com' },
+          { name: 'Gallery' },
+        ])}
+      />
+      <Breadcrumbs items={breadcrumbItems} />
       <HeroSection
         title="Our Work Speaks for Itself"
         subtitle="See the quality and craftsmanship that makes Desert Aire homeowners trust us with their outdoor spaces."

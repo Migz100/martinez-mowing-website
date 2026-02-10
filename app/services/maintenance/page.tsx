@@ -3,14 +3,49 @@ import { FaCheckCircle } from 'react-icons/fa'
 import HeroSection from '@/components/HeroSection'
 import ImagePlaceholder from '@/components/ImagePlaceholder'
 import CTABanner from '@/components/CTABanner'
+import StructuredData, {
+  createServiceSchema,
+  createBreadcrumbSchema,
+} from '@/components/StructuredData'
+import Breadcrumbs from '@/components/Breadcrumbs'
 
 export const metadata: Metadata = {
-  title: 'Property Maintenance | Martinez Mowing & More LLC',
+  title: 'Property Maintenance & Lawn Care Desert Aire WA',
   description:
-    'Year-round lawn and property maintenance for Desert Aire. Weekly/bi-weekly mowing, spring cleanup, fall leaf removal, and HOA compliance. $300-700/month.',
+    'Year-round property maintenance for Desert Aire & Mattawa. Weekly mowing, spring cleanup, fall leaf removal, HOA compliance. Licensed GC #MARTIMM744B1. $300-700/mo.',
+  keywords: [
+    'property maintenance Desert Aire',
+    'lawn care Mattawa WA',
+    'lawn mowing service Columbia Basin',
+    'HOA lawn maintenance',
+    'yard maintenance near me',
+  ],
+  openGraph: {
+    title: 'Property Maintenance & Lawn Care | Martinez Mowing & More LLC',
+    description:
+      'Year-round lawn and property maintenance for Desert Aire homeowners. Weekly mowing, cleanup, HOA compliance.',
+    url: 'https://martinezmowingandmore.com/services/maintenance',
+    siteName: 'Martinez Mowing & More LLC',
+    type: 'website',
+    locale: 'en_US',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Property Maintenance & Lawn Care Desert Aire WA',
+    description:
+      'Year-round maintenance for Desert Aire homeowners. Weekly mowing, cleanup, HOA compliance.',
+  },
+  alternates: {
+    canonical: 'https://martinezmowingandmore.com/services/maintenance',
+  },
 }
 
 export default function Maintenance() {
+  const breadcrumbItems = [
+    { name: 'Services', url: '/services' },
+    { name: 'Maintenance' },
+  ]
+
   const included = [
     'Weekly/bi-weekly mowing',
     'Edging/trimming/blowing',
@@ -22,6 +57,21 @@ export default function Maintenance() {
 
   return (
     <>
+      <StructuredData
+        data={[
+          createServiceSchema(
+            'Property Maintenance & Lawn Care',
+            'Year-round lawn and property maintenance for Desert Aire. Weekly/bi-weekly mowing, spring cleanup, fall leaf removal, and HOA compliance. $300-700/month.',
+            'maintenance'
+          ),
+          createBreadcrumbSchema([
+            { name: 'Home', url: 'https://martinezmowingandmore.com' },
+            { name: 'Services', url: 'https://martinezmowingandmore.com/services' },
+            { name: 'Maintenance' },
+          ]),
+        ]}
+      />
+      <Breadcrumbs items={breadcrumbItems} />
       <HeroSection
         title="Year-Round Maintenance So You Can Actually Enjoy Your Property"
         subtitle="You bought in Desert Aire to enjoy the lifestyle—not to spend your weekends edging, blowing, and trimming."

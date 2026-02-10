@@ -3,20 +3,43 @@ import Link from 'next/link'
 import { FaPhone, FaCheckCircle } from 'react-icons/fa'
 import HeroSection from '@/components/HeroSection'
 import ImagePlaceholder from '@/components/ImagePlaceholder'
+import StructuredData, { createBreadcrumbSchema } from '@/components/StructuredData'
+import Breadcrumbs from '@/components/Breadcrumbs'
 
 export const metadata: Metadata = {
-  title: 'Martinez Mowing & More LLC | Servicios en Español',
+  title: 'Jardinería y Cercas en Desert Aire y Mattawa WA | Martinez Mowing & More',
   description:
-    'Cercas premium, jardinería profesional, y mantenimiento de propiedades en Desert Aire y Mattawa, WA. Contratista General Licenciado #MARTIMM744B1.',
+    'Cercas premium, jardinería profesional, y mantenimiento de propiedades en Desert Aire y Mattawa, WA. Contratista General Licenciado #MARTIMM744B1. Servicio bilingüe. Llame (509) 932-1924.',
+  keywords: [
+    'jardinería Desert Aire',
+    'cercas Mattawa WA',
+    'mantenimiento de propiedades',
+    'contratista bilingüe',
+    'servicio en español',
+  ],
   openGraph: {
-    title: 'Martinez Mowing & More LLC | Servicios en Español',
+    title: 'Jardinería y Cercas en Español | Martinez Mowing & More LLC',
     description:
-      'Cercas premium, jardinería profesional, y mantenimiento sin preocupaciones para vivir cerca del campo de golf.',
-    locale: 'es_ES',
+      'Cercas premium, jardinería profesional, y mantenimiento de propiedades. Servicio bilingüe en Desert Aire y Mattawa.',
+    url: 'https://martinezmowingandmore.com/es',
+    siteName: 'Martinez Mowing & More LLC',
+    type: 'website',
+    locale: 'es_US',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Jardinería y Cercas en Desert Aire y Mattawa WA',
+    description:
+      'Cercas premium, jardinería profesional. Contratista General Licenciado. Servicio bilingüe.',
+  },
+  alternates: {
+    canonical: 'https://martinezmowingandmore.com/es',
   },
 }
 
 export default function Spanish() {
+  const breadcrumbItems = [{ name: 'Español' }]
+
   const servicios = [
     {
       titulo: 'Cercas',
@@ -62,6 +85,13 @@ export default function Spanish() {
 
   return (
     <>
+      <StructuredData
+        data={createBreadcrumbSchema([
+          { name: 'Home', url: 'https://martinezmowingandmore.com' },
+          { name: 'Español' },
+        ])}
+      />
+      <Breadcrumbs items={breadcrumbItems} />
       {/* Hero en Español */}
       <section className="relative w-full">
         <div className="relative h-[500px] md:h-[600px] flex items-center justify-center">

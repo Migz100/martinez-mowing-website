@@ -11,8 +11,12 @@ import {
 import HeroSection from '@/components/HeroSection'
 import ServiceCard from '@/components/ServiceCard'
 import CTABanner from '@/components/CTABanner'
+import StructuredData, { createBreadcrumbSchema } from '@/components/StructuredData'
+import Breadcrumbs from '@/components/Breadcrumbs'
 
 export default function Services() {
+  const breadcrumbItems = [{ name: 'Services' }]
+
   const services = [
     {
       title: 'Fences',
@@ -63,6 +67,13 @@ export default function Services() {
 
   return (
     <>
+      <StructuredData
+        data={createBreadcrumbSchema([
+          { name: 'Home', url: 'https://martinezmowingandmore.com' },
+          { name: 'Services' },
+        ])}
+      />
+      <Breadcrumbs items={breadcrumbItems} />
       <HeroSection
         title="Premium Services for Desert Aire Living"
         subtitle="From fences to full landscapes, we bring 20+ years of Columbia Basin expertise to every project."

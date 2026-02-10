@@ -3,14 +3,43 @@ import { FaCertificate, FaMapMarkerAlt, FaUsers, FaHandshake } from 'react-icons
 import HeroSection from '@/components/HeroSection'
 import ImagePlaceholder from '@/components/ImagePlaceholder'
 import CTABanner from '@/components/CTABanner'
+import StructuredData, { createBreadcrumbSchema } from '@/components/StructuredData'
+import Breadcrumbs from '@/components/Breadcrumbs'
 
 export const metadata: Metadata = {
-  title: 'About Us | Martinez Mowing & More LLC',
+  title: 'About Daniel Martinez - Licensed Contractor Mattawa WA',
   description:
-    'Meet Daniel Martinez and learn why Desert Aire homeowners trust us with their outdoor spaces. Licensed GC with 20+ years of experience.',
+    'Meet Daniel Martinez, owner of Martinez Mowing & More. Licensed GC #MARTIMM744B1 with 20+ years experience serving Desert Aire & Mattawa. Bilingual landscaping contractor you can trust.',
+  keywords: [
+    'Daniel Martinez contractor',
+    'licensed contractor Mattawa WA',
+    'Desert Aire landscaping company',
+    'bilingual contractor Washington',
+    'general contractor Columbia Basin',
+  ],
+  openGraph: {
+    title: 'About Daniel Martinez - Licensed Contractor | Martinez Mowing & More',
+    description:
+      'Licensed GC with 20+ years experience transforming Desert Aire & Mattawa outdoor spaces. Meet the team homeowners trust.',
+    url: 'https://martinezmowingandmore.com/about',
+    siteName: 'Martinez Mowing & More LLC',
+    type: 'website',
+    locale: 'en_US',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'About Daniel Martinez - Licensed Contractor Mattawa WA',
+    description:
+      'Licensed GC #MARTIMM744B1 with 20+ years experience serving Desert Aire & Mattawa homeowners.',
+  },
+  alternates: {
+    canonical: 'https://martinezmowingandmore.com/about',
+  },
 }
 
 export default function About() {
+  const breadcrumbItems = [{ name: 'About' }]
+
   const differentiators = [
     {
       icon: FaCertificate,
@@ -40,6 +69,13 @@ export default function About() {
 
   return (
     <>
+      <StructuredData
+        data={createBreadcrumbSchema([
+          { name: 'Home', url: 'https://martinezmowingandmore.com' },
+          { name: 'About' },
+        ])}
+      />
+      <Breadcrumbs items={breadcrumbItems} />
       <HeroSection
         title="Built on Reputation, Driven by Craftsmanship"
         subtitle="20+ years of turning Desert Aire backyards into outdoor retreats homeowners are proud to show off."

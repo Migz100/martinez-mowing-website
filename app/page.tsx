@@ -18,6 +18,10 @@ import ImagePlaceholder from '@/components/ImagePlaceholder'
 import SocialProofBanner from '@/components/SocialProofBanner'
 import HowItWorks from '@/components/HowItWorks'
 import FAQAccordion from '@/components/FAQAccordion'
+import StructuredData, {
+  webSiteSchema,
+  createFAQSchema,
+} from '@/components/StructuredData'
 
 export default function Home() {
   const faqs = [
@@ -103,6 +107,9 @@ export default function Home() {
 
   return (
     <>
+      {/* Structured Data */}
+      <StructuredData data={[webSiteSchema, createFAQSchema(faqs)]} />
+
       {/* Hero Section */}
       <HeroSection
         title="The Contractor Your Desert Aire Neighbors Already Trust"

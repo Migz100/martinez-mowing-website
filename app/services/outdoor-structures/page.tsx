@@ -3,14 +3,49 @@ import { FaCheckCircle } from 'react-icons/fa'
 import HeroSection from '@/components/HeroSection'
 import ImagePlaceholder from '@/components/ImagePlaceholder'
 import CTABanner from '@/components/CTABanner'
+import StructuredData, {
+  createServiceSchema,
+  createBreadcrumbSchema,
+} from '@/components/StructuredData'
+import Breadcrumbs from '@/components/Breadcrumbs'
 
 export const metadata: Metadata = {
-  title: 'Decks & Outdoor Structures | Martinez Mowing & More LLC',
+  title: 'Custom Decks & Pergolas Desert Aire WA',
   description:
-    'Custom decks, pergolas, patio covers, and gazebos that extend your living space. Cedar, composite, and Trex options. Licensed GC #MARTIMM744B1.',
+    'Custom outdoor structures for Desert Aire & Mattawa: decks, pergolas, patio covers, gazebos. Cedar, composite, Trex. Licensed GC #MARTIMM744B1. Free quotes.',
+  keywords: [
+    'custom deck builder Desert Aire',
+    'pergola installation Mattawa WA',
+    'patio cover contractor Columbia Basin',
+    'gazebo builder',
+    'outdoor structure contractor',
+  ],
+  openGraph: {
+    title: 'Custom Decks & Outdoor Structures | Martinez Mowing & More LLC',
+    description:
+      'Custom decks, pergolas, and outdoor structures that extend your living space. Licensed GC. Free estimates.',
+    url: 'https://martinezmowingandmore.com/services/outdoor-structures',
+    siteName: 'Martinez Mowing & More LLC',
+    type: 'website',
+    locale: 'en_US',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Custom Decks & Pergolas Desert Aire WA',
+    description:
+      'Custom outdoor structures: decks, pergolas, patio covers. Cedar, composite, Trex. Licensed GC.',
+  },
+  alternates: {
+    canonical: 'https://martinezmowingandmore.com/services/outdoor-structures',
+  },
 }
 
 export default function OutdoorStructures() {
+  const breadcrumbItems = [
+    { name: 'Services', url: '/services' },
+    { name: 'Outdoor Structures' },
+  ]
+
   const specialties = [
     'Custom Decks (cedar, composite, Trex)',
     'Pergolas',
@@ -20,6 +55,21 @@ export default function OutdoorStructures() {
 
   return (
     <>
+      <StructuredData
+        data={[
+          createServiceSchema(
+            'Custom Outdoor Structures',
+            'Custom decks, pergolas, patio covers, and gazebos that extend your living space. Cedar, composite, and Trex options.',
+            'construction'
+          ),
+          createBreadcrumbSchema([
+            { name: 'Home', url: 'https://martinezmowingandmore.com' },
+            { name: 'Services', url: 'https://martinezmowingandmore.com/services' },
+            { name: 'Outdoor Structures' },
+          ]),
+        ]}
+      />
+      <Breadcrumbs items={breadcrumbItems} />
       <HeroSection
         title="Custom Outdoor Structures That Extend Your Living Space"
         subtitle="Your backyard should feel like a destination—not an afterthought."

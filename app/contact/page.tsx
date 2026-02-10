@@ -3,16 +3,52 @@ import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaClipboardCheck, FaPhoneAlt, FaCa
 import HeroSection from '@/components/HeroSection'
 import ContactForm from '@/components/ContactForm'
 import ImagePlaceholder from '@/components/ImagePlaceholder'
+import StructuredData, { createBreadcrumbSchema } from '@/components/StructuredData'
+import Breadcrumbs from '@/components/Breadcrumbs'
 
 export const metadata: Metadata = {
-  title: 'Contact Us | Martinez Mowing & More LLC',
+  title: 'Free Quote - Landscaping & Fencing Desert Aire WA',
   description:
-    'Get a free quote for your landscaping project in Desert Aire or Mattawa, WA. Call (509) 932-1924 or email for fast response.',
+    'Get a free quote for your Desert Aire or Mattawa landscaping project. Fast response. Licensed GC #MARTIMM744B1. Call (509) 932-1924 or email Martinezmowingandmorellc@gmail.com.',
+  keywords: [
+    'free quote Desert Aire',
+    'landscaping estimate Mattawa WA',
+    'fence quote Columbia Basin',
+    'contact Martinez Mowing',
+    'landscaping contractor quote',
+  ],
+  openGraph: {
+    title: 'Contact Us - Free Quote | Martinez Mowing & More LLC',
+    description:
+      'Get a free quote for your Desert Aire or Mattawa landscaping project. Licensed GC. Fast response.',
+    url: 'https://martinezmowingandmore.com/contact',
+    siteName: 'Martinez Mowing & More LLC',
+    type: 'website',
+    locale: 'en_US',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Free Quote - Landscaping & Fencing Desert Aire WA',
+    description:
+      'Get a free quote for your landscaping project. Licensed GC. Fast response. (509) 932-1924.',
+  },
+  alternates: {
+    canonical: 'https://martinezmowingandmore.com/contact',
+  },
 }
 
 export default function Contact() {
+  const breadcrumbItems = [{ name: 'Contact' }]
+
   return (
     <>
+      <StructuredData
+        data={createBreadcrumbSchema([
+          { name: 'Home', url: 'https://martinezmowingandmore.com' },
+          { name: 'Contact' },
+        ])}
+      />
+      <Breadcrumbs items={breadcrumbItems} />
       <HeroSection
         title="Ready to Get Started?"
         subtitle="Tell us about your project and we'll send you a detailed quote—usually within 24 hours. No pressure, no pushy sales tactics."

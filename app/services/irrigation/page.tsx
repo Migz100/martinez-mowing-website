@@ -3,14 +3,49 @@ import { FaCheckCircle } from 'react-icons/fa'
 import HeroSection from '@/components/HeroSection'
 import ImagePlaceholder from '@/components/ImagePlaceholder'
 import CTABanner from '@/components/CTABanner'
+import StructuredData, {
+  createServiceSchema,
+  createBreadcrumbSchema,
+} from '@/components/StructuredData'
+import Breadcrumbs from '@/components/Breadcrumbs'
 
 export const metadata: Metadata = {
-  title: 'Irrigation & Drainage | Martinez Mowing & More LLC',
+  title: 'Irrigation Installation & Repair Desert Aire WA',
   description:
-    'Smart irrigation systems, repairs, seasonal blowouts, French drains, and drainage solutions for Desert Aire properties.',
+    'Professional irrigation systems for Desert Aire & Mattawa. New installation, repairs, seasonal blowouts, French drains. Licensed GC #MARTIMM744B1. Free quotes.',
+  keywords: [
+    'irrigation installation Desert Aire',
+    'irrigation repair Mattawa WA',
+    'sprinkler system Columbia Basin',
+    'French drain installation',
+    'drainage solutions',
+  ],
+  openGraph: {
+    title: 'Irrigation Installation & Repair | Martinez Mowing & More LLC',
+    description:
+      'Smart irrigation systems, repairs, seasonal blowouts, and drainage solutions for Desert Aire properties.',
+    url: 'https://martinezmowingandmore.com/services/irrigation',
+    siteName: 'Martinez Mowing & More LLC',
+    type: 'website',
+    locale: 'en_US',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Irrigation Installation & Repair Desert Aire WA',
+    description:
+      'Smart irrigation systems, repairs, French drains, drainage solutions. Licensed GC.',
+  },
+  alternates: {
+    canonical: 'https://martinezmowingandmore.com/services/irrigation',
+  },
 }
 
 export default function Irrigation() {
+  const breadcrumbItems = [
+    { name: 'Services', url: '/services' },
+    { name: 'Irrigation' },
+  ]
+
   const services = [
     'New System Design & Installation',
     'System Repairs',
@@ -21,6 +56,21 @@ export default function Irrigation() {
 
   return (
     <>
+      <StructuredData
+        data={[
+          createServiceSchema(
+            'Irrigation & Drainage Solutions',
+            'Smart irrigation systems, repairs, seasonal blowouts, French drains, and drainage solutions for Desert Aire properties.',
+            'irrigation'
+          ),
+          createBreadcrumbSchema([
+            { name: 'Home', url: 'https://martinezmowingandmore.com' },
+            { name: 'Services', url: 'https://martinezmowingandmore.com/services' },
+            { name: 'Irrigation' },
+          ]),
+        ]}
+      />
+      <Breadcrumbs items={breadcrumbItems} />
       <HeroSection
         title="Smart Irrigation That Saves Water and Keeps Everything Green"
         subtitle="Desert Aire's climate means irrigation isn't optional—it's essential."

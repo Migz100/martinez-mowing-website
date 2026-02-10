@@ -3,14 +3,49 @@ import { FaCheckCircle } from 'react-icons/fa'
 import HeroSection from '@/components/HeroSection'
 import ImagePlaceholder from '@/components/ImagePlaceholder'
 import CTABanner from '@/components/CTABanner'
+import StructuredData, {
+  createServiceSchema,
+  createBreadcrumbSchema,
+} from '@/components/StructuredData'
+import Breadcrumbs from '@/components/Breadcrumbs'
 
 export const metadata: Metadata = {
-  title: 'Retaining Walls | Martinez Mowing & More LLC',
+  title: 'Retaining Wall Contractor Desert Aire & Mattawa WA',
   description:
-    'Professional retaining wall construction for sloped yards and erosion control. Allan Block, natural stone, and timber options. Licensed GC #MARTIMM744B1.',
+    'Professional retaining wall construction Desert Aire & Mattawa. Erosion control, sloped yards. Allan Block, natural stone, timber. Licensed GC #MARTIMM744B1. Free quotes.',
+  keywords: [
+    'retaining wall contractor Desert Aire',
+    'retaining wall installation Mattawa WA',
+    'erosion control Columbia Basin',
+    'Allan Block walls',
+    'landscape wall contractor',
+  ],
+  openGraph: {
+    title: 'Retaining Wall Construction | Martinez Mowing & More LLC',
+    description:
+      'Professional retaining wall construction for sloped yards and erosion control. Licensed GC. Free estimates.',
+    url: 'https://martinezmowingandmore.com/services/retaining-walls',
+    siteName: 'Martinez Mowing & More LLC',
+    type: 'website',
+    locale: 'en_US',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Retaining Wall Contractor Desert Aire & Mattawa WA',
+    description:
+      'Professional retaining walls for erosion control. Allan Block, stone, timber. Licensed GC.',
+  },
+  alternates: {
+    canonical: 'https://martinezmowingandmore.com/services/retaining-walls',
+  },
 }
 
 export default function RetainingWalls() {
+  const breadcrumbItems = [
+    { name: 'Services', url: '/services' },
+    { name: 'Retaining Walls' },
+  ]
+
   const deliver = [
     'Structural engineering (walls over 4\')',
     'Proper drainage',
@@ -21,6 +56,21 @@ export default function RetainingWalls() {
 
   return (
     <>
+      <StructuredData
+        data={[
+          createServiceSchema(
+            'Retaining Wall Construction',
+            'Professional retaining wall construction for sloped yards and erosion control. Allan Block, natural stone, and timber options.',
+            'construction'
+          ),
+          createBreadcrumbSchema([
+            { name: 'Home', url: 'https://martinezmowingandmore.com' },
+            { name: 'Services', url: 'https://martinezmowingandmore.com/services' },
+            { name: 'Retaining Walls' },
+          ]),
+        ]}
+      />
+      <Breadcrumbs items={breadcrumbItems} />
       <HeroSection
         title="Retaining Walls That Solve Problems and Add Value"
         subtitle="Sloped yards, erosion issues, and unusable spaces—retaining walls fix them all while adding structure and beauty to your landscape."

@@ -5,14 +5,51 @@ import HeroSection from '@/components/HeroSection'
 import ImagePlaceholder from '@/components/ImagePlaceholder'
 import CTABanner from '@/components/CTABanner'
 import FAQAccordion from '@/components/FAQAccordion'
+import StructuredData, {
+  createServiceSchema,
+  createBreadcrumbSchema,
+  createFAQSchema,
+} from '@/components/StructuredData'
+import Breadcrumbs from '@/components/Breadcrumbs'
 
 export const metadata: Metadata = {
-  title: 'Custom Fences | Martinez Mowing & More LLC',
+  title: 'Custom Fence Installation Desert Aire & Mattawa WA',
   description:
-    'Custom wood, vinyl, and composite fencing designed for Desert Aire\'s wind, sun, and HOA standards. Average $8,000, completed in 3-5 days.',
+    'Professional fence installation in Desert Aire & Mattawa. Cedar, vinyl & composite. HOA-compliant. Licensed GC #MARTIMM744B1. Free quotes. (509) 932-1924.',
+  keywords: [
+    'fence installation Desert Aire',
+    'fence contractor Mattawa WA',
+    'custom fences Columbia Basin',
+    'HOA fence Desert Aire',
+    'vinyl fence installer near me',
+    'cedar fence contractor',
+  ],
+  openGraph: {
+    title: 'Custom Fence Installation | Martinez Mowing & More LLC',
+    description:
+      'Professional fence installation for Desert Aire & Mattawa homeowners. Cedar, vinyl & composite. Licensed GC. Free estimates.',
+    url: 'https://martinezmowingandmore.com/services/fences',
+    siteName: 'Martinez Mowing & More LLC',
+    type: 'website',
+    locale: 'en_US',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Custom Fence Installation Desert Aire | Martinez Mowing & More',
+    description:
+      'Professional fence installation. Cedar, vinyl & composite. Licensed GC. Free quotes.',
+  },
+  alternates: {
+    canonical: 'https://martinezmowingandmore.com/services/fences',
+  },
 }
 
 export default function Fences() {
+  const breadcrumbItems = [
+    { name: 'Services', url: '/services' },
+    { name: 'Fences' },
+  ]
+
   const faqs = [
     {
       question: 'What fence materials do you recommend for Desert Aire?',
@@ -47,6 +84,22 @@ export default function Fences() {
 
   return (
     <>
+      <StructuredData
+        data={[
+          createServiceSchema(
+            'Custom Fence Installation',
+            'Professional wood, vinyl, and composite fencing designed for Desert Aire wind, sun, and HOA standards. Average $8,000, completed in 3-5 days.',
+            'fencing'
+          ),
+          createBreadcrumbSchema([
+            { name: 'Home', url: 'https://martinezmowingandmore.com' },
+            { name: 'Services', url: 'https://martinezmowingandmore.com/services' },
+            { name: 'Fences' },
+          ]),
+          createFAQSchema(faqs),
+        ]}
+      />
+      <Breadcrumbs items={breadcrumbItems} />
       <HeroSection
         title="Custom Fences That Frame Your Desert Aire Property Perfectly"
         subtitle="Your fence is more than a boundary—it's the first thing guests notice, the backdrop to every backyard gathering, and the foundation of your outdoor privacy."

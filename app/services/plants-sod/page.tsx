@@ -5,14 +5,50 @@ import HeroSection from '@/components/HeroSection'
 import ImagePlaceholder from '@/components/ImagePlaceholder'
 import CTABanner from '@/components/CTABanner'
 import FAQAccordion from '@/components/FAQAccordion'
+import StructuredData, {
+  createServiceSchema,
+  createBreadcrumbSchema,
+  createFAQSchema,
+} from '@/components/StructuredData'
+import Breadcrumbs from '@/components/Breadcrumbs'
 
 export const metadata: Metadata = {
-  title: 'Plants & Sod | Martinez Mowing & More LLC',
+  title: 'Sod Installation & Landscaping Desert Aire WA',
   description:
-    'Lush, green landscapes that thrive in the Columbia Basin. Expert plant selection and premium sod installation. Average $6,000, completed in 1-3 days.',
+    'Professional sod installation & landscape design for Desert Aire & Mattawa. Climate-adapted plants, premium sod. Licensed GC #MARTIMM744B1. Free quotes (509) 932-1924.',
+  keywords: [
+    'sod installation Desert Aire',
+    'landscaping Mattawa WA',
+    'lawn installation Columbia Basin',
+    'landscape design Desert Aire',
+    'sod contractor near me',
+  ],
+  openGraph: {
+    title: 'Sod Installation & Landscaping | Martinez Mowing & More LLC',
+    description:
+      'Lush, green landscapes that thrive in the Columbia Basin. Expert sod installation & plant selection.',
+    url: 'https://martinezmowingandmore.com/services/plants-sod',
+    siteName: 'Martinez Mowing & More LLC',
+    type: 'website',
+    locale: 'en_US',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Sod Installation & Landscaping Desert Aire WA',
+    description:
+      'Professional sod installation & landscaping. Climate-adapted plants. Licensed GC.',
+  },
+  alternates: {
+    canonical: 'https://martinezmowingandmore.com/services/plants-sod',
+  },
 }
 
 export default function PlantsSod() {
+  const breadcrumbItems = [
+    { name: 'Services', url: '/services' },
+    { name: 'Plants & Sod' },
+  ]
+
   const faqs = [
     {
       question: 'What type of sod works best in Desert Aire?',
@@ -41,6 +77,22 @@ export default function PlantsSod() {
 
   return (
     <>
+      <StructuredData
+        data={[
+          createServiceSchema(
+            'Sod Installation & Landscaping',
+            'Professional sod installation and landscape design for Desert Aire and Mattawa. Climate-adapted plants and premium sod varieties that thrive in the Columbia Basin.',
+            'landscaping'
+          ),
+          createBreadcrumbSchema([
+            { name: 'Home', url: 'https://martinezmowingandmore.com' },
+            { name: 'Services', url: 'https://martinezmowingandmore.com/services' },
+            { name: 'Plants & Sod' },
+          ]),
+          createFAQSchema(faqs),
+        ]}
+      />
+      <Breadcrumbs items={breadcrumbItems} />
       <HeroSection
         title="Lush, Green Landscapes That Thrive in the Columbia Basin"
         subtitle="Desert Aire's climate is beautiful—but it's tough on lawns and plants. We've spent two decades figuring out exactly what works here."
