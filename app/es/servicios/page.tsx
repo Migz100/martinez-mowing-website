@@ -72,7 +72,7 @@ export default function ServiciosES() {
     <>
       <HeroSection
         title="Servicios Completos de Jardinería y Construcción"
-        subtitle="Desde cercas personalizadas hasta transformaciones completas de paisajismo. Más de 20 años de experiencia en cada proyecto de Desert Aire."
+        subtitle="Desde cercas personalizadas hasta transformaciones completas de paisajismo. 8+ años de experiencia en cada proyecto de la Cuenca de Columbia."
         ctaText="Solicita Tu Cotización Gratis"
         ctaLink="/es/contacto"
         compact
@@ -86,7 +86,7 @@ export default function ServiciosES() {
               Nuestros Servicios
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Martinez Mowing & More es tu contratista general de servicio completo para todo lo relacionado con el aire libre. Licenciado, asegurado y respaldado por más de 20 años de experiencia en la Cuenca de Columbia.
+              Martinez Mowing & More es tu contratista general de servicio completo para todo lo relacionado con el aire libre. Licenciado, asegurado y respaldado por 8+ años de experiencia en la Cuenca de Columbia.
             </p>
           </div>
 

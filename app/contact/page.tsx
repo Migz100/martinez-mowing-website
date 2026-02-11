@@ -7,12 +7,15 @@ import StructuredData, { createBreadcrumbSchema } from '@/components/StructuredD
 import Breadcrumbs from '@/components/Breadcrumbs'
 
 export const metadata: Metadata = {
-  title: 'Free Quote - Landscaping & Fencing Desert Aire WA',
+  title: 'Free Quote - Landscaping & Fencing Columbia Basin WA',
   description:
-    'Get a free quote for your Desert Aire or Mattawa landscaping project. Fast response. Licensed GC #MARTIMM744B1. Call (509) 932-1924 or email Martinezmowingandmorellc@gmail.com.',
+    'Get a free quote for your landscaping project in Desert Aire, Mattawa, Tri-Cities, Moses Lake or Othello. Fast response. Licensed GC #MARTIMM744B1. Call (509) 932-1924 or email Martinezmowingandmorellc@gmail.com.',
   keywords: [
     'free quote Desert Aire',
     'landscaping estimate Mattawa WA',
+    'Tri-Cities landscaping quote',
+    'Moses Lake fence quote',
+    'Othello landscaping estimate',
     'fence quote Columbia Basin',
     'contact Martinez Mowing',
     'landscaping contractor quote',
@@ -146,9 +149,11 @@ export default function Contact() {
                       Service Area
                     </h3>
                     <p className="text-gray-700">
-                      Desert Aire, Mattawa, WA
+                      Desert Aire & Mattawa (Primary)
                       <br />
-                      and surrounding areas
+                      Tri-Cities, Moses Lake, Othello
+                      <br />
+                      <span className="text-sm text-gray-600">Serving the entire Columbia Basin</span>
                     </p>
                   </div>
                 </div>

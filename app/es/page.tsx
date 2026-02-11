@@ -33,7 +33,7 @@ export default function HomeES() {
     {
       question: '¿Qué áreas atienden?',
       answer:
-        'Atendemos principalmente Desert Aire, Mattawa y las áreas circundantes en la Cuenca de Columbia. Conocemos este clima, suelo y requisitos de HOA mejor que nadie.',
+        'Atendemos principalmente Desert Aire y Mattawa, con servicio regular en toda la Cuenca de Columbia incluyendo Tri-Cities (Pasco, Kennewick, Richland), Moses Lake y Othello. Conocemos este clima, suelo y requisitos de HOA mejor que nadie.',
     },
     {
       question: '¿Cuánto tiempo toman típicamente los proyectos?',
@@ -119,7 +119,7 @@ export default function HomeES() {
       {/* Hero Section */}
       <HeroSection
         title="El Contratista en Quien Tus Vecinos de Desert Aire Ya Confían"
-        subtitle="Cercas premium, jardinería profesional, y mantenimiento sin preocupaciones para vivir cerca del campo de golf. Conocemos los estándares de HOA, el suelo, y exactamente qué prospera aquí."
+        subtitle="Cercas premium, jardinería profesional, y mantenimiento sin preocupaciones. Especialistas de Desert Aire sirviendo toda la Cuenca de Columbia — conocemos los estándares de HOA, el suelo, y exactamente qué prospera aquí."
         ctaText="Solicita Tu Cotización Gratis"
         ctaLink="/es/contacto"
         secondaryCta={
@@ -144,7 +144,7 @@ export default function HomeES() {
               Nuestros Servicios
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Desde cercas personalizadas hasta transformaciones completas de paisajismo, aportamos más de 20 años de experiencia a cada proyecto en Desert Aire.
+              Desde cercas personalizadas hasta transformaciones completas de paisajismo, aportamos 8+ años de experiencia a cada proyecto en la Cuenca de Columbia.
             </p>
           </div>
 
@@ -177,7 +177,7 @@ export default function HomeES() {
                 Construido en Reputación, Impulsado por Artesanía
               </h2>
               <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-                Hola, soy Daniel Martinez, y he estado construyendo espacios al aire libre en la Cuenca de Columbia por más de 20 años.
+                Hola, soy Daniel Martinez, y he estado trabajando en jardinería en la Cuenca de Columbia por 8 años.
               </p>
               <p className="text-lg text-gray-700 mb-6 leading-relaxed">
                 Comencé Martinez Mowing & More en 2021 porque vi a demasiados propietarios—especialmente aquí en Desert Aire—siendo estafados por contratistas que prometían demasiado, entregaban poco, o desaparecían a mitad de un trabajo.

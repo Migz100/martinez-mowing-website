@@ -12,26 +12,32 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata: Metadata = {
   metadataBase: new URL('https://martinezmowingandmore.vercel.app'),
   title: {
-    default: 'Desert Aire Premier Landscaping & Outdoor Contractor | Martinez Mowing & More',
+    default: 'Columbia Basin Premier Landscaping & Outdoor Contractor | Martinez Mowing & More',
     template: '%s | Martinez Mowing & More',
   },
   description:
-    'Premium landscaping, fences, property maintenance, and outdoor construction for Desert Aire and Mattawa, WA. Licensed General Contractor #MARTIMM744B1. Over 20 years experience. Bilingual service.',
+    'Premium landscaping, fences, property maintenance, and outdoor construction for Desert Aire, Mattawa, Tri-Cities, Moses Lake & Othello, WA. Licensed General Contractor #MARTIMM744B1. 8+ years experience. Bilingual service.',
   keywords: [
     'landscaping Desert Aire',
     'fences Mattawa WA',
+    'landscaping Tri-Cities',
+    'Moses Lake landscaping contractor',
+    'Othello property maintenance',
     'property maintenance Columbia Basin',
     'irrigation Desert Aire',
     'retaining walls Mattawa',
     'custom decks Washington',
+    'Pasco landscaping',
+    'Kennewick fencing',
+    'Richland outdoor contractor',
     'HOA landscaping',
     'bilingual contractor',
     'licensed general contractor WA',
   ],
   openGraph: {
-    title: 'Martinez Mowing & More LLC | Desert Aire Premier Landscaping',
+    title: 'Martinez Mowing & More LLC | Columbia Basin Premier Landscaping',
     description:
-      'Premium fences, professional landscaping, and worry-free maintenance for Desert Aire & Mattawa homeowners. Licensed GC #MARTIMM744B1.',
+      'Premium fences, professional landscaping, and worry-free maintenance for Desert Aire, Mattawa, Tri-Cities, Moses Lake & Othello. Licensed GC #MARTIMM744B1.',
     url: 'https://martinezmowingandmore.com',
     siteName: 'Martinez Mowing & More LLC',
     type: 'website',
@@ -47,9 +53,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Martinez Mowing & More LLC | Desert Aire Premier Landscaping',
+    title: 'Martinez Mowing & More LLC | Columbia Basin Premier Landscaping',
     description:
-      'Premium landscaping, fences & property maintenance for Desert Aire & Mattawa. Licensed GC. 20+ years experience.',
+      'Premium landscaping, fences & property maintenance across the Columbia Basin. Licensed GC. 8+ years experience.',
   },
   alternates: {
     canonical: 'https://martinezmowingandmore.com',

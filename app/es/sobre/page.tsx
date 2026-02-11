@@ -9,7 +9,7 @@ import Breadcrumbs from '@/components/Breadcrumbs'
 export const metadata: Metadata = {
   title: 'Sobre Daniel Martinez - Contratista Licenciado Mattawa WA',
   description:
-    'Conoce a Daniel Martinez, propietario de Martinez Mowing & More. GC Licenciado #MARTIMM744B1 con más de 20 años de experiencia sirviendo a Desert Aire y Mattawa. Contratista de jardinería bilingüe en quien puedes confiar.',
+    'Conoce a Daniel Martinez, propietario de Martinez Mowing & More. GC Licenciado #MARTIMM744B1 con 8+ años de experiencia sirviendo a Desert Aire, Mattawa, Tri-Cities, Moses Lake y Othello. Contratista de jardinería bilingüe en quien puedes confiar.',
   alternates: {
     canonical: 'https://martinezmowingandmore.com/es/sobre',
   },
@@ -27,9 +27,9 @@ export default function SobreNosotros() {
     },
     {
       icon: FaMapMarkerAlt,
-      title: 'Especialistas en Desert Aire',
+      title: 'Especialistas en la Cuenca de Columbia',
       description:
-        'Conocemos los requisitos de la HOA, las condiciones del suelo y exactamente qué plantas prosperan aquí.',
+        'Expertos de Desert Aire sirviendo toda la región. Conocemos los requisitos de la HOA, las condiciones del suelo y exactamente qué plantas prosperan aquí.',
     },
     {
       icon: FaUsers,
@@ -56,7 +56,7 @@ export default function SobreNosotros() {
       <Breadcrumbs items={breadcrumbItems} />
       <HeroSection
         title="Construido en Reputación, Impulsado por Artesanía"
-        subtitle="Más de 20 años convirtiendo los patios traseros de Desert Aire en retiros al aire libre que los propietarios están orgullosos de mostrar."
+        subtitle="Casi una década convirtiendo los patios traseros de la Cuenca de Columbia en retiros al aire libre que los propietarios están orgullosos de mostrar."
         compact
         backgroundImage="/images/team-work.jpg"
       />
@@ -76,7 +76,7 @@ export default function SobreNosotros() {
                 />
               </div>
               <p className="text-xl text-gray-700 leading-relaxed mb-6">
-                Hola, soy Daniel Martinez, y he estado construyendo espacios al aire libre en la Cuenca de Columbia por más de 20 años.
+                Hola, soy Daniel Martinez, y he estado trabajando en jardinería en la Cuenca de Columbia por 8 años.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 Comencé Martinez Mowing & More en 2021 porque vi a demasiados propietarios—especialmente aquí en Desert Aire—siendo estafados por contratistas que prometían demasiado, entregaban poco, o desaparecían a mitad de un trabajo.

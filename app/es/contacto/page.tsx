@@ -6,8 +6,8 @@ import ContactForm from '@/components/ContactForm'
 import Breadcrumbs from '@/components/Breadcrumbs'
 
 export const metadata: Metadata = {
-  title: 'Cotización Gratis - Jardinería y Cercas Desert Aire WA',
-  description: 'Obtén una cotización gratuita para tu proyecto de jardinería en Desert Aire o Mattawa. Respuesta rápida. GC Licenciado #MARTIMM744B1. Llama al (509) 932-1924.',
+  title: 'Cotización Gratis - Jardinería y Cercas Cuenca de Columbia WA',
+  description: 'Obtén una cotización gratuita para tu proyecto de jardinería en Desert Aire, Mattawa, Tri-Cities, Moses Lake u Othello. Respuesta rápida. GC Licenciado #MARTIMM744B1. Llama al (509) 932-1924.',
   alternates: { canonical: 'https://martinezmowingandmore.com/es/contacto' },
 }
 
@@ -105,7 +105,11 @@ export default function ContactoES() {
                   <div>
                     <h3 className="font-bold text-charcoal">Área de Servicio</h3>
                     <p className="text-gray-700">
-                      Desert Aire, Mattawa, y áreas circundantes en la Cuenca de Columbia
+                      Desert Aire y Mattawa (Principal)
+                      <br />
+                      Tri-Cities, Moses Lake, Othello
+                      <br />
+                      <span className="text-sm text-gray-600">Sirviendo toda la Cuenca de Columbia</span>
                     </p>
                   </div>
                 </div>

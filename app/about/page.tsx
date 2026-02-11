@@ -9,18 +9,20 @@ import Breadcrumbs from '@/components/Breadcrumbs'
 export const metadata: Metadata = {
   title: 'About Daniel Martinez - Licensed Contractor Mattawa WA',
   description:
-    'Meet Daniel Martinez, owner of Martinez Mowing & More. Licensed GC #MARTIMM744B1 with 20+ years experience serving Desert Aire & Mattawa. Bilingual landscaping contractor you can trust.',
+    'Meet Daniel Martinez, owner of Martinez Mowing & More. Licensed GC #MARTIMM744B1 with 8+ years experience serving Desert Aire, Mattawa, Tri-Cities & Moses Lake. Bilingual landscaping contractor you can trust.',
   keywords: [
     'Daniel Martinez contractor',
     'licensed contractor Mattawa WA',
     'Desert Aire landscaping company',
+    'Tri-Cities landscaping contractor',
+    'Moses Lake outdoor contractor',
     'bilingual contractor Washington',
     'general contractor Columbia Basin',
   ],
   openGraph: {
     title: 'About Daniel Martinez - Licensed Contractor | Martinez Mowing & More',
     description:
-      'Licensed GC with 20+ years experience transforming Desert Aire & Mattawa outdoor spaces. Meet the team homeowners trust.',
+      'Licensed GC with 8+ years experience transforming Columbia Basin outdoor spaces. Serving Desert Aire, Mattawa, Tri-Cities & Moses Lake.',
     url: 'https://martinezmowingandmore.com/about',
     siteName: 'Martinez Mowing & More LLC',
     type: 'website',
@@ -30,7 +32,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'About Daniel Martinez - Licensed Contractor Mattawa WA',
     description:
-      'Licensed GC #MARTIMM744B1 with 20+ years experience serving Desert Aire & Mattawa homeowners.',
+      'Licensed GC #MARTIMM744B1 with 8+ years experience serving the Columbia Basin.',
   },
   alternates: {
     canonical: 'https://martinezmowingandmore.com/about',
@@ -49,9 +51,9 @@ export default function About() {
     },
     {
       icon: FaMapMarkerAlt,
-      title: 'Desert Aire Specialists',
+      title: 'Columbia Basin Specialists',
       description:
-        'We know the HOA requirements, soil conditions, and exactly what plants thrive here.',
+        'Desert Aire experts serving the entire region. We know the HOA requirements, soil conditions, and exactly what plants thrive here.',
     },
     {
       icon: FaUsers,
@@ -78,7 +80,7 @@ export default function About() {
       <Breadcrumbs items={breadcrumbItems} />
       <HeroSection
         title="Built on Reputation, Driven by Craftsmanship"
-        subtitle="20+ years of turning Desert Aire backyards into outdoor retreats homeowners are proud to show off."
+        subtitle="Nearly a decade of turning Columbia Basin backyards into outdoor retreats homeowners are proud to show off."
         compact
         backgroundImage="/images/team-work.jpg"
       />
@@ -98,8 +100,8 @@ export default function About() {
                 />
               </div>
               <p className="text-xl text-gray-700 leading-relaxed mb-6">
-                Hi, I'm Daniel Martinez, and I've been building outdoor spaces in
-                the Columbia Basin for over 20 years.
+                Hi, I'm Daniel Martinez, and I've been working in landscaping across
+                the Columbia Basin for 8 years.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 I started Martinez Mowing & More in 2021 because I saw too many

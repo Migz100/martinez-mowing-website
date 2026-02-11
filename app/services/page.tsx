@@ -81,8 +81,8 @@ export default function Services() {
       />
       <Breadcrumbs items={breadcrumbItems} />
       <HeroSection
-        title="Premium Services for Desert Aire Living"
-        subtitle="From fences to full landscapes, we bring 20+ years of Columbia Basin expertise to every project."
+        title="Premium Services for Columbia Basin Living"
+        subtitle="From fences to full landscapes, we bring 8+ years of Columbia Basin expertise to every project."
         compact
       />
 
