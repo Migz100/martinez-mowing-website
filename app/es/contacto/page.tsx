@@ -6,9 +6,9 @@ import ContactForm from '@/components/ContactForm'
 import Breadcrumbs from '@/components/Breadcrumbs'
 
 export const metadata: Metadata = {
-  title: 'Cotización Gratis - Jardinería y Cercas Cuenca de Columbia WA',
-  description: 'Obtén una cotización gratuita para tu proyecto de jardinería en Desert Aire, Mattawa, Tri-Cities, Moses Lake u Othello. Respuesta rápida. GC Licenciado #MARTIMM744B1. Llama al (509) 932-1924.',
-  alternates: { canonical: 'https://martinezmowingandmore.com/es/contacto' },
+  title: 'Cotización Gratis - Jardinería y Cercas | Desert Aire, Tri-Cities, Moses Lake WA',
+  description: 'Cotización gratuita para jardinería, cercas y construcción exterior en la Cuenca de Columbia. Servimos Desert Aire, Pasco, Kennewick, Richland, Moses Lake y Othello. GC Licenciado #MARTIMM744B1. (509) 932-1924.',
+  alternates: { canonical: 'https://martinez-mowing-website.vercel.app/es/contacto' },
 }
 
 export default function ContactoES() {
@@ -18,8 +18,8 @@ export default function ContactoES() {
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <HeroSection
-        title="¿Listo para Empezar?"
-        subtitle="Cuéntanos sobre tu proyecto y te enviaremos una cotización detallada—generalmente dentro de 24 horas. Sin presión, sin tácticas de venta agresivas."
+        title="Hablemos de Tu Proyecto"
+        subtitle="Cuéntanos qué necesitas y te enviaremos una cotización detallada — generalmente dentro de 24 horas. Sin presión. Servimos toda la Cuenca de Columbia."
         compact
         ctaText="Llámanos Ahora"
         ctaLink="tel:5099321924"
@@ -105,11 +105,13 @@ export default function ContactoES() {
                   <div>
                     <h3 className="font-bold text-charcoal">Área de Servicio</h3>
                     <p className="text-gray-700">
-                      Desert Aire y Mattawa (Principal)
+                      Base: Desert Aire y Mattawa
                       <br />
-                      Tri-Cities, Moses Lake, Othello
+                      Pasco, Kennewick, Richland (Tri-Cities)
                       <br />
-                      <span className="text-sm text-gray-600">Sirviendo toda la Cuenca de Columbia</span>
+                      Moses Lake, Othello y alrededores
+                      <br />
+                      <span className="text-sm text-gray-600">Cubrimos toda la Cuenca de Columbia</span>
                     </p>
                   </div>
                 </div>

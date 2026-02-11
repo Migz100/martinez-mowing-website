@@ -71,7 +71,7 @@ export default function Footer() {
               </a>
               <div className="flex items-start gap-2">
                 <FaMapMarkerAlt className="flex-shrink-0 mt-1" />
-                <span>{isSpanish ? 'Sirviendo a Desert Aire y Mattawa, WA' : 'Serving Desert Aire & Mattawa, WA'}</span>
+                <span>{isSpanish ? 'Sirviendo la Cuenca de Columbia — Desert Aire, Tri-Cities, Moses Lake, Othello' : 'Serving the Columbia Basin — Desert Aire, Tri-Cities, Moses Lake, Othello'}</span>
               </div>
             </div>
           </div>

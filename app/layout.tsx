@@ -10,7 +10,7 @@ import { LocalBusinessSchema, WebSiteSchema } from '@/components/StructuredData'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://martinezmowingandmore.vercel.app'),
+  metadataBase: new URL('https://martinez-mowing-website.vercel.app'),
   title: {
     default: 'Columbia Basin Premier Landscaping & Outdoor Contractor | Martinez Mowing & More',
     template: '%s | Martinez Mowing & More',
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     title: 'Martinez Mowing & More LLC | Columbia Basin Premier Landscaping',
     description:
       'Premium fences, professional landscaping, and worry-free maintenance for Desert Aire, Mattawa, Tri-Cities, Moses Lake & Othello. Licensed GC #MARTIMM744B1.',
-    url: 'https://martinezmowingandmore.com',
+    url: 'https://martinez-mowing-website.vercel.app',
     siteName: 'Martinez Mowing & More LLC',
     type: 'website',
     locale: 'en_US',
@@ -58,10 +58,10 @@ export const metadata: Metadata = {
       'Premium landscaping, fences & property maintenance across the Columbia Basin. Licensed GC. 8+ years experience.',
   },
   alternates: {
-    canonical: 'https://martinezmowingandmore.com',
+    canonical: 'https://martinez-mowing-website.vercel.app',
     languages: {
-      'en-US': 'https://martinezmowingandmore.com',
-      'es-US': 'https://martinezmowingandmore.com/es',
+      'en-US': 'https://martinez-mowing-website.vercel.app',
+      'es-US': 'https://martinez-mowing-website.vercel.app/es',
     },
   },
   other: {
@@ -82,12 +82,12 @@ export default function RootLayout({
         <link
           rel="alternate"
           hrefLang="es"
-          href="https://martinezmowingandmore.com/es"
+          href="https://martinez-mowing-website.vercel.app/es"
         />
         <link
           rel="alternate"
           hrefLang="en"
-          href="https://martinezmowingandmore.com"
+          href="https://martinez-mowing-website.vercel.app"
         />
         <LocalBusinessSchema />
         <WebSiteSchema />

@@ -9,13 +9,13 @@ export default function TrustBadges() {
     },
     {
       icon: FaAward,
-      title: '20+ Years Experience',
-      description: 'Proven expertise',
+      title: '8+ Years Experience',
+      description: 'Since 2021',
     },
     {
       icon: FaMapMarkerAlt,
-      title: 'Desert Aire Specialists',
-      description: 'We know the HOA',
+      title: 'Columbia Basin Pros',
+      description: 'Desert Aire to Tri-Cities',
     },
     {
       icon: FaDollarSign,

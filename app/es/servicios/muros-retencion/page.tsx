@@ -8,9 +8,9 @@ import FAQAccordion from '@/components/FAQAccordion'
 import Breadcrumbs from '@/components/Breadcrumbs'
 
 export const metadata: Metadata = {
-  title: 'Muros de Retención Desert Aire | Martinez Mowing',
-  description: 'Construcción profesional de muros de retención en Desert Aire y Mattawa. Soluciones estructurales para erosión y drenaje.',
-  alternates: { canonical: 'https://martinezmowingandmore.com/es/servicios/muros-retencion' },
+  title: 'Muros de Retención - Desert Aire, Tri-Cities, Moses Lake WA | Martinez Mowing',
+  description: 'Muros de retención profesionales en la Cuenca de Columbia. Soluciones para erosión y drenaje en Desert Aire, Pasco, Kennewick, Moses Lake y Othello. GC Licenciado.',
+  alternates: { canonical: 'https://martinez-mowing-website.vercel.app/es/servicios/muros-retencion' },
 }
 
 export default function MurosRetencionES() {
@@ -43,8 +43,8 @@ export default function MurosRetencionES() {
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <HeroSection
-        title="Muros de Retención Que Resuelven Problemas y Agregan Belleza"
-        subtitle="Si tienes erosión, problemas de drenaje o simplemente quieres nivelar tu terreno, construimos muros de retención estructuralmente sólidos que duran décadas."
+        title="Muros de Retención Para Cualquier Terreno de la Cuenca de Columbia"
+        subtitle="Erosión, problemas de drenaje o terreno desnivelado — construimos muros de retención sólidos que duran décadas. De Desert Aire a Tri-Cities y Moses Lake."
         compact
         backgroundImage="/images/retaining-walls.jpg"
       />
@@ -57,7 +57,7 @@ export default function MurosRetencionES() {
                 Ingeniería Que Funciona
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                Un muro de retención no es solo una pila de bloques—es una solución estructural que necesita ingeniería, drenaje y construcción adecuados para durar. Lo hemos hecho cientos de veces.
+                Un muro de retención no es solo una pila de bloques — es una solución estructural que necesita ingeniería, drenaje y construcción adecuados para durar. Lo hemos hecho en todo tipo de terrenos por toda la Cuenca de Columbia, desde Desert Aire hasta Richland y Othello.
               </p>
 
               <div className="bg-accent/10 border-l-4 border-accent p-6 rounded-lg mb-6">
@@ -98,7 +98,7 @@ export default function MurosRetencionES() {
 
       <CTABanner
         title="Deja de Perder Terreno Por Erosión"
-        subtitle="Cada temporada de lluvia empeora el problema. Arreglémoslo correctamente."
+        subtitle="Cada temporada de lluvia empeora el problema. Ya sea en Desert Aire, Kennewick o Moses Lake — arreglémoslo correctamente."
         ctaText="Solicita Tu Cotización Gratis"
         ctaLink="/es/contacto"
       />

@@ -28,32 +28,32 @@ export default function HomeES() {
     {
       question: '¿Están licenciados y asegurados?',
       answer:
-        '¡Sí! Somos un Contratista General totalmente licenciado (GC #MARTIMM744B1) y contamos con un seguro de responsabilidad civil integral. Manejamos todos los permisos y nos aseguramos de que cada proyecto cumpla con los códigos de construcción locales y los requisitos de la HOA.',
+        '¡Sí! Somos un Contratista General totalmente licenciado (GC #MARTIMM744B1) con seguro de responsabilidad civil integral. Manejamos todos los permisos y nos aseguramos de que cada proyecto cumpla con los códigos locales y requisitos de HOA — ya sea en Desert Aire, Pasco, o Moses Lake.',
     },
     {
       question: '¿Qué áreas atienden?',
       answer:
-        'Atendemos principalmente Desert Aire y Mattawa, con servicio regular en toda la Cuenca de Columbia incluyendo Tri-Cities (Pasco, Kennewick, Richland), Moses Lake y Othello. Conocemos este clima, suelo y requisitos de HOA mejor que nadie.',
+        'Nuestra base está en Desert Aire y Mattawa, pero servimos toda la Cuenca de Columbia: Tri-Cities (Pasco, Kennewick, Richland), Moses Lake, Othello y comunidades alrededor. 8+ años trabajando en esta región — conocemos el clima, el suelo y los requisitos de cada área.',
     },
     {
-      question: '¿Cuánto tiempo toman típicamente los proyectos?',
+      question: '¿Cuánto tiempo toman los proyectos?',
       answer:
-        'Depende del proyecto. La mayoría de las cercas se completan en 3-5 días. Las instalaciones de césped y jardinería toman 1-3 días. Los proyectos más grandes como terrazas o muros de retención se estiman durante su consulta gratuita. Siempre proporcionamos plazos realistas por adelantado.',
+        'Depende del trabajo. La mayoría de las cercas se completan en 3-5 días. Instalaciones de césped y jardinería toman 1-3 días. Proyectos más grandes como terrazas o muros de retención se estiman durante tu consulta gratuita. Siempre damos plazos realistas por adelantado.',
     },
     {
-      question: '¿Manejan las aprobaciones de la HOA?',
+      question: '¿Manejan aprobaciones de HOA?',
       answer:
-        'Absolutamente. Conocemos los requisitos de la HOA de Desert Aire al derecho y al revés. Podemos ayudarle a navegar el proceso de aprobación y asegurarnos de que su proyecto cumpla con todos los estándares de la comunidad.',
+        'Claro que sí. Conocemos los requisitos de HOA de Desert Aire al derecho y al revés, y también trabajamos con regulaciones de comunidades en Pasco, Kennewick y otras áreas de la Cuenca de Columbia.',
     },
     {
-      question: '¿Qué pasa después de que envío una solicitud de cotización?',
+      question: '¿Qué pasa después de que envío mi solicitud?',
       answer:
-        'Daniel revisa personalmente su solicitud y lo llama dentro de las 24 horas. Programaremos una visita gratuita al lugar para ver su propiedad, discutir su visión y proporcionar una cotización detallada sin presión.',
+        'Daniel revisa personalmente cada solicitud y te llama dentro de 24 horas. Programamos una visita gratuita a tu propiedad para ver el espacio, platicar tu visión y darte una cotización detallada — sin presión.',
     },
     {
       question: '¿Ofrecen planes de pago?',
       answer:
-        'Trabajamos con usted para crear una estructura de pago que se ajuste a su presupuesto. Los detalles se discuten durante su estimación. Nuestro objetivo es hacer que su visión al aire libre sea asequible y sin estrés.',
+        'Trabajamos contigo para crear una estructura de pago que se ajuste a tu presupuesto. Los detalles se platican durante la estimación. Queremos que tu proyecto sea realidad sin estrés financiero.',
     },
   ]
 
@@ -61,7 +61,7 @@ export default function HomeES() {
     {
       title: 'Cercas',
       description:
-        'Cercas personalizadas de madera, vinilo y compuesto diseñadas para los estándares de viento, sol y HOA de Desert Aire.',
+        'Cercas personalizadas de madera, vinilo y compuesto — construidas para el viento, el sol y los estándares de HOA de la Cuenca de Columbia.',
       icon: HiOutlineViewGrid,
       href: '/es/servicios/cercas',
       image: '/images/fences.jpg',
@@ -70,7 +70,7 @@ export default function HomeES() {
     {
       title: 'Plantas y Césped',
       description:
-        'Paisajes verdes y exuberantes que prosperan en el clima de la Cuenca de Columbia con resultados de calidad resort.',
+        'Paisajes verdes y exuberantes que prosperan en el clima de la Cuenca de Columbia. Desde patios en Pasco hasta jardines en Desert Aire.',
       icon: HiOutlineColorSwatch,
       href: '/es/servicios/plantas-cesped',
       image: '/images/plants-sod.jpg',
@@ -79,7 +79,7 @@ export default function HomeES() {
     {
       title: 'Mantenimiento de Propiedad',
       description:
-        'Mantenimiento durante todo el año para que pueda disfrutar de su propiedad sin pasar los fines de semana trabajando en el jardín.',
+        'Mantenimiento todo el año para que disfrutes tu propiedad sin perder los fines de semana en el jardín.',
       icon: HiOutlineCog,
       href: '/es/servicios/mantenimiento',
       image: '/images/maintenance.jpg',
@@ -88,7 +88,7 @@ export default function HomeES() {
     {
       title: 'Muros de Retención',
       description:
-        'Soluciones estructurales que resuelven problemas de erosión mientras agregan belleza y valor a su paisaje.',
+        'Soluciones estructurales que resuelven erosión y agregan belleza a tu paisaje — en cualquier terreno de la Cuenca de Columbia.',
       icon: HiOutlineCube,
       href: '/es/servicios/muros-retencion',
       image: '/images/retaining-walls.jpg',
@@ -96,7 +96,7 @@ export default function HomeES() {
     {
       title: 'Terrazas/Pérgolas/Estructuras',
       description:
-        'Estructuras al aire libre personalizadas que extienden su espacio de vida y hacen de su patio trasero un destino.',
+        'Estructuras al aire libre que extienden tu espacio de vida. Tu patio trasero se convierte en tu lugar favorito.',
       icon: HiOutlineHome,
       href: '/es/servicios/estructuras-exteriores',
       image: '/images/outdoor-structures.jpg',
@@ -104,7 +104,7 @@ export default function HomeES() {
     {
       title: 'Irrigación y Drenaje',
       description:
-        'Sistemas de riego inteligentes que ahorran agua y mantienen todo verde durante los veranos de Desert Aire.',
+        'Sistemas de riego inteligentes que ahorran agua y mantienen todo verde durante los veranos secos de la Cuenca de Columbia.',
       icon: HiOutlineBeaker,
       href: '/es/servicios/irrigacion',
       image: '/images/irrigation.jpg',
@@ -118,8 +118,8 @@ export default function HomeES() {
 
       {/* Hero Section */}
       <HeroSection
-        title="El Contratista en Quien Tus Vecinos de Desert Aire Ya Confían"
-        subtitle="Cercas premium, jardinería profesional, y mantenimiento sin preocupaciones. Especialistas de Desert Aire sirviendo toda la Cuenca de Columbia — conocemos los estándares de HOA, el suelo, y exactamente qué prospera aquí."
+        title="El Equipo de Jardinería Más Confiable de la Cuenca de Columbia"
+        subtitle="Cercas premium, jardinería profesional y mantenimiento sin preocupaciones — de Desert Aire a Tri-Cities. 8+ años de experiencia, licencia de contratista general y servicio completamente bilingüe."
         ctaText="Solicita Tu Cotización Gratis"
         ctaLink="/es/contacto"
         secondaryCta={
@@ -144,7 +144,7 @@ export default function HomeES() {
               Nuestros Servicios
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Desde cercas personalizadas hasta transformaciones completas de paisajismo, aportamos 8+ años de experiencia a cada proyecto en la Cuenca de Columbia.
+              Desde cercas en Kennewick hasta jardines completos en Desert Aire — 8+ años de experiencia en cada proyecto de la Cuenca de Columbia.
             </p>
           </div>
 
@@ -174,16 +174,16 @@ export default function HomeES() {
               </div>
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-charcoal mb-6">
-                Construido en Reputación, Impulsado por Artesanía
+                De Desert Aire Para Toda la Cuenca de Columbia
               </h2>
               <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-                Hola, soy Daniel Martinez, y he estado trabajando en jardinería en la Cuenca de Columbia por 8 años.
+                Hola, soy Daniel Martinez. Llevo 8 años trabajando en jardinería y construcción exterior por toda la Cuenca de Columbia.
               </p>
               <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-                Comencé Martinez Mowing & More en 2021 porque vi a demasiados propietarios—especialmente aquí en Desert Aire—siendo estafados por contratistas que prometían demasiado, entregaban poco, o desaparecían a mitad de un trabajo.
+                Fundé Martinez Mowing & More en 2021 porque vi a demasiados propietarios — en Desert Aire, en Pasco, en Moses Lake — siendo estafados por contratistas que prometían mucho y entregaban poco, o desaparecían a mitad de un trabajo.
               </p>
               <p className="text-lg text-gray-700 mb-8 leading-relaxed">
-                Quería construir algo diferente. Una compañía donde tu proyecto se hace bien, a tiempo, y con el tipo de atención al detalle que te emociona mostrar a tus vecinos.
+                Quería algo diferente. Una compañía donde tu proyecto se hace bien, a tiempo, y con la atención al detalle que te emociona mostrar a tus vecinos. Eso es lo que hacemos todos los días.
               </p>
               <Link
                 href="/es/sobre"
@@ -204,8 +204,8 @@ export default function HomeES() {
 
       {/* CTA Banner */}
       <CTABanner
-        title="¿Listo para Empezar?"
-        subtitle="Cuéntanos sobre tu proyecto y te enviaremos una cotización detallada—generalmente dentro de 24 horas. Sin presión, sin tácticas de venta agresivas. Solo un desglose claro de lo que se necesita para hacer el trabajo bien."
+        title="No Dejes Que Tu Propiedad Pierda Valor"
+        subtitle="Cada temporada sin mantenimiento adecuado te cuesta dinero. Cada mejora que pospones es una oportunidad perdida. Ya sea en Desert Aire, Tri-Cities o Moses Lake — transformemos tu espacio exterior antes de que pase otro verano."
         ctaText="Solicita Tu Cotización Gratis"
         ctaLink="/es/contacto"
       />

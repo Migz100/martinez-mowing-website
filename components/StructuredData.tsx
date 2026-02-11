@@ -1,4 +1,4 @@
-const BASE_URL = 'https://martinezmowingandmore.vercel.app'
+const BASE_URL = 'https://martinez-mowing-website.vercel.app'
 
 // Default export: renders one or more JSON-LD schemas
 export default function StructuredData({
@@ -27,7 +27,7 @@ export const localBusinessSchema = {
   '@type': 'GeneralContractor',
   name: 'Martinez Mowing & More LLC',
   description:
-    'Premium landscaping, fences, property maintenance, and outdoor construction for Desert Aire and Mattawa, WA. Licensed General Contractor #MARTIMM744B1.',
+    'Premium landscaping, fences, property maintenance, and outdoor construction across the Columbia Basin — Desert Aire, Tri-Cities, Moses Lake, Othello, WA. Licensed General Contractor #MARTIMM744B1. 8+ years experience. Bilingual service.',
   url: BASE_URL,
   telephone: '+15099321924',
   email: 'Martinezmowingandmorellc@gmail.com',
@@ -52,6 +52,31 @@ export const localBusinessSchema = {
     {
       '@type': 'City',
       name: 'Mattawa',
+      containedInPlace: { '@type': 'State', name: 'Washington' },
+    },
+    {
+      '@type': 'City',
+      name: 'Pasco',
+      containedInPlace: { '@type': 'State', name: 'Washington' },
+    },
+    {
+      '@type': 'City',
+      name: 'Kennewick',
+      containedInPlace: { '@type': 'State', name: 'Washington' },
+    },
+    {
+      '@type': 'City',
+      name: 'Richland',
+      containedInPlace: { '@type': 'State', name: 'Washington' },
+    },
+    {
+      '@type': 'City',
+      name: 'Moses Lake',
+      containedInPlace: { '@type': 'State', name: 'Washington' },
+    },
+    {
+      '@type': 'City',
+      name: 'Othello',
       containedInPlace: { '@type': 'State', name: 'Washington' },
     },
   ],
@@ -99,10 +124,15 @@ export function createServiceSchema(
       name: 'Martinez Mowing & More LLC',
       telephone: '+15099321924',
     },
-    areaServed: {
-      '@type': 'City',
-      name: 'Desert Aire, Mattawa, WA',
-    },
+    areaServed: [
+      { '@type': 'City', name: 'Desert Aire' },
+      { '@type': 'City', name: 'Mattawa' },
+      { '@type': 'City', name: 'Pasco' },
+      { '@type': 'City', name: 'Kennewick' },
+      { '@type': 'City', name: 'Richland' },
+      { '@type': 'City', name: 'Moses Lake' },
+      { '@type': 'City', name: 'Othello' },
+    ],
     serviceType,
   }
 }

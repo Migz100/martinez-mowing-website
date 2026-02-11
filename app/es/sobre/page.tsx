@@ -7,11 +7,11 @@ import StructuredData, { createBreadcrumbSchema } from '@/components/StructuredD
 import Breadcrumbs from '@/components/Breadcrumbs'
 
 export const metadata: Metadata = {
-  title: 'Sobre Daniel Martinez - Contratista Licenciado Mattawa WA',
+  title: 'Sobre Daniel Martinez - Contratista Licenciado Cuenca de Columbia WA',
   description:
-    'Conoce a Daniel Martinez, propietario de Martinez Mowing & More. GC Licenciado #MARTIMM744B1 con 8+ años de experiencia sirviendo a Desert Aire, Mattawa, Tri-Cities, Moses Lake y Othello. Contratista de jardinería bilingüe en quien puedes confiar.',
+    'Conoce a Daniel Martinez, contratista general licenciado (GC #MARTIMM744B1) con 8+ años de experiencia. Sirviendo Desert Aire, Mattawa, Tri-Cities, Moses Lake y Othello. El contratista bilingüe más confiable de la Cuenca de Columbia.',
   alternates: {
-    canonical: 'https://martinezmowingandmore.com/es/sobre',
+    canonical: 'https://martinez-mowing-website.vercel.app/es/sobre',
   },
 }
 
@@ -27,9 +27,9 @@ export default function SobreNosotros() {
     },
     {
       icon: FaMapMarkerAlt,
-      title: 'Especialistas en la Cuenca de Columbia',
+      title: 'Toda la Cuenca de Columbia',
       description:
-        'Expertos de Desert Aire sirviendo toda la región. Conocemos los requisitos de la HOA, las condiciones del suelo y exactamente qué plantas prosperan aquí.',
+        'Base en Desert Aire, sirviendo desde Mattawa hasta Tri-Cities, Moses Lake y Othello. Conocemos los requisitos de HOA, el suelo y qué prospera en cada zona.',
     },
     {
       icon: FaUsers,
@@ -49,14 +49,14 @@ export default function SobreNosotros() {
     <>
       <StructuredData
         data={createBreadcrumbSchema([
-          { name: 'Inicio', url: 'https://martinezmowingandmore.com/es' },
+          { name: 'Inicio', url: 'https://martinez-mowing-website.vercel.app/es' },
           { name: 'Sobre Nosotros' },
         ])}
       />
       <Breadcrumbs items={breadcrumbItems} />
       <HeroSection
-        title="Construido en Reputación, Impulsado por Artesanía"
-        subtitle="Casi una década convirtiendo los patios traseros de la Cuenca de Columbia en retiros al aire libre que los propietarios están orgullosos de mostrar."
+        title="De Desert Aire Para Toda la Cuenca de Columbia"
+        subtitle="8+ años transformando propiedades en Desert Aire, Tri-Cities, Moses Lake y más — retiros al aire libre que los propietarios están orgullosos de mostrar."
         compact
         backgroundImage="/images/team-work.jpg"
       />
@@ -76,13 +76,13 @@ export default function SobreNosotros() {
                 />
               </div>
               <p className="text-xl text-gray-700 leading-relaxed mb-6">
-                Hola, soy Daniel Martinez, y he estado trabajando en jardinería en la Cuenca de Columbia por 8 años.
+                Hola, soy Daniel Martinez. Llevo 8 años trabajando en jardinería y construcción exterior por toda la Cuenca de Columbia — desde Desert Aire hasta Tri-Cities y Moses Lake.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                Comencé Martinez Mowing & More en 2021 porque vi a demasiados propietarios—especialmente aquí en Desert Aire—siendo estafados por contratistas que prometían demasiado, entregaban poco, o desaparecían a mitad de un trabajo.
+                Fundé Martinez Mowing & More en 2021 porque vi a demasiados propietarios siendo estafados por contratistas que prometían mucho y entregaban poco, o simplemente desaparecían a mitad de un trabajo. Lo vi en Desert Aire, en Pasco, en Othello — el mismo problema en todos lados.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                Quería construir algo diferente. Una compañía donde tu proyecto se hace bien, a tiempo, y con el tipo de atención al detalle que te emociona mostrar a tus vecinos.
+                Quería construir algo diferente. Una compañía donde tu proyecto se hace bien, a tiempo, y con la atención al detalle que te emociona mostrar a tus vecinos — sin importar en qué parte de la Cuenca de Columbia vivas.
               </p>
             </div>
           </div>
@@ -134,7 +134,7 @@ export default function SobreNosotros() {
                 />
               </div>
           <p className="text-xl text-gray-700 leading-relaxed mb-6">
-            Ya sea una cerca personalizada para enmarcar tu vista, un nuevo sistema de riego para mantener tu césped verde durante el verano, o mantenimiento mensual para que realmente puedas disfrutar tus fines de semana—tratamos tu propiedad como si fuera nuestra.
+            Ya sea una cerca en Kennewick, un sistema de riego en Desert Aire, césped nuevo en Pasco, o mantenimiento mensual en Moses Lake — tratamos cada propiedad como si fuera nuestra. Ese es nuestro estándar en toda la Cuenca de Columbia.
           </p>
           <p className="text-xl text-gray-700 leading-relaxed mb-2">
             Construyamos algo que amarás al llegar a casa.

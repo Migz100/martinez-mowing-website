@@ -5,9 +5,9 @@ import CTABanner from '@/components/CTABanner'
 import Breadcrumbs from '@/components/Breadcrumbs'
 
 export const metadata: Metadata = {
-  title: 'Galería de Proyectos - Martinez Mowing & More',
-  description: 'Mira nuestros proyectos completados de jardinería, cercas y construcción en Desert Aire y Mattawa, WA.',
-  alternates: { canonical: 'https://martinezmowingandmore.com/es/galeria' },
+  title: 'Galería de Proyectos - Jardinería y Cercas Cuenca de Columbia WA',
+  description: 'Proyectos completados de jardinería, cercas y construcción exterior en Desert Aire, Tri-Cities, Moses Lake y toda la Cuenca de Columbia, WA.',
+  alternates: { canonical: 'https://martinez-mowing-website.vercel.app/es/galeria' },
 }
 
 export default function GaleriaES() {
@@ -27,7 +27,7 @@ export default function GaleriaES() {
       <Breadcrumbs items={breadcrumbItems} />
       <HeroSection
         title="Nuestro Trabajo Habla Por Sí Mismo"
-        subtitle="Mira las transformaciones que hemos creado para propietarios de Desert Aire y Mattawa."
+        subtitle="Transformaciones reales para propietarios en Desert Aire, Tri-Cities, Moses Lake y toda la Cuenca de Columbia."
         compact
       />
 
@@ -38,7 +38,7 @@ export default function GaleriaES() {
               Proyectos Recientes
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Cada proyecto es una oportunidad para superar expectativas. Aquí hay algunos de nuestros trabajos recientes en la comunidad.
+              Cada proyecto es una oportunidad para superar expectativas. Aquí tienes algunos trabajos recientes desde Desert Aire hasta Pasco y Moses Lake.
             </p>
           </div>
 
@@ -65,7 +65,7 @@ export default function GaleriaES() {
 
       <CTABanner
         title="¿Listo para Tu Propia Transformación?"
-        subtitle="Creemos algo hermoso para tu propiedad. Cotizaciones gratuitas, sin presión."
+        subtitle="Ya sea en Desert Aire, Kennewick o Moses Lake — creemos algo increíble para tu propiedad. Cotizaciones gratuitas, sin presión."
         ctaText="Solicita Tu Cotización Gratis"
         ctaLink="/es/contacto"
       />

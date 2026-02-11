@@ -8,9 +8,9 @@ import FAQAccordion from '@/components/FAQAccordion'
 import Breadcrumbs from '@/components/Breadcrumbs'
 
 export const metadata: Metadata = {
-  title: 'Sistemas de Irrigación y Drenaje Desert Aire | Martinez Mowing',
-  description: 'Instalación profesional de sistemas de riego y soluciones de drenaje en Desert Aire y Mattawa, WA.',
-  alternates: { canonical: 'https://martinezmowingandmore.com/es/servicios/irrigacion' },
+  title: 'Irrigación y Drenaje - Desert Aire, Tri-Cities, Moses Lake WA | Martinez Mowing',
+  description: 'Sistemas de riego y drenaje profesionales en la Cuenca de Columbia. Servimos Desert Aire, Pasco, Kennewick, Richland, Moses Lake y Othello. Cotización gratis.',
+  alternates: { canonical: 'https://martinez-mowing-website.vercel.app/es/servicios/irrigacion' },
 }
 
 export default function IrrigacionES() {
@@ -22,7 +22,7 @@ export default function IrrigacionES() {
   const faqs = [
     {
       question: '¿Qué tipo de sistema de riego recomiendan?',
-      answer: 'Para el clima de Desert Aire, típicamente recomendamos sistemas de rociadores automáticos con zonas separadas para céspedes, jardines y camas de plantas para máxima eficiencia.',
+      answer: 'Para el clima seco de la Cuenca de Columbia, recomendamos sistemas de rociadores automáticos con zonas separadas para céspedes, jardines y camas de plantas. Las necesidades varían entre Desert Aire, Tri-Cities y Moses Lake — diseñamos según tu zona específica.',
     },
     {
       question: '¿Pueden reparar mi sistema existente?',
@@ -43,8 +43,8 @@ export default function IrrigacionES() {
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <HeroSection
-        title="Sistemas de Riego Inteligentes Que Mantienen Todo Verde"
-        subtitle="Ahorra agua, ahorra tiempo y mantén tu paisaje exuberante durante todo el verano con un sistema de riego diseñado para el clima de Desert Aire."
+        title="Riego Inteligente Para los Veranos de la Cuenca de Columbia"
+        subtitle="Ahorra agua, ahorra tiempo y mantén tu paisaje verde todo el verano — con un sistema diseñado para las condiciones de Desert Aire, Tri-Cities y toda la región."
         compact
         backgroundImage="/images/irrigation.jpg"
       />
@@ -57,7 +57,7 @@ export default function IrrigacionES() {
                 Riega Inteligentemente, No Más
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                Un sistema de riego adecuado paga por sí mismo en agua ahorrada, tiempo ahorrado y un césped que se ve verde todo el verano sin que tengas que mover un aspersor manualmente.
+                Un sistema de riego adecuado se paga solo en agua ahorrada, tiempo ahorrado y un césped que se ve verde todo el verano. Ya sea en Desert Aire, Pasco o Moses Lake — no más mover aspersores manualmente.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 Diseñamos sistemas personalizados con zonas separadas para diferentes áreas de tu propiedad, controladores inteligentes que ajustan automáticamente según el clima, y componentes de calidad que duran años.
@@ -101,7 +101,7 @@ export default function IrrigacionES() {
 
       <CTABanner
         title="Deja de Desperdiciar Agua en Riego Ineficiente"
-        subtitle="Un sistema adecuado ahorra dinero cada mes y mantiene tu paisaje perfecto. Hablemos sobre tu propiedad."
+        subtitle="Un sistema adecuado ahorra dinero cada mes y mantiene tu paisaje perfecto. Servimos toda la Cuenca de Columbia — hablemos sobre tu propiedad."
         ctaText="Solicita Tu Cotización Gratis"
         ctaLink="/es/contacto"
       />

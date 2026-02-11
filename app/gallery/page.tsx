@@ -8,33 +8,34 @@ import StructuredData, { createBreadcrumbSchema } from '@/components/StructuredD
 import Breadcrumbs from '@/components/Breadcrumbs'
 
 export const metadata: Metadata = {
-  title: 'Our Work - Landscaping Projects Desert Aire | Martinez Mowing & More',
+  title: 'Our Work - Landscaping & Fencing Projects Columbia Basin WA',
   description:
-    'View our portfolio of completed landscaping, fencing, and outdoor structure projects in Desert Aire & Mattawa, WA. Licensed GC #MARTIMM744B1. See what we can do for you.',
+    'View our portfolio of completed landscaping, fencing, and outdoor projects across the Columbia Basin — Desert Aire, Tri-Cities, Moses Lake & Mattawa. Licensed GC #MARTIMM744B1.',
   keywords: [
-    'landscaping portfolio Desert Aire',
+    'landscaping portfolio Columbia Basin',
     'fence projects Mattawa WA',
-    'outdoor projects Columbia Basin',
+    'outdoor projects Tri-Cities',
     'landscaping photos Desert Aire',
-    'contractor gallery',
+    'contractor gallery Moses Lake',
+    'Pasco landscaping projects',
   ],
   openGraph: {
     title: 'Our Work - Landscaping Projects | Martinez Mowing & More LLC',
     description:
-      'View our portfolio of completed landscaping, fencing, and outdoor projects in Desert Aire & Mattawa.',
-    url: 'https://martinezmowingandmore.com/gallery',
+      'View our portfolio of completed landscaping, fencing, and outdoor projects across the Columbia Basin.',
+    url: 'https://martinez-mowing-website.vercel.app/gallery',
     siteName: 'Martinez Mowing & More LLC',
     type: 'website',
     locale: 'en_US',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Our Work - Landscaping Projects Desert Aire',
+    title: 'Our Work - Landscaping Projects Columbia Basin WA',
     description:
-      'View our portfolio of completed projects in Desert Aire & Mattawa. Licensed GC.',
+      'View our portfolio of completed projects across the Columbia Basin. Licensed GC.',
   },
   alternates: {
-    canonical: 'https://martinezmowingandmore.com/gallery',
+    canonical: 'https://martinez-mowing-website.vercel.app/gallery',
   },
 }
 
@@ -61,14 +62,14 @@ export default function Gallery() {
     <>
       <StructuredData
         data={createBreadcrumbSchema([
-          { name: 'Home', url: 'https://martinezmowingandmore.com' },
+          { name: 'Home', url: 'https://martinez-mowing-website.vercel.app' },
           { name: 'Gallery' },
         ])}
       />
       <Breadcrumbs items={breadcrumbItems} />
       <HeroSection
         title="Our Work Speaks for Itself"
-        subtitle="See the quality and craftsmanship that makes Desert Aire homeowners trust us with their outdoor spaces."
+        subtitle="See the quality and craftsmanship that homeowners trust across the Columbia Basin — from Desert Aire to Tri-Cities."
         compact
       />
 
@@ -118,7 +119,7 @@ export default function Gallery() {
           </h2>
           <p className="text-lg text-gray-700 mb-8">
             Follow us on Instagram for real-time project updates, before &
-            after transformations, and landscaping tips for Desert Aire living.
+            after transformations, and landscaping tips for Columbia Basin living.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a

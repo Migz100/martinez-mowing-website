@@ -13,34 +13,35 @@ import StructuredData, {
 import Breadcrumbs from '@/components/Breadcrumbs'
 
 export const metadata: Metadata = {
-  title: 'Custom Fence Installation Desert Aire & Mattawa WA',
+  title: 'Custom Fence Installation Columbia Basin WA | Desert Aire, Tri-Cities, Moses Lake',
   description:
-    'Professional fence installation in Desert Aire & Mattawa. Cedar, vinyl & composite. HOA-compliant. Licensed GC #MARTIMM744B1. Free quotes. (509) 932-1924.',
+    'Professional fence installation across the Columbia Basin — Desert Aire, Pasco, Kennewick, Moses Lake. Cedar, vinyl & composite. HOA-compliant. Licensed GC #MARTIMM744B1. (509) 932-1924.',
   keywords: [
-    'fence installation Desert Aire',
+    'fence installation Columbia Basin',
     'fence contractor Mattawa WA',
-    'custom fences Columbia Basin',
+    'custom fences Tri-Cities',
     'HOA fence Desert Aire',
-    'vinyl fence installer near me',
-    'cedar fence contractor',
+    'vinyl fence installer Pasco',
+    'cedar fence contractor Kennewick',
+    'fence installation Moses Lake',
   ],
   openGraph: {
-    title: 'Custom Fence Installation | Martinez Mowing & More LLC',
+    title: 'Custom Fence Installation Columbia Basin | Martinez Mowing & More LLC',
     description:
-      'Professional fence installation for Desert Aire & Mattawa homeowners. Cedar, vinyl & composite. Licensed GC. Free estimates.',
-    url: 'https://martinezmowingandmore.com/services/fences',
+      'Professional fence installation for Columbia Basin homeowners — Desert Aire, Tri-Cities, Moses Lake. Cedar, vinyl & composite. Licensed GC.',
+    url: 'https://martinez-mowing-website.vercel.app/services/fences',
     siteName: 'Martinez Mowing & More LLC',
     type: 'website',
     locale: 'en_US',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Custom Fence Installation Desert Aire | Martinez Mowing & More',
+    title: 'Custom Fence Installation | Columbia Basin WA',
     description:
-      'Professional fence installation. Cedar, vinyl & composite. Licensed GC. Free quotes.',
+      'Professional fence installation — Desert Aire to Tri-Cities. Cedar, vinyl & composite. Licensed GC.',
   },
   alternates: {
-    canonical: 'https://martinezmowingandmore.com/services/fences',
+    canonical: 'https://martinez-mowing-website.vercel.app/services/fences',
   },
 }
 
@@ -52,14 +53,14 @@ export default function Fences() {
 
   const faqs = [
     {
-      question: 'What fence materials do you recommend for Desert Aire?',
+      question: 'What fence materials do you recommend for the Columbia Basin?',
       answer:
-        'For Desert Aire\'s wind and sun exposure, we typically recommend composite or vinyl for durability with minimal maintenance, or cedar for a natural look. We\'ll assess your specific needs during the free estimate.',
+        'For the wind and sun exposure we get here, we typically recommend composite or vinyl for durability with minimal maintenance, or cedar for a natural look. Material choice depends on your property, whether you\'re in Desert Aire, Kennewick, or Moses Lake — we\'ll assess during your free estimate.',
     },
     {
       question: 'Do you handle HOA approval?',
       answer:
-        'Yes. We know Desert Aire\'s HOA fence requirements and can help you navigate the approval process to ensure your fence meets community standards.',
+        'Yes. We know Desert Aire\'s HOA fence requirements inside and out, and we work with HOA boards across the Columbia Basin. We handle the approval process so your fence meets all community standards.',
     },
     {
       question: 'How long will my fence last?',
@@ -88,12 +89,12 @@ export default function Fences() {
         data={[
           createServiceSchema(
             'Custom Fence Installation',
-            'Professional wood, vinyl, and composite fencing designed for Desert Aire wind, sun, and HOA standards. Average $8,000, completed in 3-5 days.',
+            'Professional wood, vinyl, and composite fencing built for Columbia Basin wind and sun. Serving Desert Aire, Tri-Cities, and Moses Lake. Average $8,000, completed in 3-5 days.',
             'fencing'
           ),
           createBreadcrumbSchema([
-            { name: 'Home', url: 'https://martinezmowingandmore.com' },
-            { name: 'Services', url: 'https://martinezmowingandmore.com/services' },
+            { name: 'Home', url: 'https://martinez-mowing-website.vercel.app' },
+            { name: 'Services', url: 'https://martinez-mowing-website.vercel.app/services' },
             { name: 'Fences' },
           ]),
           createFAQSchema(faqs),
@@ -101,8 +102,8 @@ export default function Fences() {
       />
       <Breadcrumbs items={breadcrumbItems} />
       <HeroSection
-        title="Custom Fences That Frame Your Desert Aire Property Perfectly"
-        subtitle="Your fence is more than a boundary—it's the first thing guests notice, the backdrop to every backyard gathering, and the foundation of your outdoor privacy."
+        title="Custom Fences Built for Columbia Basin Properties"
+        subtitle="From Kennewick backyards to Desert Aire HOA communities — your fence is more than a boundary. It's privacy, security, and the backdrop to every gathering."
         compact
         backgroundImage="/images/hero-fence.jpg"
       />
@@ -112,14 +113,14 @@ export default function Fences() {
           <div className="grid md:grid-cols-2 gap-12">
             <div>
               <h2 className="text-3xl font-bold text-charcoal mb-6">
-                Built for Desert Aire
+                Built for Columbia Basin Conditions
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                Your fence is more than a boundary—it's the first thing guests
-                notice, the backdrop to every backyard gathering, and the
-                foundation of your outdoor privacy. We specialize in custom wood,
-                vinyl, and composite fencing designed specifically for Desert
-                Aire's wind, sun, and HOA standards.
+                We specialize in custom wood, vinyl, and composite fencing
+                engineered for Columbia Basin conditions — the wind, the intense
+                sun, and the soil. Whether you're in Desert Aire with HOA
+                requirements or a Pasco homeowner who wants privacy, we build
+                fences that hold up for decades.
               </p>
 
               <div className="bg-accent/10 border-l-4 border-accent p-6 rounded-lg mb-6">

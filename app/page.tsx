@@ -33,7 +33,7 @@ export default function Home() {
     {
       question: 'What areas do you serve?',
       answer:
-        'We primarily serve Desert Aire and Mattawa, with regular service throughout the Columbia Basin including Tri-Cities (Pasco, Kennewick, Richland), Moses Lake, and Othello. We know this climate, soil, and HOA requirements better than anyone.',
+        'We serve the entire Columbia Basin — Tri-Cities (Pasco, Kennewick, Richland), Moses Lake, Othello, Desert Aire, and Mattawa. Based in Mattawa, we know the climate, soil, and local requirements across every community we work in.',
     },
     {
       question: 'How long do projects typically take?',
@@ -43,7 +43,7 @@ export default function Home() {
     {
       question: 'Do you handle HOA approvals?',
       answer:
-        'Absolutely. We know Desert Aire\'s HOA requirements inside and out. We can help you navigate the approval process and ensure your project meets all community standards.',
+        'Absolutely. We work with HOA boards and community standards across the Columbia Basin — Desert Aire, Tri-Cities, and beyond. We know the requirements and handle the approval process so you don\'t have to stress about it.',
     },
     {
       question: 'What happens after I submit a quote request?',
@@ -61,7 +61,7 @@ export default function Home() {
     {
       title: 'Fences',
       description:
-        'Custom wood, vinyl, and composite fencing designed for Desert Aire\'s wind, sun, and HOA standards.',
+        'Custom wood, vinyl, and composite fencing built for Columbia Basin wind, sun, and HOA standards.',
       icon: HiOutlineViewGrid,
       href: '/services/fences',
       price: 'Starting at $8,000',
@@ -104,7 +104,7 @@ export default function Home() {
     {
       title: 'Irrigation & Drainage',
       description:
-        'Smart irrigation systems that save water and keep everything green through Desert Aire summers.',
+        'Smart irrigation systems that save water and keep everything green through Columbia Basin summers.',
       icon: HiOutlineBeaker,
       href: '/services/irrigation',
       image: '/images/irrigation.jpg',
@@ -118,8 +118,8 @@ export default function Home() {
 
       {/* Hero Section */}
       <HeroSection
-        title="The Contractor Your Desert Aire Neighbors Already Trust"
-        subtitle="Premium fences, professional landscaping, and worry-free maintenance. Desert Aire specialists serving the entire Columbia Basin — we know the HOA standards, the soil, and exactly what thrives here."
+        title="The Columbia Basin's Most Trusted Outdoor Contractor"
+        subtitle="Premium fences, professional landscaping, and worry-free maintenance across the Columbia Basin. From Tri-Cities to Moses Lake, Desert Aire to Othello — we know the soil, the climate, and exactly what thrives here."
         backgroundImage="/images/hero-landscaping.jpg"
         secondaryCta={
           <a
@@ -143,8 +143,8 @@ export default function Home() {
               Our Services
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              From custom fences to complete landscape transformations, we bring
-              8+ years of expertise to every Desert Aire project.
+              From custom fences to complete landscape transformations — 8+ years
+              of Columbia Basin expertise on every project.
             </p>
           </div>
 
@@ -177,11 +177,12 @@ export default function Home() {
                 Built on Reputation, Driven by Craftsmanship
               </h2>
               <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-                Hi, I'm Daniel Martinez, and I've been working in landscaping across
-                the Columbia Basin for 8 years. I started Martinez Mowing &
-                More in 2021 because I saw too many homeowners—especially here in
-                Desert Aire—getting burned by contractors who overpromised,
-                underdelivered, or disappeared halfway through a job.
+                Hi, I'm Daniel Martinez. I've spent 8 years building, landscaping,
+                and maintaining properties across the Columbia Basin — from Desert Aire
+                to Pasco, Kennewick to Moses Lake. I started Martinez Mowing &
+                More in 2021 because too many homeowners in this region were getting
+                burned by contractors who overpromised, underdelivered, or disappeared
+                halfway through a job.
               </p>
               <p className="text-lg text-gray-700 mb-8 leading-relaxed">
                 I wanted to build something different. A company where your
@@ -208,7 +209,7 @@ export default function Home() {
       {/* CTA Banner */}
       <CTABanner
         title="Stop Losing Property Value to Neglected Landscaping"
-        subtitle="Every day without proper maintenance costs you money. Every season that passes without improvements is a missed opportunity. Let's transform your outdoor space before another Desert Aire summer passes you by."
+        subtitle="Every day without proper maintenance costs you money. Every season that passes without improvements is a missed opportunity. Whether you're in Desert Aire, Pasco, or Moses Lake — let's transform your outdoor space before another Columbia Basin summer passes you by."
       />
     </>
   )

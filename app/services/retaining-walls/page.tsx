@@ -10,33 +10,35 @@ import StructuredData, {
 import Breadcrumbs from '@/components/Breadcrumbs'
 
 export const metadata: Metadata = {
-  title: 'Retaining Wall Contractor Desert Aire & Mattawa WA',
+  title: 'Retaining Wall Contractor Columbia Basin WA | Desert Aire, Tri-Cities, Moses Lake',
   description:
-    'Professional retaining wall construction Desert Aire & Mattawa. Erosion control, sloped yards. Allan Block, natural stone, timber. Licensed GC #MARTIMM744B1. Free quotes.',
+    'Professional retaining wall construction across the Columbia Basin — Desert Aire, Pasco, Kennewick, Moses Lake. Erosion control, sloped yards. Allan Block, natural stone, timber. Licensed GC #MARTIMM744B1.',
   keywords: [
-    'retaining wall contractor Desert Aire',
+    'retaining wall contractor Columbia Basin',
     'retaining wall installation Mattawa WA',
-    'erosion control Columbia Basin',
-    'Allan Block walls',
-    'landscape wall contractor',
+    'erosion control Tri-Cities',
+    'Allan Block walls Pasco',
+    'landscape wall contractor Desert Aire',
+    'retaining wall Moses Lake',
+    'Kennewick retaining walls',
   ],
   openGraph: {
     title: 'Retaining Wall Construction | Martinez Mowing & More LLC',
     description:
-      'Professional retaining wall construction for sloped yards and erosion control. Licensed GC. Free estimates.',
-    url: 'https://martinezmowingandmore.com/services/retaining-walls',
+      'Professional retaining wall construction across the Columbia Basin. Sloped yards, erosion control. Licensed GC. Free estimates.',
+    url: 'https://martinez-mowing-website.vercel.app/services/retaining-walls',
     siteName: 'Martinez Mowing & More LLC',
     type: 'website',
     locale: 'en_US',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Retaining Wall Contractor Desert Aire & Mattawa WA',
+    title: 'Retaining Wall Contractor Columbia Basin WA',
     description:
-      'Professional retaining walls for erosion control. Allan Block, stone, timber. Licensed GC.',
+      'Professional retaining walls — Desert Aire to Tri-Cities. Allan Block, stone, timber. Licensed GC.',
   },
   alternates: {
-    canonical: 'https://martinezmowingandmore.com/services/retaining-walls',
+    canonical: 'https://martinez-mowing-website.vercel.app/services/retaining-walls',
   },
 }
 
@@ -64,8 +66,8 @@ export default function RetainingWalls() {
             'construction'
           ),
           createBreadcrumbSchema([
-            { name: 'Home', url: 'https://martinezmowingandmore.com' },
-            { name: 'Services', url: 'https://martinezmowingandmore.com/services' },
+            { name: 'Home', url: 'https://martinez-mowing-website.vercel.app' },
+            { name: 'Services', url: 'https://martinez-mowing-website.vercel.app/services' },
             { name: 'Retaining Walls' },
           ]),
         ]}
@@ -92,8 +94,8 @@ export default function RetainingWalls() {
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 Whether you need a simple timber wall to create planting beds or
                 an engineered block system to stabilize a steep grade, we handle
-                the engineering, permits, and construction so you get a wall
-                that's built to last.
+                the engineering, permits, and construction. From Desert Aire
+                hillsides to Richland properties — we build walls that last.
               </p>
 
               <div className="bg-primary/5 border-l-4 border-primary p-6 rounded-lg">

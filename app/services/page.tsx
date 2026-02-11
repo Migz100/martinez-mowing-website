@@ -21,7 +21,7 @@ export default function Services() {
     {
       title: 'Fences',
       description:
-        'Custom wood, vinyl, and composite fencing designed specifically for Desert Aire\'s wind, sun, and HOA standards. Average investment: $8,000.',
+        'Custom wood, vinyl, and composite fencing built for Columbia Basin conditions — wind, sun, and HOA standards. Average investment: $8,000.',
       icon: HiOutlineViewGrid,
       href: '/services/fences',
       price: 'Avg. $8,000 | 3-5 days',
@@ -75,7 +75,7 @@ export default function Services() {
     <>
       <StructuredData
         data={createBreadcrumbSchema([
-          { name: 'Home', url: 'https://martinezmowingandmore.com' },
+          { name: 'Home', url: 'https://martinez-mowing-website.vercel.app' },
           { name: 'Services' },
         ])}
       />

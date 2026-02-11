@@ -17,7 +17,7 @@ export default function SocialProofBanner() {
             <FaCheckCircle className="text-3xl text-primary flex-shrink-0" />
             <div>
               <p className="text-2xl font-bold text-primary">
-                <StatCounter end={20} suffix="+" />
+                <StatCounter end={8} suffix="+" />
               </p>
               <p className="text-sm text-gray-600">
                 {isSpanish ? 'Años de Experiencia' : 'Years Experience'}
@@ -31,8 +31,8 @@ export default function SocialProofBanner() {
             <div>
               <p className="text-lg font-bold text-charcoal">
                 {isSpanish
-                  ? 'Confianza de los Propietarios de Desert Aire'
-                  : 'Trusted by Desert Aire Homeowners'}
+                  ? 'Confianza en Toda la Cuenca de Columbia'
+                  : 'Trusted Across the Columbia Basin'}
               </p>
               <p className="text-sm text-gray-600">
                 {isSpanish ? 'Desde 2021' : 'Since 2021'}

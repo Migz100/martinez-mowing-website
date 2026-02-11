@@ -8,9 +8,9 @@ import FAQAccordion from '@/components/FAQAccordion'
 import Breadcrumbs from '@/components/Breadcrumbs'
 
 export const metadata: Metadata = {
-  title: 'Terrazas, Pérgolas y Estructuras Exteriores | Martinez Mowing',
-  description: 'Construcción personalizada de terrazas, pérgolas y estructuras exteriores en Desert Aire y Mattawa, WA.',
-  alternates: { canonical: 'https://martinezmowingandmore.com/es/servicios/estructuras-exteriores' },
+  title: 'Terrazas, Pérgolas y Estructuras - Desert Aire, Tri-Cities, Moses Lake WA | Martinez Mowing',
+  description: 'Terrazas, pérgolas y estructuras exteriores en la Cuenca de Columbia. Servimos Desert Aire, Pasco, Kennewick, Richland, Moses Lake y Othello. GC Licenciado. Cotización gratis.',
+  alternates: { canonical: 'https://martinez-mowing-website.vercel.app/es/servicios/estructuras-exteriores' },
 }
 
 export default function EstructurasExterioresES() {
@@ -22,11 +22,11 @@ export default function EstructurasExterioresES() {
   const faqs = [
     {
       question: '¿Qué materiales recomiendan?',
-      answer: 'Para el clima de Desert Aire, típicamente recomendamos madera tratada a presión, cedro o materiales compuestos para durabilidad con mínimo mantenimiento.',
+      answer: 'Para el clima de la Cuenca de Columbia, típicamente recomendamos madera tratada a presión, cedro o materiales compuestos para durabilidad con mínimo mantenimiento. Las condiciones específicas de tu zona (Desert Aire, Tri-Cities, Moses Lake) influyen en la recomendación.',
     },
     {
       question: '¿Necesito aprobación de la HOA?',
-      answer: 'Sí. Conocemos los requisitos de Desert Aire y te ayudamos con el proceso de aprobación.',
+      answer: 'Depende de tu comunidad. Conocemos los requisitos de HOA de Desert Aire y también trabajamos con regulaciones en Pasco, Kennewick y otras áreas. Te guiamos en todo el proceso.',
     },
   ]
 
@@ -43,8 +43,8 @@ export default function EstructurasExterioresES() {
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <HeroSection
-        title="Estructuras Exteriores Personalizadas Que Extienden Tu Espacio de Vida"
-        subtitle="Terrazas donde entretienes, pérgolas que brindan sombra, cocinas al aire libre que te hacen querer estar afuera—construimos los espacios donde la vida sucede."
+        title="Estructuras Exteriores Que Extienden Tu Espacio de Vida"
+        subtitle="Terrazas donde entretienes, pérgolas que dan sombra, cocinas al aire libre — construimos los espacios donde la vida sucede. De Desert Aire a Tri-Cities y toda la Cuenca de Columbia."
         compact
         backgroundImage="/images/outdoor-structures.jpg"
       />
@@ -57,7 +57,7 @@ export default function EstructurasExterioresES() {
                 Más Que Solo Construcción
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                Tu patio trasero debería ser tu lugar favorito en casa. Construimos terrazas personalizadas, pérgolas, gazebos, cocinas al aire libre y más para convertir tu espacio exterior en un verdadero retiro.
+                Tu patio trasero debería ser tu lugar favorito en casa. Construimos terrazas, pérgolas, gazebos, cocinas al aire libre y más — para convertir tu espacio exterior en un verdadero retiro. Ya sea en Desert Aire, Pasco, Kennewick o Moses Lake, diseñamos para las condiciones locales.
               </p>
 
               <div className="bg-accent/10 border-l-4 border-accent p-6 rounded-lg mb-6">
@@ -98,7 +98,7 @@ export default function EstructurasExterioresES() {
 
       <CTABanner
         title="Deja de Soñar Con Tu Oasis en el Patio Trasero"
-        subtitle="Construyamos el espacio al aire libre que has estado planeando. Comencemos con una consulta gratuita."
+        subtitle="Ya sea en Desert Aire, Richland o Othello — construyamos el espacio al aire libre que has estado planeando. Consulta gratuita en toda la Cuenca de Columbia."
         ctaText="Solicita Tu Cotización Gratis"
         ctaLink="/es/contacto"
       />

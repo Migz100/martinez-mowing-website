@@ -18,7 +18,7 @@ export default function ServiciosES() {
     {
       title: 'Cercas',
       description:
-        'Cercas personalizadas de madera, vinilo y compuesto diseñadas para los estándares de viento, sol y HOA de Desert Aire.',
+        'Cercas personalizadas de madera, vinilo y compuesto — construidas para el viento, el sol y los estándares de HOA de la Cuenca de Columbia.',
       icon: HiOutlineViewGrid,
       href: '/es/servicios/cercas',
       image: '/images/fences.jpg',
@@ -27,7 +27,7 @@ export default function ServiciosES() {
     {
       title: 'Plantas y Césped',
       description:
-        'Paisajes verdes y exuberantes que prosperan en el clima de la Cuenca de Columbia con resultados de calidad resort.',
+        'Paisajes verdes y exuberantes que prosperan en el clima de la Cuenca de Columbia. Desde patios en Pasco hasta jardines en Desert Aire.',
       icon: HiOutlineColorSwatch,
       href: '/es/servicios/plantas-cesped',
       image: '/images/plants-sod.jpg',
@@ -36,7 +36,7 @@ export default function ServiciosES() {
     {
       title: 'Mantenimiento de Propiedad',
       description:
-        'Mantenimiento durante todo el año para que puedas disfrutar de tu propiedad sin pasar los fines de semana trabajando en el jardín.',
+        'Mantenimiento todo el año para que disfrutes tu propiedad sin perder los fines de semana en el jardín.',
       icon: HiOutlineCog,
       href: '/es/servicios/mantenimiento',
       image: '/images/maintenance.jpg',
@@ -45,7 +45,7 @@ export default function ServiciosES() {
     {
       title: 'Muros de Retención',
       description:
-        'Soluciones estructurales que resuelven problemas de erosión mientras agregan belleza y valor a tu paisaje.',
+        'Soluciones estructurales que resuelven erosión y agregan belleza a tu paisaje — en cualquier terreno de la Cuenca de Columbia.',
       icon: HiOutlineCube,
       href: '/es/servicios/muros-retencion',
       image: '/images/retaining-walls.jpg',
@@ -53,7 +53,7 @@ export default function ServiciosES() {
     {
       title: 'Terrazas/Pérgolas/Estructuras',
       description:
-        'Estructuras al aire libre personalizadas que extienden tu espacio de vida y hacen de tu patio trasero un destino.',
+        'Estructuras al aire libre que extienden tu espacio de vida. Tu patio trasero se convierte en tu lugar favorito.',
       icon: HiOutlineHome,
       href: '/es/servicios/estructuras-exteriores',
       image: '/images/outdoor-structures.jpg',
@@ -61,7 +61,7 @@ export default function ServiciosES() {
     {
       title: 'Irrigación y Drenaje',
       description:
-        'Sistemas de riego inteligentes que ahorran agua y mantienen todo verde durante los veranos de Desert Aire.',
+        'Sistemas de riego inteligentes que ahorran agua y mantienen todo verde durante los veranos secos de la Cuenca de Columbia.',
       icon: HiOutlineBeaker,
       href: '/es/servicios/irrigacion',
       image: '/images/irrigation.jpg',
@@ -71,8 +71,8 @@ export default function ServiciosES() {
   return (
     <>
       <HeroSection
-        title="Servicios Completos de Jardinería y Construcción"
-        subtitle="Desde cercas personalizadas hasta transformaciones completas de paisajismo. 8+ años de experiencia en cada proyecto de la Cuenca de Columbia."
+        title="Servicios de Jardinería y Construcción en la Cuenca de Columbia"
+        subtitle="Desde cercas en Kennewick hasta jardines completos en Desert Aire — 8+ años de experiencia y servicio bilingüe en toda la región."
         ctaText="Solicita Tu Cotización Gratis"
         ctaLink="/es/contacto"
         compact
@@ -86,7 +86,7 @@ export default function ServiciosES() {
               Nuestros Servicios
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Martinez Mowing & More es tu contratista general de servicio completo para todo lo relacionado con el aire libre. Licenciado, asegurado y respaldado por 8+ años de experiencia en la Cuenca de Columbia.
+              Martinez Mowing & More es tu contratista general de servicio completo para todo lo exterior. Licenciado, asegurado y respaldado por 8+ años de experiencia — de Desert Aire a Tri-Cities, Moses Lake y Othello.
             </p>
           </div>
 
@@ -109,8 +109,8 @@ export default function ServiciosES() {
               <p className="text-gray-600">GC #MARTIMM744B1. Manejamos permisos, cumplimos códigos y respaldamos cada proyecto.</p>
             </div>
             <div className="bg-white p-6 rounded-xl shadow-md">
-              <h3 className="font-bold text-xl text-charcoal mb-3">Experiencia Local</h3>
-              <p className="text-gray-600">Conocemos los requisitos de HOA de Desert Aire, las condiciones del suelo y qué prospera aquí.</p>
+              <h3 className="font-bold text-xl text-charcoal mb-3">Experiencia Regional</h3>
+              <p className="text-gray-600">Conocemos la Cuenca de Columbia — requisitos de HOA en Desert Aire, condiciones de suelo en Tri-Cities, qué prospera en cada zona.</p>
             </div>
             <div className="bg-white p-6 rounded-xl shadow-md">
               <h3 className="font-bold text-xl text-charcoal mb-3">Servicio Bilingüe</h3>
@@ -126,7 +126,7 @@ export default function ServiciosES() {
 
       <CTABanner
         title="¿Listo para Empezar?"
-        subtitle="Cuéntanos sobre tu proyecto y te enviaremos una cotización detallada—generalmente dentro de 24 horas."
+        subtitle="Cuéntanos sobre tu proyecto y te enviamos una cotización detallada — generalmente dentro de 24 horas. Servimos toda la Cuenca de Columbia."
         ctaText="Solicita Tu Cotización Gratis"
         ctaLink="/es/contacto"
       />

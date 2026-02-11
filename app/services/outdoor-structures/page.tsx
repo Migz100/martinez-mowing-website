@@ -10,33 +10,35 @@ import StructuredData, {
 import Breadcrumbs from '@/components/Breadcrumbs'
 
 export const metadata: Metadata = {
-  title: 'Custom Decks & Pergolas Desert Aire WA',
+  title: 'Custom Decks & Pergolas Columbia Basin WA | Desert Aire, Tri-Cities, Moses Lake',
   description:
-    'Custom outdoor structures for Desert Aire & Mattawa: decks, pergolas, patio covers, gazebos. Cedar, composite, Trex. Licensed GC #MARTIMM744B1. Free quotes.',
+    'Custom outdoor structures across the Columbia Basin — Desert Aire, Pasco, Kennewick, Moses Lake. Decks, pergolas, patio covers, gazebos. Cedar, composite, Trex. Licensed GC #MARTIMM744B1.',
   keywords: [
-    'custom deck builder Desert Aire',
+    'custom deck builder Columbia Basin',
     'pergola installation Mattawa WA',
-    'patio cover contractor Columbia Basin',
-    'gazebo builder',
-    'outdoor structure contractor',
+    'patio cover contractor Tri-Cities',
+    'gazebo builder Pasco',
+    'outdoor structure contractor Desert Aire',
+    'deck builder Kennewick',
+    'pergola Moses Lake',
   ],
   openGraph: {
     title: 'Custom Decks & Outdoor Structures | Martinez Mowing & More LLC',
     description:
-      'Custom decks, pergolas, and outdoor structures that extend your living space. Licensed GC. Free estimates.',
-    url: 'https://martinezmowingandmore.com/services/outdoor-structures',
+      'Custom decks, pergolas, and outdoor structures across the Columbia Basin. Licensed GC. Free estimates.',
+    url: 'https://martinez-mowing-website.vercel.app/services/outdoor-structures',
     siteName: 'Martinez Mowing & More LLC',
     type: 'website',
     locale: 'en_US',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Custom Decks & Pergolas Desert Aire WA',
+    title: 'Custom Decks & Pergolas Columbia Basin WA',
     description:
-      'Custom outdoor structures: decks, pergolas, patio covers. Cedar, composite, Trex. Licensed GC.',
+      'Custom outdoor structures — Desert Aire to Tri-Cities. Decks, pergolas, patio covers. Licensed GC.',
   },
   alternates: {
-    canonical: 'https://martinezmowingandmore.com/services/outdoor-structures',
+    canonical: 'https://martinez-mowing-website.vercel.app/services/outdoor-structures',
   },
 }
 
@@ -63,8 +65,8 @@ export default function OutdoorStructures() {
             'construction'
           ),
           createBreadcrumbSchema([
-            { name: 'Home', url: 'https://martinezmowingandmore.com' },
-            { name: 'Services', url: 'https://martinezmowingandmore.com/services' },
+            { name: 'Home', url: 'https://martinez-mowing-website.vercel.app' },
+            { name: 'Services', url: 'https://martinez-mowing-website.vercel.app/services' },
             { name: 'Outdoor Structures' },
           ]),
         ]}
@@ -88,10 +90,10 @@ export default function OutdoorStructures() {
                 Your backyard should feel like a destination—not an afterthought.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                Whether it's a custom deck for entertaining, a pergola to frame
-                your outdoor dining area, or a gazebo to create shade by the
-                pool, we build outdoor structures that are as functional as they
-                are beautiful.
+                Whether it's a custom deck for entertaining in Pasco, a pergola
+                to frame your outdoor dining in Desert Aire, or a gazebo for
+                shade in Moses Lake — we build outdoor structures that are as
+                functional as they are beautiful.
               </p>
 
               <div className="bg-primary/5 border-l-4 border-primary p-6 rounded-lg">

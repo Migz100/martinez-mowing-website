@@ -23,20 +23,20 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Contact Us - Free Quote | Martinez Mowing & More LLC',
     description:
-      'Get a free quote for your Desert Aire or Mattawa landscaping project. Licensed GC. Fast response.',
-    url: 'https://martinezmowingandmore.com/contact',
+      'Get a free quote for your Columbia Basin landscaping project — Desert Aire, Tri-Cities, Moses Lake. Licensed GC. Fast response.',
+    url: 'https://martinez-mowing-website.vercel.app/contact',
     siteName: 'Martinez Mowing & More LLC',
     type: 'website',
     locale: 'en_US',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Free Quote - Landscaping & Fencing Desert Aire WA',
+    title: 'Free Quote - Landscaping & Fencing Columbia Basin WA',
     description:
-      'Get a free quote for your landscaping project. Licensed GC. Fast response. (509) 932-1924.',
+      'Get a free quote for your landscaping project — Desert Aire to Tri-Cities. Licensed GC. (509) 932-1924.',
   },
   alternates: {
-    canonical: 'https://martinezmowingandmore.com/contact',
+    canonical: 'https://martinez-mowing-website.vercel.app/contact',
   },
 }
 
@@ -47,7 +47,7 @@ export default function Contact() {
     <>
       <StructuredData
         data={createBreadcrumbSchema([
-          { name: 'Home', url: 'https://martinezmowingandmore.com' },
+          { name: 'Home', url: 'https://martinez-mowing-website.vercel.app' },
           { name: 'Contact' },
         ])}
       />

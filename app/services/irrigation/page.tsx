@@ -10,33 +10,35 @@ import StructuredData, {
 import Breadcrumbs from '@/components/Breadcrumbs'
 
 export const metadata: Metadata = {
-  title: 'Irrigation Installation & Repair Desert Aire WA',
+  title: 'Irrigation Installation & Repair Columbia Basin WA | Desert Aire, Tri-Cities, Moses Lake',
   description:
-    'Professional irrigation systems for Desert Aire & Mattawa. New installation, repairs, seasonal blowouts, French drains. Licensed GC #MARTIMM744B1. Free quotes.',
+    'Professional irrigation systems across the Columbia Basin — Desert Aire, Pasco, Kennewick, Moses Lake. New installation, repairs, seasonal blowouts, French drains. Licensed GC #MARTIMM744B1.',
   keywords: [
-    'irrigation installation Desert Aire',
+    'irrigation installation Columbia Basin',
     'irrigation repair Mattawa WA',
-    'sprinkler system Columbia Basin',
-    'French drain installation',
-    'drainage solutions',
+    'sprinkler system Tri-Cities',
+    'French drain installation Pasco',
+    'drainage solutions Desert Aire',
+    'irrigation Moses Lake',
+    'sprinkler repair Kennewick',
   ],
   openGraph: {
     title: 'Irrigation Installation & Repair | Martinez Mowing & More LLC',
     description:
-      'Smart irrigation systems, repairs, seasonal blowouts, and drainage solutions for Desert Aire properties.',
-    url: 'https://martinezmowingandmore.com/services/irrigation',
+      'Smart irrigation systems, repairs, seasonal blowouts, and drainage solutions across the Columbia Basin — Desert Aire to Tri-Cities.',
+    url: 'https://martinez-mowing-website.vercel.app/services/irrigation',
     siteName: 'Martinez Mowing & More LLC',
     type: 'website',
     locale: 'en_US',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Irrigation Installation & Repair Desert Aire WA',
+    title: 'Irrigation Installation & Repair Columbia Basin WA',
     description:
-      'Smart irrigation systems, repairs, French drains, drainage solutions. Licensed GC.',
+      'Smart irrigation systems, repairs, French drains — Desert Aire to Tri-Cities. Licensed GC.',
   },
   alternates: {
-    canonical: 'https://martinezmowingandmore.com/services/irrigation',
+    canonical: 'https://martinez-mowing-website.vercel.app/services/irrigation',
   },
 }
 
@@ -60,12 +62,12 @@ export default function Irrigation() {
         data={[
           createServiceSchema(
             'Irrigation & Drainage Solutions',
-            'Smart irrigation systems, repairs, seasonal blowouts, French drains, and drainage solutions for Desert Aire properties.',
+            'Smart irrigation systems, repairs, seasonal blowouts, French drains, and drainage solutions across the Columbia Basin — Desert Aire, Tri-Cities, Moses Lake.',
             'irrigation'
           ),
           createBreadcrumbSchema([
-            { name: 'Home', url: 'https://martinezmowingandmore.com' },
-            { name: 'Services', url: 'https://martinezmowingandmore.com/services' },
+            { name: 'Home', url: 'https://martinez-mowing-website.vercel.app' },
+            { name: 'Services', url: 'https://martinez-mowing-website.vercel.app/services' },
             { name: 'Irrigation' },
           ]),
         ]}
@@ -73,7 +75,7 @@ export default function Irrigation() {
       <Breadcrumbs items={breadcrumbItems} />
       <HeroSection
         title="Smart Irrigation That Saves Water and Keeps Everything Green"
-        subtitle="Desert Aire's climate means irrigation isn't optional—it's essential."
+        subtitle="In the Columbia Basin, irrigation isn't optional — it's essential. From Desert Aire to Tri-Cities, we keep properties green."
         compact
         backgroundImage="/images/irrigation.jpg"
       />
@@ -83,11 +85,12 @@ export default function Irrigation() {
           <div className="grid md:grid-cols-2 gap-12">
             <div>
               <h2 className="text-3xl font-bold text-charcoal mb-6">
-                Essential for Desert Aire Living
+                Essential for Columbia Basin Living
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                Desert Aire's climate means irrigation isn't optional—it's
-                essential.
+                In the Columbia Basin, irrigation isn't optional — it's
+                essential. The summers are hot, the wind is relentless, and
+                without the right system, your landscape won't survive.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 Whether you need a new system designed from scratch, repairs to

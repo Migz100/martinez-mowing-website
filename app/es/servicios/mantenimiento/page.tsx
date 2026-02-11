@@ -8,9 +8,9 @@ import FAQAccordion from '@/components/FAQAccordion'
 import Breadcrumbs from '@/components/Breadcrumbs'
 
 export const metadata: Metadata = {
-  title: 'Mantenimiento de Propiedad Desert Aire | Martinez Mowing',
-  description: 'Mantenimiento profesional de propiedad durante todo el año en Desert Aire y Mattawa. Corte de césped, recorte, fertilización y más.',
-  alternates: { canonical: 'https://martinezmowingandmore.com/es/servicios/mantenimiento' },
+  title: 'Mantenimiento de Propiedad - Desert Aire, Tri-Cities, Moses Lake WA | Martinez Mowing',
+  description: 'Mantenimiento profesional de propiedad todo el año en la Cuenca de Columbia. Servimos Desert Aire, Pasco, Kennewick, Moses Lake y Othello. Corte, recorte, fertilización y más.',
+  alternates: { canonical: 'https://martinez-mowing-website.vercel.app/es/servicios/mantenimiento' },
 }
 
 export default function MantenimientoES() {
@@ -47,8 +47,8 @@ export default function MantenimientoES() {
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <HeroSection
-        title="Mantenimiento Sin Preocupaciones Para Que Disfrutes Tu Propiedad"
-        subtitle="Deja de pasar los fines de semana cortando, recortando y arrastrándote por el calor. Nosotros nos encargamos."
+        title="Mantenimiento Sin Preocupaciones en Toda la Cuenca de Columbia"
+        subtitle="Deja de perder fines de semana cortando, recortando y arrastrándote por el calor. Ya sea en Desert Aire, Tri-Cities o Moses Lake — nosotros nos encargamos."
         compact
         backgroundImage="/images/maintenance.jpg"
       />
@@ -64,7 +64,7 @@ export default function MantenimientoES() {
                 Imagina regresar a casa después de una semana larga y ver tu césped perfectamente cortado, bordes limpios, todo se ve de revista—sin que hayas levantado un dedo.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                Nuestro servicio de mantenimiento es tu opción de "configúralo y olvídalo" para mantener tu propiedad de Desert Aire luciendo impecable durante todo el año. Mismo equipo, misma calidad, cada semana.
+                Nuestro servicio de mantenimiento es tu opción de "configúralo y olvídalo" para mantener tu propiedad luciendo impecable todo el año. Ya sea en Desert Aire, Pasco, Kennewick o Moses Lake — mismo equipo, misma calidad, cada semana.
               </p>
 
               <div className="bg-accent/10 border-l-4 border-accent p-6 rounded-lg mb-6">
@@ -105,7 +105,7 @@ export default function MantenimientoES() {
 
       <CTABanner
         title="Recupera Tus Fines de Semana"
-        subtitle="Deja de perder sábados sudando bajo el sol. Déjanos manejar el mantenimiento mientras tú disfrutas tu propiedad."
+        subtitle="Deja de perder sábados sudando bajo el sol de la Cuenca de Columbia. Déjanos manejar el mantenimiento mientras tú disfrutas tu propiedad."
         ctaText="Solicita Tu Cotización Gratis"
         ctaLink="/es/contacto"
       />

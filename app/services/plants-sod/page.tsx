@@ -13,33 +13,35 @@ import StructuredData, {
 import Breadcrumbs from '@/components/Breadcrumbs'
 
 export const metadata: Metadata = {
-  title: 'Sod Installation & Landscaping Desert Aire WA',
+  title: 'Sod Installation & Landscaping Columbia Basin WA | Desert Aire, Tri-Cities, Moses Lake',
   description:
-    'Professional sod installation & landscape design for Desert Aire & Mattawa. Climate-adapted plants, premium sod. Licensed GC #MARTIMM744B1. Free quotes (509) 932-1924.',
+    'Professional sod installation & landscape design across the Columbia Basin — Desert Aire, Pasco, Kennewick, Moses Lake. Climate-adapted plants, premium sod. Licensed GC #MARTIMM744B1. (509) 932-1924.',
   keywords: [
-    'sod installation Desert Aire',
+    'sod installation Columbia Basin',
     'landscaping Mattawa WA',
-    'lawn installation Columbia Basin',
+    'lawn installation Tri-Cities',
     'landscape design Desert Aire',
-    'sod contractor near me',
+    'sod contractor Pasco',
+    'landscaping Moses Lake',
+    'Kennewick sod installation',
   ],
   openGraph: {
     title: 'Sod Installation & Landscaping | Martinez Mowing & More LLC',
     description:
-      'Lush, green landscapes that thrive in the Columbia Basin. Expert sod installation & plant selection.',
-    url: 'https://martinezmowingandmore.com/services/plants-sod',
+      'Lush, green landscapes that thrive in the Columbia Basin. Expert sod installation from Desert Aire to Tri-Cities.',
+    url: 'https://martinez-mowing-website.vercel.app/services/plants-sod',
     siteName: 'Martinez Mowing & More LLC',
     type: 'website',
     locale: 'en_US',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Sod Installation & Landscaping Desert Aire WA',
+    title: 'Sod Installation & Landscaping Columbia Basin WA',
     description:
-      'Professional sod installation & landscaping. Climate-adapted plants. Licensed GC.',
+      'Professional sod installation & landscaping — Desert Aire to Tri-Cities. Climate-adapted plants. Licensed GC.',
   },
   alternates: {
-    canonical: 'https://martinezmowingandmore.com/services/plants-sod',
+    canonical: 'https://martinez-mowing-website.vercel.app/services/plants-sod',
   },
 }
 
@@ -51,9 +53,9 @@ export default function PlantsSod() {
 
   const faqs = [
     {
-      question: 'What type of sod works best in Desert Aire?',
+      question: 'What type of sod works best in the Columbia Basin?',
       answer:
-        'For Desert Aire\'s hot summers and cold winters, we typically recommend Kentucky bluegrass blends or tall fescue. Both handle the climate well with proper irrigation. We\'ll assess your sun exposure and water access to recommend the best fit.',
+        'For the hot summers and cold winters across the Columbia Basin, we typically recommend Kentucky bluegrass blends or tall fescue. Both handle the climate well with proper irrigation — whether you\'re in Desert Aire, Pasco, or Moses Lake. We\'ll assess your sun exposure and water access to recommend the best fit.',
     },
     {
       question: 'When is the best time to install sod?',
@@ -81,12 +83,12 @@ export default function PlantsSod() {
         data={[
           createServiceSchema(
             'Sod Installation & Landscaping',
-            'Professional sod installation and landscape design for Desert Aire and Mattawa. Climate-adapted plants and premium sod varieties that thrive in the Columbia Basin.',
+            'Professional sod installation and landscape design across the Columbia Basin — Desert Aire, Tri-Cities, Moses Lake. Climate-adapted plants and premium sod varieties.',
             'landscaping'
           ),
           createBreadcrumbSchema([
-            { name: 'Home', url: 'https://martinezmowingandmore.com' },
-            { name: 'Services', url: 'https://martinezmowingandmore.com/services' },
+            { name: 'Home', url: 'https://martinez-mowing-website.vercel.app' },
+            { name: 'Services', url: 'https://martinez-mowing-website.vercel.app/services' },
             { name: 'Plants & Sod' },
           ]),
           createFAQSchema(faqs),
@@ -95,7 +97,7 @@ export default function PlantsSod() {
       <Breadcrumbs items={breadcrumbItems} />
       <HeroSection
         title="Lush, Green Landscapes That Thrive in the Columbia Basin"
-        subtitle="Desert Aire's climate is beautiful—but it's tough on lawns and plants. We've spent two decades figuring out exactly what works here."
+        subtitle="The Columbia Basin climate is beautiful — but it's tough on lawns and plants. After 8 years of installs across the region, we know exactly what thrives here."
         compact
         backgroundImage="/images/plants-sod.jpg"
       />
@@ -108,11 +110,11 @@ export default function PlantsSod() {
                 Built to Thrive Here
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                Desert Aire's climate is beautiful—but it's tough on lawns and
-                plants. We've spent two decades figuring out exactly what works
-                here: which sod varieties handle the heat, which plants survive
-                the wind, and how to design landscapes that look resort-quality
-                without needing resort-level maintenance.
+                The Columbia Basin climate is beautiful — but it's tough on lawns
+                and plants. After 8 years of installs from Desert Aire to
+                Tri-Cities, we know which sod varieties handle the heat, which
+                plants survive the wind, and how to design landscapes that look
+                resort-quality without needing resort-level maintenance.
               </p>
 
               <div className="bg-accent/10 border-l-4 border-accent p-6 rounded-lg mb-6">
@@ -229,7 +231,7 @@ export default function PlantsSod() {
 
       <CTABanner
         title="Stop Wasting Money on a Lawn That Won't Grow"
-        subtitle="Every summer you spend fighting brown patches and bare spots is money and time down the drain. Let's install a lawn that actually thrives in Desert Aire's climate."
+        subtitle="Every summer you spend fighting brown patches and bare spots is money and time down the drain. Let's install a lawn that actually thrives in the Columbia Basin — whether you're in Desert Aire, Kennewick, or Moses Lake."
       />
     </>
   )

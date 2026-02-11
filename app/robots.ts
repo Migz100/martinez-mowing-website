@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://martinezmowingandmore.vercel.app/sitemap.xml',
+    sitemap: 'https://martinez-mowing-website.vercel.app/sitemap.xml',
   }
 }

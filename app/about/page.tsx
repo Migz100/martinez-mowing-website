@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     title: 'About Daniel Martinez - Licensed Contractor | Martinez Mowing & More',
     description:
       'Licensed GC with 8+ years experience transforming Columbia Basin outdoor spaces. Serving Desert Aire, Mattawa, Tri-Cities & Moses Lake.',
-    url: 'https://martinezmowingandmore.com/about',
+    url: 'https://martinez-mowing-website.vercel.app/about',
     siteName: 'Martinez Mowing & More LLC',
     type: 'website',
     locale: 'en_US',
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
       'Licensed GC #MARTIMM744B1 with 8+ years experience serving the Columbia Basin.',
   },
   alternates: {
-    canonical: 'https://martinezmowingandmore.com/about',
+    canonical: 'https://martinez-mowing-website.vercel.app/about',
   },
 }
 
@@ -53,7 +53,7 @@ export default function About() {
       icon: FaMapMarkerAlt,
       title: 'Columbia Basin Specialists',
       description:
-        'Desert Aire experts serving the entire region. We know the HOA requirements, soil conditions, and exactly what plants thrive here.',
+        'Based in Desert Aire, serving the entire Columbia Basin. We know the HOA requirements, soil conditions, and what thrives in every community from Mattawa to Tri-Cities.',
     },
     {
       icon: FaUsers,
@@ -73,7 +73,7 @@ export default function About() {
     <>
       <StructuredData
         data={createBreadcrumbSchema([
-          { name: 'Home', url: 'https://martinezmowingandmore.com' },
+          { name: 'Home', url: 'https://martinez-mowing-website.vercel.app' },
           { name: 'About' },
         ])}
       />
@@ -100,14 +100,15 @@ export default function About() {
                 />
               </div>
               <p className="text-xl text-gray-700 leading-relaxed mb-6">
-                Hi, I'm Daniel Martinez, and I've been working in landscaping across
-                the Columbia Basin for 8 years.
+                Hi, I'm Daniel Martinez. I've spent 8 years building and
+                landscaping properties across the Columbia Basin — from our home
+                base in Desert Aire to Tri-Cities, Moses Lake, and Othello.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                I started Martinez Mowing & More in 2021 because I saw too many
-                homeowners—especially here in Desert Aire—getting burned by
-                contractors who overpromised, underdelivered, or disappeared
-                halfway through a job.
+                I started Martinez Mowing & More in 2021 because too many
+                homeowners in this region were getting burned by contractors
+                who overpromised, underdelivered, or disappeared halfway
+                through a job.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 I wanted to build something different. A company where your

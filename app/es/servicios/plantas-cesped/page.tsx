@@ -8,9 +8,9 @@ import FAQAccordion from '@/components/FAQAccordion'
 import Breadcrumbs from '@/components/Breadcrumbs'
 
 export const metadata: Metadata = {
-  title: 'Instalación de Plantas y Césped Desert Aire | Martinez Mowing',
-  description: 'Instalación profesional de césped y jardinería en Desert Aire y Mattawa. Resultados de calidad resort que prosperan en el clima de la Cuenca de Columbia.',
-  alternates: { canonical: 'https://martinezmowingandmore.com/es/servicios/plantas-cesped' },
+  title: 'Plantas y Césped - Desert Aire, Tri-Cities, Moses Lake WA | Martinez Mowing',
+  description: 'Instalación profesional de césped y jardinería en la Cuenca de Columbia. Servimos Desert Aire, Pasco, Kennewick, Richland, Moses Lake y Othello. Resultados de calidad resort.',
+  alternates: { canonical: 'https://martinez-mowing-website.vercel.app/es/servicios/plantas-cesped' },
 }
 
 export default function PlantasCespedES() {
@@ -21,8 +21,8 @@ export default function PlantasCespedES() {
 
   const faqs = [
     {
-      question: '¿Qué tipo de césped recomiendan para Desert Aire?',
-      answer: 'Recomendamos variedades resistentes a la sequía que prosperan en el clima cálido y seco de la Cuenca de Columbia. Durante tu consulta gratuita, evaluaremos tu suelo, exposición al sol y uso para recomendar la mejor opción.',
+      question: '¿Qué tipo de césped recomiendan para esta zona?',
+      answer: 'Recomendamos variedades resistentes a la sequía que prosperan en el clima cálido y seco de la Cuenca de Columbia. Las condiciones varían entre Desert Aire, Tri-Cities y Moses Lake — durante tu consulta gratuita evaluamos tu suelo, exposición al sol y uso para recomendar la mejor opción.',
     },
     {
       question: '¿Cuánto tiempo tarda en establecerse el nuevo césped?',
@@ -51,8 +51,8 @@ export default function PlantasCespedES() {
     <>
       <Breadcrumbs items={breadcrumbItems} />
       <HeroSection
-        title="Paisajes Exuberantes Que Prosperan en el Clima de Desert Aire"
-        subtitle="Césped verde y vibrante, jardines que florecen durante todo el verano, y plantaciones que se ven hermosas año tras año."
+        title="Paisajes Verdes Que Prosperan en la Cuenca de Columbia"
+        subtitle="Césped vibrante, jardines que florecen todo el verano y plantaciones que lucen increíbles año tras año — de Desert Aire a Tri-Cities y Moses Lake."
         compact
         backgroundImage="/images/plants-sod.jpg"
       />
@@ -68,10 +68,10 @@ export default function PlantasCespedES() {
                 Tu césped debería ser el tipo de verde que hace que los vecinos se detengan. El tipo de exuberante que hace que los niños quieran jugar descalzos. El tipo de perfecto que hace que organizar una barbacoa sea algo que esperas con ansias, no temes.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                Nos especializamos en crear paisajes que prosperan en el clima único de Desert Aire: veranos calurosos, vientos fuertes y suelo desafiante. Cada proyecto comienza con análisis de suelo, nivelación adecuada y plantas seleccionadas específicamente para prosperar aquí.
+                Nos especializamos en paisajes que prosperan en la Cuenca de Columbia: veranos calurosos, vientos fuertes y suelo desafiante. Ya sea en Desert Aire, Pasco, Kennewick o Moses Lake, cada proyecto comienza con análisis de suelo, nivelación adecuada y plantas seleccionadas para prosperar en tu zona específica.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                Ya sea que estés comenzando desde cero, renovando un césped existente, o agregando plantaciones coloridas, creamos espacios al aire libre que se ven increíbles durante décadas, no solo temporadas.
+                ¿Empezando desde cero? ¿Renovando un césped existente? ¿Agregando color con plantaciones nuevas? Creamos espacios al aire libre que lucen increíbles por décadas, no solo temporadas.
               </p>
 
               <div className="bg-accent/10 border-l-4 border-accent p-6 rounded-lg mb-6">
@@ -128,8 +128,8 @@ export default function PlantasCespedES() {
       </section>
 
       <CTABanner
-        title="Deja de Mirar el Césped Marrón de Tu Vecino con Envidia"
-        subtitle="Cada temporada sin un césped adecuado es una oportunidad perdida de disfrutar tu propiedad. Creemos el oasis verde que mereces."
+        title="Deja de Ver Pasar los Veranos con un Césped Café"
+        subtitle="Cada temporada sin un paisaje adecuado es una oportunidad perdida. Ya sea en Desert Aire, Richland o Othello — creemos el oasis verde que tu propiedad merece."
         ctaText="Solicita Tu Cotización Gratis"
         ctaLink="/es/contacto"
       />

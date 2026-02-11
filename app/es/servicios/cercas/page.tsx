@@ -13,11 +13,11 @@ import StructuredData, {
 import Breadcrumbs from '@/components/Breadcrumbs'
 
 export const metadata: Metadata = {
-  title: 'Instalación de Cercas Personalizadas Desert Aire y Mattawa WA',
+  title: 'Instalación de Cercas - Desert Aire, Tri-Cities, Moses Lake WA',
   description:
-    'Instalación profesional de cercas en Desert Aire y Mattawa. Cedro, vinilo y compuesto. Cumple con HOA. GC Licenciado #MARTIMM744B1. Cotizaciones gratuitas. (509) 932-1924.',
+    'Cercas profesionales de cedro, vinilo y compuesto en la Cuenca de Columbia. Servimos Desert Aire, Pasco, Kennewick, Richland, Moses Lake y Othello. GC Licenciado #MARTIMM744B1. (509) 932-1924.',
   alternates: {
-    canonical: 'https://martinezmowingandmore.com/es/servicios/cercas',
+    canonical: 'https://martinez-mowing-website.vercel.app/es/servicios/cercas',
   },
 }
 
@@ -29,14 +29,14 @@ export default function CercasES() {
 
   const faqs = [
     {
-      question: '¿Qué materiales de cerca recomiendan para Desert Aire?',
+      question: '¿Qué materiales de cerca recomiendan para la Cuenca de Columbia?',
       answer:
-        'Para la exposición al viento y al sol de Desert Aire, típicamente recomendamos compuesto o vinilo para durabilidad con mínimo mantenimiento, o cedro para un aspecto natural. Evaluaremos tus necesidades específicas durante la estimación gratuita.',
+        'Para el viento y sol de esta región, típicamente recomendamos compuesto o vinilo para durabilidad con mínimo mantenimiento, o cedro para un aspecto natural. Las condiciones varían — en Desert Aire el viento es más fuerte, en Tri-Cities el sol es intenso. Evaluamos tu situación específica en la estimación gratuita.',
     },
     {
-      question: '¿Manejan la aprobación de la HOA?',
+      question: '¿Manejan aprobaciones de HOA?',
       answer:
-        'Sí. Conocemos los requisitos de cercas de la HOA de Desert Aire y podemos ayudarte a navegar el proceso de aprobación para asegurar que tu cerca cumpla con los estándares de la comunidad.',
+        'Sí. Conocemos los requisitos de la HOA de Desert Aire al derecho y al revés, y también trabajamos con regulaciones de comunidades en Pasco, Kennewick y otras áreas. Te guiamos en todo el proceso de aprobación.',
     },
     {
       question: '¿Cuánto durará mi cerca?',
@@ -46,7 +46,7 @@ export default function CercasES() {
     {
       question: '¿Pueden igualar el estilo de mi cerca existente?',
       answer:
-        'Absolutamente. Podemos igualar estilos, colores y alturas para que se integren perfectamente con cercas existentes o crear un diseño completamente personalizado.',
+        'Claro que sí. Podemos igualar estilos, colores y alturas para que se integren con cercas existentes o crear un diseño completamente personalizado.',
     },
     {
       question: '¿Ofrecen garantía?',
@@ -70,12 +70,12 @@ export default function CercasES() {
         data={[
           createServiceSchema(
             'Instalación de Cercas Personalizadas',
-            'Cercado profesional de madera, vinilo y compuesto diseñado para el viento, sol y estándares de HOA de Desert Aire. Promedio $8,000, completado en 3-5 días.',
+            'Cercado profesional de madera, vinilo y compuesto para la Cuenca de Columbia. Servimos Desert Aire, Tri-Cities, Moses Lake y Othello. Promedio $8,000, completado en 3-5 días.',
             'fencing'
           ),
           createBreadcrumbSchema([
-            { name: 'Inicio', url: 'https://martinezmowingandmore.com/es' },
-            { name: 'Servicios', url: 'https://martinezmowingandmore.com/es/servicios' },
+            { name: 'Inicio', url: 'https://martinez-mowing-website.vercel.app/es' },
+            { name: 'Servicios', url: 'https://martinez-mowing-website.vercel.app/es/servicios' },
             { name: 'Cercas' },
           ]),
           createFAQSchema(faqs),
@@ -83,8 +83,8 @@ export default function CercasES() {
       />
       <Breadcrumbs items={breadcrumbItems} />
       <HeroSection
-        title="Cercas Personalizadas Que Enmarcan Tu Propiedad de Desert Aire Perfectamente"
-        subtitle="Tu cerca es más que un límite—es lo primero que los invitados notan, el telón de fondo de cada reunión en el patio trasero, y la base de tu privacidad al aire libre."
+        title="Cercas Personalizadas Para Toda la Cuenca de Columbia"
+        subtitle="Desde Desert Aire hasta Tri-Cities y Moses Lake — construimos cercas que resisten el viento, el sol y el paso del tiempo. Tu límite, tu privacidad, tu estilo."
         compact
         backgroundImage="/images/hero-fence.jpg"
       />
@@ -94,16 +94,16 @@ export default function CercasES() {
           <div className="grid md:grid-cols-2 gap-12">
             <div>
               <h2 className="text-3xl font-bold text-charcoal mb-6">
-                Construido para Desert Aire
+                Construido Para las Condiciones de la Cuenca de Columbia
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                Tu cerca es más que un límite—es lo primero que los invitados notan, el telón de fondo de cada reunión en el patio trasero, y la base de tu privacidad al aire libre.
+                Tu cerca es más que un límite — es lo primero que los invitados notan, el telón de fondo de cada reunión en el patio, y la base de tu privacidad al aire libre.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                Nos especializamos en cercas personalizadas de madera, vinilo y compuesto diseñadas específicamente para el viento, sol y estándares de HOA de Desert Aire. Cada poste está asegurado con concreto, cada panel está perfectamente nivelado, y cada puerta funciona sin problemas durante años.
+                Nos especializamos en cercas de madera, vinilo y compuesto diseñadas para las condiciones de la Cuenca de Columbia — el viento fuerte, el sol intenso y los estándares de HOA de cada comunidad. Ya sea en Desert Aire, Pasco, Kennewick o Moses Lake, cada poste va asegurado con concreto, cada panel perfectamente nivelado.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                Ya sea que necesites privacidad total, una cerca decorativa para enmarcar tu jardín, o algo funcional para mantener a las mascotas seguras, construimos cercas que duran décadas y se ven hermosas durante todo ese tiempo.
+                ¿Necesitas privacidad total? ¿Una cerca decorativa para enmarcar tu jardín? ¿Algo funcional para las mascotas? Construimos cercas que duran décadas y se ven increíbles durante todo ese tiempo.
               </p>
 
               <div className="bg-accent/10 border-l-4 border-accent p-6 rounded-lg mb-6">
@@ -221,8 +221,8 @@ export default function CercasES() {
       </section>
 
       <CTABanner
-        title="No Dejes Que Otro Verano Pase Sin Una Cerca Completa"
-        subtitle="Tu privacidad, tus mascotas, tus hijos—cada día sin una cerca adecuada los pone en riesgo. Deja de posponerlo. Construyamos una cerca que dure décadas."
+        title="No Dejes Que Otro Verano Pase Sin Tu Cerca"
+        subtitle="Tu privacidad, tus mascotas, tus hijos — cada día sin una cerca adecuada los pone en riesgo. Ya sea en Desert Aire, Pasco o Moses Lake — construyamos una cerca que dure décadas."
         ctaText="Solicita Tu Cotización Gratis"
         ctaLink="/es/contacto"
       />

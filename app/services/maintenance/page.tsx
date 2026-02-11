@@ -10,33 +10,35 @@ import StructuredData, {
 import Breadcrumbs from '@/components/Breadcrumbs'
 
 export const metadata: Metadata = {
-  title: 'Property Maintenance & Lawn Care Desert Aire WA',
+  title: 'Property Maintenance & Lawn Care Columbia Basin WA | Desert Aire, Tri-Cities, Moses Lake',
   description:
-    'Year-round property maintenance for Desert Aire & Mattawa. Weekly mowing, spring cleanup, fall leaf removal, HOA compliance. Licensed GC #MARTIMM744B1. $300-700/mo.',
+    'Year-round property maintenance across the Columbia Basin — Desert Aire, Pasco, Kennewick, Moses Lake. Weekly mowing, spring cleanup, fall leaf removal, HOA compliance. Licensed GC #MARTIMM744B1. $300-700/mo.',
   keywords: [
-    'property maintenance Desert Aire',
+    'property maintenance Columbia Basin',
     'lawn care Mattawa WA',
-    'lawn mowing service Columbia Basin',
-    'HOA lawn maintenance',
-    'yard maintenance near me',
+    'lawn mowing service Tri-Cities',
+    'HOA lawn maintenance Desert Aire',
+    'yard maintenance Pasco',
+    'lawn care Moses Lake',
+    'Kennewick property maintenance',
   ],
   openGraph: {
     title: 'Property Maintenance & Lawn Care | Martinez Mowing & More LLC',
     description:
-      'Year-round lawn and property maintenance for Desert Aire homeowners. Weekly mowing, cleanup, HOA compliance.',
-    url: 'https://martinezmowingandmore.com/services/maintenance',
+      'Year-round lawn and property maintenance across the Columbia Basin. Desert Aire to Tri-Cities. Weekly mowing, cleanup, HOA compliance.',
+    url: 'https://martinez-mowing-website.vercel.app/services/maintenance',
     siteName: 'Martinez Mowing & More LLC',
     type: 'website',
     locale: 'en_US',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Property Maintenance & Lawn Care Desert Aire WA',
+    title: 'Property Maintenance & Lawn Care Columbia Basin WA',
     description:
-      'Year-round maintenance for Desert Aire homeowners. Weekly mowing, cleanup, HOA compliance.',
+      'Year-round maintenance — Desert Aire to Tri-Cities. Weekly mowing, cleanup, HOA compliance.',
   },
   alternates: {
-    canonical: 'https://martinezmowingandmore.com/services/maintenance',
+    canonical: 'https://martinez-mowing-website.vercel.app/services/maintenance',
   },
 }
 
@@ -61,12 +63,12 @@ export default function Maintenance() {
         data={[
           createServiceSchema(
             'Property Maintenance & Lawn Care',
-            'Year-round lawn and property maintenance for Desert Aire. Weekly/bi-weekly mowing, spring cleanup, fall leaf removal, and HOA compliance. $300-700/month.',
+            'Year-round lawn and property maintenance across the Columbia Basin — Desert Aire, Tri-Cities, Moses Lake. Weekly/bi-weekly mowing, spring cleanup, fall leaf removal, HOA compliance. $300-700/month.',
             'maintenance'
           ),
           createBreadcrumbSchema([
-            { name: 'Home', url: 'https://martinezmowingandmore.com' },
-            { name: 'Services', url: 'https://martinezmowingandmore.com/services' },
+            { name: 'Home', url: 'https://martinez-mowing-website.vercel.app' },
+            { name: 'Services', url: 'https://martinez-mowing-website.vercel.app/services' },
             { name: 'Maintenance' },
           ]),
         ]}
@@ -74,7 +76,7 @@ export default function Maintenance() {
       <Breadcrumbs items={breadcrumbItems} />
       <HeroSection
         title="Year-Round Maintenance So You Can Actually Enjoy Your Property"
-        subtitle="You bought in Desert Aire to enjoy the lifestyle—not to spend your weekends edging, blowing, and trimming."
+        subtitle="You didn't invest in your property to spend every weekend on yard work. From Desert Aire to Kennewick — we handle it so you don't have to."
         compact
         backgroundImage="/images/maintenance.jpg"
       />
@@ -87,8 +89,9 @@ export default function Maintenance() {
                 Enjoy Your Weekends Again
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                You bought in Desert Aire to enjoy the lifestyle—not to spend
-                your weekends edging, blowing, and trimming.
+                Whether you're in Desert Aire, Pasco, or Moses Lake — you
+                didn't invest in your property to spend every weekend edging,
+                blowing, and trimming.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 Our maintenance plans keep your property looking sharp
