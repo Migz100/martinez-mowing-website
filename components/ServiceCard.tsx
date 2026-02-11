@@ -43,7 +43,6 @@ export default function ServiceCard({
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
-              <Icon className="absolute bottom-3 right-3 text-3xl text-white/90" />
             </>
           ) : (
             <div className="h-full image-placeholder-gradient flex items-center justify-center">
